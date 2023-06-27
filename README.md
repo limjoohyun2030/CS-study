@@ -18,7 +18,7 @@
 | 주현 | [@Sweetpotatopizza](https://github.com/Sweetpotatopizza) |
 | 동재 | |
 | 예서 | [@yeseoLee](https://github.com/yeseoLee) |
-| 민서 | [@alstjgg](https://github.com/alstjgg) |
+
 
 ## 📌 참고 자료
 스터디의 주제는 아래 자료들을 참고합니다
