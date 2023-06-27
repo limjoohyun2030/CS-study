@@ -87,20 +87,20 @@
 ## Timeline
 | 날짜 예시 | 상호 | 주현 | 동재 | 예서 |
 |--|--|--|--|--|
-| 21.10.27 |Git 과 GitHub 에 대해서 | TDD 란 무엇이며 어떠한 장점이 있는가? | RESTFul API 란? | 객체 지향 프로그래밍이란 무엇인가?|
-| 21.11.03 | 함수형 프로그래밍 | 좋은 코드란 무엇인가 | Array와 List | MVC 패턴이란 무엇인가? | 
-| 21.11.06 | Tree | Heap | Array & List | Stack & Queue |
-| 21.11.10 | PCB & Context Switching | [TCP] 3 way handshake & 4 way handshake | 프로세스 & 스레드 | OSI 7 계층 |
-| 21.11.17 | CPU Scheduling | TCP IP 흐름 제어 & 혼잡 제어 | ICP란 | HTTP & HTTPS | 
-| 21.11.24 | 데드락 | UDP | 세마포어 | TLS/SSL handshake |
-| 21.12.01 | 페이징 & 세그멘테이션 | DNS | 페이징 알고리즘 | IP vs MAC |
-| 21.12.08 | Blocking, Non-blocking & Synchronous, Asynchronous | 로드밸런싱 | 파일 시스템 | 라우팅 |
-| 21.12.15 | NoSQL - 1 | Transaction & Lock - 1, 3 | 정규화 - 1 | Index - 1 |
-| 21.12.22 | NoSQL - 2 | Transaction & Lock - 2, 4 | Connection | Index - 2 |
-| 21.12.29 | NoSQL - 3 | Transaction & Lock - 5 | Connection | Index - 3 |
-| 22.01.05 | 하둡 | Spring @Transactional | SQL 최적화 - 1 | Index - 4 |
-| 22.01.12 | Kafka - 1 | MySQL 아키텍처 - 1 | SQL 최적화 - 2 | Elasticsearch - 1 |
-| 22.01.19 | Kafka - 2 | MySQL 아키텍처 - 2 | SQL 최적화 - 3 | Elasticsearch - 2 |
-| 22.01.26 | Kafka - 3 | MySQL 아키텍처 - 3 | SQL 최적화 - 4 | Redis |
-| 22.02.09 | Big Data Atchitecture |  | SQL 최적화 - 5 | Msa 아키텍처 - 1 |
-| 22.02.16 | Data Pipeline | MySQL의 리플리케이션 | SQL 최적화 - 6 |  |
+| 2023-06-29 |  |  |  |  |
+| 2023-07-13 |  |  |  |  | 
+| 2023-07-27 |  |  |  |  |
+| 2023-08-10 |  |  |  |  |
+| 2023-08-24 |  |  |  |  |
+| 2023-09-07 |  |  |  |  |
+| 2023-09-21 |  |  |  |  |
+| 2023-10-05 |  |  |  |  |
+| 2023-10-19 |  |  |  |  |
+| 2023-11-02 |  |  |  |  |
+| 2023-11-16 |  |  |  |  |
+| 2023-11-30 |  |  |  |  | 
+| 2023-12-14 |  |  |  |  | 
+| 2023-12-28 |  |  |  |  | 
+| 2023-01-11 |  |  |  |  | 
+| 2023-01-25 |  |  |  |  | 
+| 2023-02-08 |  |  |  |  |
