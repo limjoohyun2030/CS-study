@@ -16,7 +16,7 @@
 | 이름   | GitHub                                         |
 | ---- | ---------------------------------------------- |
 | 상호 | [@LeeQuiett](https://github.com/LeeQuiett) |
-| 주현 | [@Sweetpotatopizza](https://github.com/Sweetpotatopizza) |
+| 주현 | [@limjoohyun2030](https://github.com/limjoohyun2030) |
 | 동재 | |
 | 예서 | [@yeseoLee](https://github.com/yeseoLee) |
 
