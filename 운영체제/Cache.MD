@@ -85,7 +85,7 @@ A[0], A[1]과 같은 연속 접근 시, 참조된 데이터 근처에 있는 데
     
     Web Server에서 데이터베이스에 접근하여 데이터를 가져오는 대신 캐시DB를 두어 더 빠르게 가져올 수 있다.
     
-
+---
 참고
 
 - [https://gyoogle.dev/blog/computer-science/computer-architecture/캐시 메모리.html](https://gyoogle.dev/blog/computer-science/computer-architecture/%EC%BA%90%EC%8B%9C%20%EB%A9%94%EB%AA%A8%EB%A6%AC.html)
