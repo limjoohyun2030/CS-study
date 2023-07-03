@@ -135,7 +135,7 @@
     - 그러나 사용자 수준 스레드가 블로킹(System Call 등으로 인해) 상태에 들어가면, 해당 프로세스의 모든 스레드가 중단될 수 있다.
 2. 커널 수준 스레드
     
-    ![img1.daumcdn.png](/운영체제/ProcessAndThread/img1.daumcdn 1.png)
+    ![img1.daumcdn.png](/운영체제/ProcessAndThread/img1.daumcdn1.png)
     
     - 커널 수준 스레드는 운영체제 커널에서 직접 관리되는 스레드이다.
     - 각 스레드에 대해 운영체제는 스레드의 컨텍스트 스위칭과 스케줄링을 수행한다.
@@ -143,7 +143,7 @@
     - 커널 수준 스레드는 블로킹 상태에 있는 스레드가 있더라도 다른 스레드가 실행될 수 있다.
 3. 혼합형 스레드
     
-    ![img1.daumcdn.png](운영체제/ProcessAndThread/img1.daumcdn 2.png)
+    ![img1.daumcdn.png](운영체제/ProcessAndThread/img1.daumcdn2.png)
     
     - 혼합형 스레드는 사용자 수준 스레드와 커널 수준 스레드를 혼합하여 사용하는 방식이다.
     - 일반적으로, 각 사용자 수준 ㅅ스레드는 커널 수준 스레드에 매핑된다.
