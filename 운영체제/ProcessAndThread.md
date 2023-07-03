@@ -45,7 +45,7 @@
 
 ## 4. 프로세스의 상태 변화
 
-![Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%E1%84%8B%E1%85%AA%20%E1%84%89%E1%85%B3%E1%84%85%E1%85%A6%E1%84%83%E1%85%B3%203323e2d9dc764d91ad15aa9fe3b39afc/Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png)
+![Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png](/운영체제/ProcessAndThread/Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png)
 
 - 준비상태 : 메모리에 올라온 상태
 - 실행상태 : CPU를 할당 받은 상태
