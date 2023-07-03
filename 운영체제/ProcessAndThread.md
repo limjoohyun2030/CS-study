@@ -8,7 +8,7 @@
 
 1. **메모리 구조, 프로세스는 각각 독립된 메모리를 할당받는다.**
     
-    ![운영체제/ProcessAndThread/Untitled.png](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%E1%84%8B%E1%85%AA%20%E1%84%89%E1%85%B3%E1%84%85%E1%85%A6%E1%84%83%E1%85%B3%203323e2d9dc764d91ad15aa9fe3b39afc/Untitled.png)
+    ![운영체제/ProcessAndThread/Untitled.png](운영체제/ProcessAndThread/Untitled.png)
     
     **프로세스는 코드, 데이터, 힙, 스택으로 구성된다.**
     
