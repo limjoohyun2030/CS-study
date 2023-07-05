@@ -12,3 +12,7 @@
 <br>
 
 ## RESTful API
+
+<br>
+
+## Get, Post
