@@ -85,7 +85,7 @@
 ## Timeline
 | 날짜 예시 | 상호 | 주현 | 동재 | 예서 |
 |--|--|--|--|--|
-| 2023-06-29 | ProcessAndThread | Browser |  | Cache |
+| 2023-06-29 | ProcessAndThread | Browser(Architecture, Engine) |  | Cache |
 | 2023-07-13 |  |  |  |  | 
 | 2023-07-27 |  |  |  |  |
 | 2023-08-10 |  |  |  |  |
