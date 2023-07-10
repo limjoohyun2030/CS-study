@@ -86,7 +86,7 @@
 | 날짜 예시 | 상호 | 주현 | 동재 | 예서 |
 |--|--|--|--|--|
 | 2023-06-29 | ProcessAndThread | Browser(Architecture, Engine) |  | Cache |
-| 2023-07-13 |  | Browser Rendering, Protocol, RESTful API |  |  | 
+| 2023-07-13 |  | Browser Rendering, Protocol, RESTful API |  | 동기와 비동기 | 
 | 2023-07-27 |  |  |  |  |
 | 2023-08-10 |  |  |  |  |
 | 2023-08-24 |  |  |  |  |
