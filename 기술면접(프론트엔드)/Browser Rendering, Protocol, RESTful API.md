@@ -1,7 +1,3 @@
-## 주소창에 www.google.com 을 입력하면?
-을 시작으로 Rendering 도 설명
-
-<br>
 
 ## Rendering 
 
@@ -16,3 +12,10 @@
 <br>
 
 ## Get, Post
+
+<br>
+
+## 주소창에 www.google.com 을 입력하면?
+마지막으로 연결해서 설명
+
+<br>
