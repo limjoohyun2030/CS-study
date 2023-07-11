@@ -31,7 +31,7 @@
 - 블로킹/논블록킹은 단어 그대로 현재 작업이 block(차단, 대기) 되느냐 아니냐에 따라 다른 작업을 수행할 수 있는지에 대한 관점
 
 ### 케이스별로 확인하기
-![Boost application performance using asynchronous I/O](./img/aio.gif)
+![Boost application performance using asynchronous I/O](./SyncronousAndAsyncronous/aio.gif)
 - 동기 + 블로킹
    ```javascript
   function run(a, b) {
