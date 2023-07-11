@@ -53,7 +53,7 @@
 - [로드밸런서](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%84%9C.md)
 - [라우팅](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EB%9D%BC%EC%9A%B0%ED%8C%85.md)
 ## 운영체제
-- [프로세스 & 스레드](https://github.com/alstjgg/cs-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%26%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
+- [프로세스 & 스레드](/운영체제/ProcessAndThread.md)
 - [PCB & Context Switching](https://github.com/alstjgg/cs-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/PCB%20and%20Context%20Switching.md)
 - [CPU Scheduling](https://github.com/alstjgg/cs-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/CPU%20Scheduling.md)
 - [ICP란?](https://github.com/alstjgg/cs-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/IPC%EB%9E%80.md)
