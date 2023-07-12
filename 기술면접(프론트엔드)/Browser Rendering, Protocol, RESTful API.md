@@ -1,4 +1,4 @@
-
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/0f8b4222-ede9-434b-b4e0-f04c2dff5264)
 ## Rendering 
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/1b59e269-f54b-4e6f-b594-c962e7a5d609)
@@ -180,18 +180,92 @@ Protocol 이란 통신규약 이라는 의미를 가지며,
 - SMTP(Simple Mail Tranfer Protocol) : 전자 우편 전송 프로토콜
 - DHCP(Dynamic Host Configuration Protocol) : 클라이언트가 동적인 IP 주소를 할당 받아 인터넷을 사용하도록 도와주는 프로토콜
 
-### 암호관련
-- SSL(Secure Socket Layer) :
-- TLS
+### TCP(Transmission Control Protocol) , UDP(User Datagram Protocol)
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/4c06be5d-6aeb-416b-a73e-0fe8eba27b3c)
 
-###
-- TCP(Transmission Control Protocol)
-- UDP(User Datagram Protocol)
+<br>
+OSI 7 레이어에서 Transport Layer에는 양 끝단(End to end)의 사용자들이 신뢰성있는 데이터를 주고 받을 수 있도록 해 주어, 상위 계층들이 데이터 전달의 유효성이나 효율성을 생각하지 않도록 해줍니다
+TCP UDP 모두 Transport Layer(전송 프로토콜) 인데 Application 프로세스들 간의 논리적인 통신을 제공하는 Layer 입니다.
+
+- TCP
+  
+        인터넷상에서 데이터를 메세지의 형태로 보내기 위해 IP와 함께 사용하는 프로토콜
+  TCP는 연결형 서비스로, 신뢰적인 전송을 보장하기에 hanshaking하고 데이터의 흐름제어와 혼잡제어를 수행하지만 속도가 느립니다.
+  <br>
+  
+- UDP
+  
+        데이터를 데이터그램 단위로 처리하는 프로토콜
+
+UDP는 비연결형 프로토콜입니다. 할당되는 논리적인 경로가 없고 각각의 패킷이 다른 경로로 전송되고 이 각각의 패킷은 독립적인 관계를 지니게 됩니다. 네트워크 부하가 적다는 장점이 있지만 데이터 전송의 신뢰성이 낮기 때문에, 연속성이 중요한 실시간 서비스(스트리밍)에 좋다고 합니다.
+
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/fed51ba5-6709-4711-9e66-1fe412a0cea1)
+
+(추상적인 설명들이 많으므로 차이점을 느낌으로 기억합시다)
+
+<br>
+
+### 3-Way Handshake와 4-Way Handshake
+        3-Way Handshake 는 TCP의 접속,4-Way Handshake는 TCP의 접속 해제 과정입니다.
+
+Handshake와 관련된 많은 복잡한 용어들이 나오는데, 대략적인 느낌만 먼저 이해합시다.
+3-Way Handshake , 4-Way Handshake 는 연결하고자 하는 두 장치끼리
+연결이 잘 됐는지 확인하는 과정이라고 이해하면 됩니다.
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/9ce4a2c9-5091-4dff-85d6-82cac90c5332)
+
+        A -> B : 안녕! 거기 있니?
+        B -> A : 응 안녕! 나 여기있어. 내 말 들려?
+        A -> B : 웅 잘 들려!
+
+관련 용어
+- CLOSED	연결 수립을 시작하기 전의 기본 상태 (연결 없음)
+- LISTEN	포트가 열린 상태로 연결 요청 대기 중
+- SYN-SENT	SYN 요청을 한 상태
+- SYN-RECEIVED	SYN 요청을 받고 상대방의 응답을 기다리는 중
+- ESTABLISEHD	연결의 수립이 완료된 상태, 서로 데이터를 교환할 수 있다.
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/348b7b8c-b012-4d00-aab4-9761a1a13eaa)
+
+
+        A -> B : 이제 통화 끊고 내일 보자~
+        B -> A : 알겠어. 잠시만 기다려 
+        B -> A : 그래 이제 끊을게!
+        A -> B : 그래 내일 봐 
+
+관련 용어
+- CLOSE	연결 수립을 시작하기 전의 기본 상태 (연결 없음)
+- ESTABLISHED	연결의 수립이 완료된 상태, 서로 데이터를 교환할 수 있다.
+- CLOSE-WAIT	상대방의 FIN(종료 요청)을 받은 상태. 상대방 FIN에 대한 ACK를 보내고 애플리케이션에 종료를 알린다.
+- LAST-ACK	CLOSE-WAIT 상태를 처리 후 자신의 FIN요청을 보낸 후 FIN에 대한 ACK를 기다리는 상태.
+- FIN-WAIT-1	자신이 보낸 FIN에 대한 ACK를 기다리거나 상대방의 FIN을 기다린다.
+- FIN-WAIT-2	자신이 보낸 FIN에 대한 ACK를 받았고 상대방의 FIN을 기다린다.
+- CLOSING	상대방의 FIN에 ACK를 보냈지만 자신의 FIN에 대한 ACK를 못받은 상태
+- TIME-WAIT	모든 FIN에 대한 ACK를 받고 연결 종료가 완료된 상태. 새 연결과 겹치지 않도록 일정 시간 동안 기다린 후 CLOSED로 전이한다.
+
+<br>
+
+### 암호화 기반 프로토콜 (두 프로토콜 모두 클라이언트(브라우저)와 서버(웹서버)가 보안이 향상된 통신 프로토콜)
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/846d609e-63ab-4fd3-af20-fb8fd1987333)
+
+- SSL(Secure Socket Layer) : 개인정보 보호, 인증, 데이터 무결성을 보장.
+  SSL 인증은 SSL 인증서가 있는 웹사이트에서만 가능. 공개 키로 클라이언트, 웹서버 모두 암호화 가능
+  대표적으로 HTTPS 는 HTTP 와 SSL 을 결합한 프로토콜
+- TLS(Transport Layer Security) : SSL 이후에 나온 버전이지만 SSL 이 더 많이 쓰여서 SSL 과 묶여서 표현함
+
+참고) SSL 도 handshake 를 하는데, SSL은 TCP 기반 프로토콜이므로 TCP 3-way handshake 를 수행하고 나서 SSL handshake 를 수행합니다.
 
 ### HTTP(Hyper Text Transfer Protocol)
 
+        웹상에서 HTML 문서나 동영상과 같은 리소스(Resource)를 주고받기 위한 프로토콜
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/6ae8cb54-b920-41e1-9719-9a78ea6fd242)
+        
 HTTP 는 Client-Server Protocol Model 을 기반으로 하는데, 
 이는 서비스 제공자(서버)와 서비스 요청자(클라이언트)를 구분하는 Network model 입니다.
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/d415fe8b-b70b-4cb1-8ff3-acc62f99bda3)
 
 
 
@@ -226,3 +300,6 @@ https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%
 - https://velog.io/@moonsun116/async-vs-defer
 - https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
 - https://velog.io/@dyunge_100/WEB-HTTP-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
+- https://velog.io/@yjw8459/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B3%B4%EC%95%88-SSL%EC%9D%B4%EB%9E%80
+- https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-TCPUDP%EC%99%80-3-Way-Handshake4-Way-Handshake
+- https://seongonion.tistory.com/74
