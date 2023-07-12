@@ -65,6 +65,7 @@ async 와 defer 는 차이점이 있습니다
 <br>
 
 - defer
+  
 defer 는 script 태그가 여러개 있다면 순차적으로 실행됩니다.
 defer 는 DOMContentLoaded 라는 이벤트가 발생하기 전에 실행됩니다
 <br>
@@ -117,13 +118,32 @@ JS에 의해 노드가 추가되거나, Browser 창이 Resizing 된다면
 reflow 와 repaint 이 발생합니다.
 
 ### 8. reflow, repaint (추가 공부 필요)
-https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
+
+- reflow
+  
+생성된 DOM 노드의 레이아웃 변경 시 영향을 받는 모든 노드(부모, 자식)의 수치를 다시 계산하여 레이아웃 트리(렌더 트리)를 재생성하는 작업
+width, height, padding, margin 등 레이아웃에 영향을 주는 속성들을 변경하면 발생합니다.
+
+- repaint
+
+ reflow 과정이 끝나고 재생성된 레이아웃 트리(렌더 트리)를 다시 레이어에 그리는 작업
+ color, border-radius, background, box-shadow 등등, 레이아웃에는 영향을 안 주지만, 시각적인게 바뀔때 발생
+
+즉, reflow 는 틀을 그린다고 생각하고, repaint 는 말 그대로 구조를 바꾸는게 아니라 
+물감으로 덧칠하는 부분이라고 생각하면 될 것 같습니다.
 
 
-6.
+reflow 와 repaint 를 알아야하는 이유는, 이 두 요소가 렌더링 속도에 영향을 주기 때문입니다.
+두 단어 앞에 're' 라는 단어가 붙혀진 이유는 다시 그려준다는 의미인데
+레이아웃이 변경될때마다, 시각적인게 변경될때마다 많은 변화가 일어난다면 그만큼
+브라우저 렌더링 속도가 떨어져서 사용자 경험이 안 좋아지게 됩니다.
 
-<br>
-<br>
+- 해결책?
+
+1. CSS Transform 속성을 사용하면 CPU 가 아닌 GPU 로 렌더링 하기 때문에, 애니메이션 처리를 빠르게 가능
+2. JS requestAnimationFrame 함수를 사용
+
+
 
 ## Protocol
 
@@ -155,4 +175,5 @@ https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%
 - https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
 - https://velog.io/@fepanbr/HTML-script%ED%83%9C%EA%B7%B8-defer-async
 - https://velog.io/@moonsun116/async-vs-defer
+- https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
 - 
