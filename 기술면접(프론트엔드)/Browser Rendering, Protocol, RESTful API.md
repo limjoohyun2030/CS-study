@@ -1,40 +1,48 @@
 
 ## Rendering 
 
-### 1. Browser 가 url을 입력받으면, DNS를 통해 ip주소로 변환하고, 해당 ip 주소를 가진 서버에게 Resources 를 요청
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/1b59e269-f54b-4e6f-b594-c962e7a5d609)
+
+<ol>
+  <li>
+    Browser 가 url을 입력받으면, DNS를 통해 ip주소로 변환하고, 해당 ip 주소를 가진 서버에게 Resources 를 요청
+    <br>
 <br>
-
-### 2. Webkit, Blink 같은 Browser Rendering Engine 이 Server로부터 받은 HTML, CSS 를 Parsing 
-
+  </li>
+  <li>
+    Webkit, Blink 같은 Browser Rendering Engine 이 Server로부터 받은 HTML, CSS 를 Parsing 
+    <br>
 <br>
-
-### 3. HTML Parser가 HTML을 Parsing 해서 DOM(Document Objecy Model) tree 를 만듬
-
+  </li>
+  <li>
+    HTML Parser가 HTML을 Parsing 해서 DOM(Document Objecy Model) tree 를 만듬
+    <br>
 <br>
-
-### 4. CSS Parser가 CSS를 Parsing 해서 CSSOM(CSS Object Model) tree 를 만듬
-
-<br>
-->HTML,CSS 모두 서버로부터 바이트 형태로 전달을 받습니다. 
+  </li>
+  <li>
+    CSS Parser가 CSS를 Parsing 해서 CSSOM(CSS Object Model) tree 를 만듬
+    <br>
+    <br>
+HTML,CSS 모두 서버로부터 바이트 형태로 전달을 받습니다. 
 이 바이트 형태를 문자열로, 문자열을 토큰으로, 토큰을 노드로 바꾸고, 
 이 노드들을 DOM tree, CSSOM tree로 만들고, 이 두개의 tree를 합쳐서 Render tree로 만듭니다.
-<br>
-<br>
+<br><br>
 이때 알아야할 점은, 화면에 렌더링되는 노드들만 구성이 된다는 점인데
 화면에 렌더링 되지않은 display:none 이나 meta 태그등은 렌더 트리에 포함되지 않습니다
+<br><br>
+  </li>
+  
+  <li>
+    HTML Parser가 Parsing 할때 link 나 style 같은 CSS 태그를 만나면 블로킹되고, CSSOM 생성쪽으로 넘어감
+    CSSOM 생성이 마무리되면, 블로킹 되었던 시점부터 다시 HTML Parsing을 진행합니다.
+    <br>
 <br>
-<br>
-
-### 5. HTML Parser가 Parsing 할때 link 나 style 같은 CSS 태그를 만나면 블로킹되고, CSSOM 생성쪽으로 넘어감 
-CSSOM 생성이 마무리되면, 블로킹 되었던 시점부터 다시 HTML Parsing을 진행합니다.
-
-<br>
-
-### 6. HTML Parser가 Parsing 할때 script 태그를 만나면 제어권한을 JS Runtime Engine으로 넘김
-JS Engine은 JS를 Parsing 해서 AST(Abstract syntax tree)를 만듭니다.
-<br>
-<br>
-AST는 JS에만 적용되는 단어는 아닙니다. 특정 프로그래밍 언어로 작성된 프로그램 소스를
+  </li>
+  <li>
+    HTML Parser가 Parsing 할때 script 태그를 만나면 제어권한을 JS Runtime Engine으로 넘김. 
+    <br>
+    JS Engine은 JS를 Parsing 해서 AST(Abstract syntax tree)를 만듭니다.
+    AST는 JS에만 적용되는 단어는 아닙니다. 특정 프로그래밍 언어로 작성된 프로그램 소스를
 의미별로 분리해서 컴퓨터가 이해할 수 있는 구조로 변경시킨 트리입니다.
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/b9fcb6c7-54e9-4247-b99c-4f1881fc936a)
@@ -47,15 +55,18 @@ Virtual Machine이 이해할 수 있는 ByteCode를 만듭니다.
 
 <br>
 <br>
-
-### 6.5 Script 태그는 동기적 파싱. 해결법은 async defer?
-Script 태그는 동기적으로, 즉 위에서 아래로 읽어내려가면서 Parsing 을 하기 때문에
+  </li>
+  <li>
+    Script 태그는 동기적 파싱. 해결법은 async defer?
+<br>
+<br>
+    Script 태그는 동기적으로, 즉 위에서 아래로 읽어내려가면서 Parsing 을 하기 때문에
 script 태그의 위치에 따라 HTML Parsing 이 지연될 수 있습니다.
 그래서 script 태그는 가능하면 body 태그의 맨 아래쪽에 위치하는게 좋다고 생각할 수 있습니다.
-
+<br>
 <br>
 
-그러나 script 태그를 body 태그 맨 아래에 두어도 문제가 있습니다.
+    그러나 script 태그를 body 태그 맨 아래에 두어도 문제가 있습니다.
 이미 화면상에 보이는 HTML 태그에서 만든 컴포넌트들의 상호작용이 작동하지 않을 수 있습니다(버튼 클릭, 텍스트입력등)
 
 async, defer 속성을 이용해서 JS코드를 비동기적으로 불러옴으로서, DOM 렌더링의 블로킹을 방지할 수 있습니다.
@@ -105,21 +116,29 @@ async 를 쓰면 둘 중 먼저 다운로드 된 js 가 실행됩니다.
 <br>
 이러한 특징 때문에
 defer 는 초기 페이지의 렌더링 과정에서 꼭 필요한 처리지만, 무거운 작업일 경우 사용하고, 
-async는 페이지와 관련없이 독립적인 기능을 하기 위해 사용하는 것이 좋다.(Ex. 광고 클릭 카운트)
-
+async는 페이지와 관련없이 독립적인 기능을 하기 위해 사용하는 것이 좋습니다.(Ex. 광고 클릭 카운트)
 <br>
+<br>
+  </li>
 
-### 7.DOM tree 와 CSSOM tree 를 합쳐서 Render tree 를 만듦
-Render tree를 기반으로 
+  <li>
+    DOM tree 와 CSSOM tree 를 합쳐서 Render tree 를 만듦
+    <br>
+    <br>
+    Render tree를 기반으로 
 - HTML 요소의 Layout(컴포넌트들의 위치와 크기)을 계산하고
 - Browser 화면에 HTML 요소를 Painting 합니다.
   
 JS에 의해 노드가 추가되거나, Browser 창이 Resizing 된다면
 reflow 와 repaint 이 발생합니다.
 
-### 8. reflow, repaint (추가 공부 필요)
-
-- reflow
+<br><br>
+  </li>
+  
+  <li>
+    reflow, repaint
+    <br><br>
+      - reflow
   
 생성된 DOM 노드의 레이아웃 변경 시 영향을 받는 모든 노드(부모, 자식)의 수치를 다시 계산하여 레이아웃 트리(렌더 트리)를 재생성하는 작업
 width, height, padding, margin 등 레이아웃에 영향을 주는 속성들을 변경하면 발생합니다.
@@ -142,10 +161,40 @@ reflow 와 repaint 를 알아야하는 이유는, 이 두 요소가 렌더링 �
 
 1. CSS Transform 속성을 사용하면 CPU 가 아닌 GPU 로 렌더링 하기 때문에, 애니메이션 처리를 빠르게 가능
 2. JS requestAnimationFrame 함수를 사용
-
+    <br><br>
+  </li>
+</ol>
 
 
 ## Protocol
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/0b2d9d89-cbb2-4738-896b-5bfed858794e)
+
+
+Protocol 이란 통신규약 이라는 의미를 가지며, 
+컴퓨터나 전자기기 사이에 메세지를 주고 받는 양식과 규칙의 체계를 의미입니다.
+
+웹 통신 쪽에서는 HTTP 를 많이 쓰지만, Protocol 의 종류에는 여러가지가 있습니다.
+
+- FTP(File Transfer Protocol) : 컴퓨터 사이에 파일 전송을 하기 위한 프로토콜
+- SMTP(Simple Mail Tranfer Protocol) : 전자 우편 전송 프로토콜
+- DHCP(Dynamic Host Configuration Protocol) : 클라이언트가 동적인 IP 주소를 할당 받아 인터넷을 사용하도록 도와주는 프로토콜
+
+### 암호관련
+- SSL(Secure Socket Layer) :
+- TLS
+
+###
+- TCP(Transmission Control Protocol)
+- UDP(User Datagram Protocol)
+
+### HTTP(Hyper Text Transfer Protocol)
+
+HTTP 는 Client-Server Protocol Model 을 기반으로 하는데, 
+이는 서비스 제공자(서버)와 서비스 요청자(클라이언트)를 구분하는 Network model 입니다.
+
+
+
 
 <br>
 
@@ -176,4 +225,4 @@ https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%
 - https://velog.io/@fepanbr/HTML-script%ED%83%9C%EA%B7%B8-defer-async
 - https://velog.io/@moonsun116/async-vs-defer
 - https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
-- 
+- https://velog.io/@dyunge_100/WEB-HTTP-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
