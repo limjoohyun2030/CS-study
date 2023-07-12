@@ -1,4 +1,4 @@
-![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/0f8b4222-ede9-434b-b4e0-f04c2dff5264)
+
 ## Rendering 
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/1b59e269-f54b-4e6f-b594-c962e7a5d609)
