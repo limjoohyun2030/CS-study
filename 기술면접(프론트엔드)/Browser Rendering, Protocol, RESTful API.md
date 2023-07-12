@@ -54,27 +54,59 @@ script 태그의 위치에 따라 HTML Parsing 이 지연될 수 있습니다.
 그래서 script 태그는 가능하면 body 태그의 맨 아래쪽에 위치하는게 좋다고 생각할 수 있습니다.
 
 <br>
-<br>
 
 그러나 script 태그를 body 태그 맨 아래에 두어도 문제가 있습니다.
 이미 화면상에 보이는 HTML 태그에서 만든 컴포넌트들의 상호작용이 작동하지 않을 수 있습니다(버튼 클릭, 텍스트입력등)
 
 async, defer 속성을 이용해서 JS코드를 비동기적으로 불러옴으로서, DOM 렌더링의 블로킹을 방지할 수 있습니다.
+즉, 렌더링을 막지않고  스크립트를 실행하기 때문에 사용자 경험이 좋아지게 됩니다.
+async 와 defer 는 차이점이 있습니다
 
 <br>
-(추가 공부 필요)
-https://velog.io/@fepanbr/HTML-script%ED%83%9C%EA%B7%B8-defer-async
-https://velog.io/@moonsun116/async-vs-defer
+
+- defer
+defer 는 script 태그가 여러개 있다면 순차적으로 실행됩니다.
+defer 는 DOMContentLoaded 라는 이벤트가 발생하기 전에 실행됩니다
+<br>
+예를들어
+
+<script defer ...a.js></script>
+<script defer ...b.js></script>
+
+이렇게 있다면 a.js 다음에 b.js 가 실행됩니다.
+그리고 아래와 같은 코드가 봅시다
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => alert('hi'));
+</script>
+<script defer ...c.js></script>
+
+DOMConetentLoaded 이벤트가 실행되면 hi 를 alert 창으로 띄우는 코드입니다.
+말 그대로 DOM content 들이 모두 로드가 되고 나서 진행이 되는데,
+defer 는 DOMConetentLoaded 이전에 실행되기 때문에
+alert hi 보다  c.js 가 먼저 실행이 됩니다.
+
+
 <br>
 
 - async
-JS 파일 로딩을 비동기적으로 처리한다.
-JS 파일 로딩이 끝난 순서대로 파싱 및 실행이 이루어지며, 이 경우 HTML 파싱이 블로킹 처리되기에 순서가 보장되지 않는다.
-- defer
-async와 마찬가지로 JS 파일 로딩을 비동기적으로 처리한다.
-JS 코드의 파싱 및 실행은 DOM 생성 이후에 실행된다.
 
+async 는 defer 와 달리 독립적으로 실행됩니다.
+순차적으로 실행되지도 않고, DOMConetentLoaded 의 영향을 받지도 않습니다.
 
+<script async ...a.js></script>
+<script async ...b.js></script>
+
+앞에서 본 것과 같은 코드가 있다고 할때
+defer 라면 a.js 이후에 b.js 가 실행되지만
+async 를 쓰면 둘 중 먼저 다운로드 된 js 가 실행됩니다.
+
+<br>
+이러한 특징 때문에
+defer 는 초기 페이지의 렌더링 과정에서 꼭 필요한 처리지만, 무거운 작업일 경우 사용하고, 
+async는 페이지와 관련없이 독립적인 기능을 하기 위해 사용하는 것이 좋다.(Ex. 광고 클릭 카운트)
+
+<br>
 
 ### 7.DOM tree 와 CSSOM tree 를 합쳐서 Render tree 를 만듦
 Render tree를 기반으로 
@@ -121,4 +153,6 @@ https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%
 - https://prod.velog.io/@championcom/CSSOM-AST
 - https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers
 - https://velog.io/@soulee__/Javascript-%EB%A6%AC%ED%8E%98%EC%9D%B8%ED%8A%B8-%EB%A6%AC%ED%94%8C%EB%A1%9C%EC%9A%B0
+- https://velog.io/@fepanbr/HTML-script%ED%83%9C%EA%B7%B8-defer-async
+- https://velog.io/@moonsun116/async-vs-defer
 - 
