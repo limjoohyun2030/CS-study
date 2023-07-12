@@ -60,13 +60,13 @@ Virtual Machine이 이해할 수 있는 ByteCode를 만듭니다.
     Script 태그는 동기적 파싱. 해결법은 async defer?
 <br>
 <br>
-    Script 태그는 동기적으로, 즉 위에서 아래로 읽어내려가면서 Parsing 을 하기 때문에
+Script 태그는 동기적으로, 즉 위에서 아래로 읽어내려가면서 Parsing 을 하기 때문에
 script 태그의 위치에 따라 HTML Parsing 이 지연될 수 있습니다.
 그래서 script 태그는 가능하면 body 태그의 맨 아래쪽에 위치하는게 좋다고 생각할 수 있습니다.
 <br>
 <br>
 
-    그러나 script 태그를 body 태그 맨 아래에 두어도 문제가 있습니다.
+그러나 script 태그를 body 태그 맨 아래에 두어도 문제가 있습니다.
 이미 화면상에 보이는 HTML 태그에서 만든 컴포넌트들의 상호작용이 작동하지 않을 수 있습니다(버튼 클릭, 텍스트입력등)
 
 async, defer 속성을 이용해서 JS코드를 비동기적으로 불러옴으로서, DOM 렌더링의 블로킹을 방지할 수 있습니다.
@@ -77,8 +77,8 @@ async 와 defer 는 차이점이 있습니다
 
 - defer
   
-defer 는 script 태그가 여러개 있다면 순차적으로 실행됩니다.
-defer 는 DOMContentLoaded 라는 이벤트가 발생하기 전에 실행됩니다
+      defer 는 script 태그가 여러개 있다면 순차적으로 실행됩니다.
+      defer 는 DOMContentLoaded 라는 이벤트가 발생하기 전에 실행됩니다
 <br>
 예를들어
 
@@ -103,7 +103,7 @@ alert hi 보다  c.js 가 먼저 실행이 됩니다.
 
 - async
 
-async 는 defer 와 달리 독립적으로 실행됩니다.
+      async 는 defer 와 달리 독립적으로 실행됩니다.
 순차적으로 실행되지도 않고, DOMConetentLoaded 의 영향을 받지도 않습니다.
 
 <script async ...a.js></script>
