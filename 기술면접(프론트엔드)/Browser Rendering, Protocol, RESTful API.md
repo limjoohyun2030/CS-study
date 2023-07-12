@@ -256,7 +256,9 @@ Handshake와 관련된 많은 복잡한 용어들이 나오는데, 대략적인 
 
 참고) SSL 도 handshake 를 하는데, SSL은 TCP 기반 프로토콜이므로 TCP 3-way handshake 를 수행하고 나서 SSL handshake 를 수행합니다.
 
-### HTTP(Hyper Text Transfer Protocol)
+<br>
+
+## HTTP(Hyper Text Transfer Protocol)
 
         웹상에서 HTML 문서나 동영상과 같은 리소스(Resource)를 주고받기 위한 프로토콜
 
@@ -267,16 +269,151 @@ HTTP 는 Client-Server Protocol Model 을 기반으로 하는데,
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/d415fe8b-b70b-4cb1-8ff3-acc62f99bda3)
 
-
-
+기본적인 통신 방법은 Browser 가 HTTP 방식으로 Resources 를  Request 하면
+Server 가 HTTP 방식으로 Response 하는 방식입니다.
 
 <br>
+
+        HTTP는 Connectless 방식으로 작동합니다. 서버에 연결하고, 요청해서 응답을 받으면 연결을 끊어버립니다
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/a5beb08b-1d85-4c74-b74e-1ff05a0cd98b)
+
+<br>
+
+- 장점 : 불특정 다수를 대상으로 하는 서비스에 적합한 방식입니다. 많은 사람들이 웹 서비스를 사용하더라도 접속 유지는 최소한으로 할 수 있기 때문에 서버 부하를 많이 줄일 수 있습니다.
+
+- 단점 : 연결을 끊어버리기 때문에, 클라이언트의 이전 상태를 알 수 없습니다. 이러한 HTTP의 특징을 Stateless라고 합니다. 클라이언트의 이전 상태 정보를 알 수 없게 되면 클라이언트가 과거에 로그인을 성공하더라도 로그 정보를 유지할 수 없습니다. 예를 들어, 쇼핑몰에 로그인을 하고 이런저런 상품들을 살펴봤었는데, 이 기록들을 보관할 수 없습니다. 이러한 단점을 해결하기 위해 Cookie와 Session이 등장했습니다.
+
+<br>
+
+### Proxy
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/6d9cacce-b5c9-47fa-a568-ce454688fcee)
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/dd437140-3764-4753-9f52-e045de435210)
+
+참고) Client 를 User-Agent 라고도 합니다.
+
+        웹 브라우저와 서버 사이에서 HTTP 메시지를 이어 받고 전달하는, 게이트웨이(Gateway) 또는 캐시(Cache) 역할, 중개인 역할을 하는 것을 프록시(Proxy)라고 부릅니다
+
+<br>
+
+프록시는 아래와 같은 다양한 기능들을 수행할 수 있습니다.
+
+캐싱 (ex: 브라우저 캐시)
+필터링 (바이러스 백신 스캔, 유해 컨텐츠 차단 기능)
+로드 밸런싱 (여러 서버들이 서로 다른 요청을 처리하도록 허용)
+인증 (다양한 리소스에 대한 접근 제어)
+로깅 (이력 정보를 저장)
+
+<br>
+
+그런데 이런 HTTP 프록시는 상대적으로 보안이 취약하다는 단점이 있어서, 익명성과 보안이 좋은 VPN 을 주로 사용한다고 합니다.
+
+<br>
+
+다시 HTTP 로 돌아갑시다. 
+
+<br>
+
+### HTTP Request Method
+
+Request를 할때 서버에게 알려주어야 할 정보들이 있습니다. 그 중 하나가 Method, 즉 (요청)방법에 관한 내용입니다.
+
+        GET : 특정한 리소스를 가져오도록 요청하기 위해 사용한다. 데이터를 가져올 때만 사용해야 한다.
+        POST : 서버로 데이터를 전송하기 위해 사용한다. 서버에 변경사항을 만든다고 보면 된다.
+        PUT : 요청 페이로드(Payload)를 사용해 새로운 리소스를 생성하거나, 대상 리소스를 나타내는 데이터를 대체한다.
+        DELETE : 지정한 리소스를 삭제하기 위해서 사용한다.
+        HEAD : (HTTP) 헤더 정보만 요청한다. 해당 자원이 존재하는지 혹은 서버에 문제가 없는지를 확인하기 위해서 사용한다.
+        OPTIONS : 웹 서버가 지원하는 메서드의 종류를 요청한다.
+
+이런 Method들이 있지만 주로 GET 과 POST 를 사용합니다.
+
+
+### URI (Uniform Resource Identifier)
+
+Request를 할때 서버에게 알려주어야 할 또 다른 정보가 URI 입니다.
+HTTP Request Method 에서 요청 방법을 선택했다면, URI 에서는 서버에게 요청할 Resource 를 정합니다.
+
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/d7f4fae9-9989-4390-b389-2a1c8ce13afd)
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/838a893c-bd4a-44b0-8904-ed7e2135601c)
+
+
+- 문법 : scheme://[userinfo@]host[:port][/path][?query][$fragment]
+- 예시 : https://www.google.com:443/search?q=hello&hl=ko
+구성
+- scheme : 주로 프로토콜을 명시 (http / https)
+- userinfo : URL에 사용자정보를 포함해서 인증 -> 거의 사용하지 X
+- host : 호스트명으로 도메인명이나 IP 주소를 직접 사용 가능
+- port : http는 80 / https는 443
+- path : 리소스 경로, 보통 계층적 구조를 가지도록 설계
+- query : key=value 형태로 값을 나타냄, query parameter, query string으로 불림
+- fragment : html 내부 북마크 등에 사용 (서버에 전송하는 정보는 아님)
+
+
+### HTTP Status Code
+
+Client 가 요청을 했으니 이제 Server 가 HTTP Status Code 로 HTTP 상태를 Response 를 해야합니다.
+
+- 2xx: Success 성공
+서버가 요청을 받고 성공적으로 처리되었음을 나타냅니다.
+
+- 3xx: Redirection 리다이렉션
+대부분 클라이언트가 이전 주소로 데이터를 요청하여 서버에서 새 URL로 리다이렉트를 유도하는 경우를 나타냅니다.
+
+- 4xx: Client Error 클라이언트 오류
+대부분 클라이언트의 코드가 잘못된 경우입니다. 유효하지 않은 Resource 를 요청했거나, 요청이나 권한이 잘못된 경우 발생합니다. 유명한 Response 로는 404 Not Found 가 있습니다.
+
+- 5xx: Server Error 서버 오류
+서버가 클라이언트의 요청을 처리하지 못했을 때 발생합니다.
+
+### HTTP Message 구조
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/75298a93-e057-4bed-b0d9-d106d9c38618)
+
+- 시작 라인 (Start-line) : 메시지의 종류에 따라 요청 라인 (Request-line)과 응답 라인 (Response-line)으로 나뉩니다.
+- 헤더 라인 (Header-line) : HTTP 전송에 필요한 모든 부가 정보가 포함됩니다.
+(예를 들면 Content-type, Content-Length, ...)
+- 공백 라인 (CRLF) : 공백인 라인(필수라고 합니다.)
+- 메시지 바디 (Entity 본문) : 실제 전송할 데이터로 HTML, 이미지, 영상, JSON 등등 byte로 표현할 수 있는 모든 데이터가 전송 가능합니다.
+
+### HTTP Request Message
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/97305a81-e534-463e-92be-2758449aa945)
+
+
+- HTTP Method : 요청방식을 적는 부분입니다. 주로 리소스를 가져오거나(GET) HTML 폼의 데이터를 전송(POST)하지만 다른 동작이 요구될 수도 있습니다.
+
+- Path : 가져오려는 리소스의 경로
+
+- Version of the Protocol : HTTP 프로토콜의 버전
+
+- Headers : 서버에 대한 추가 정보를 전달하는 선택적 헤더들
+
+
+### HTTP 응답 메시지 (HTTP Response Message)
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/52e130b9-ebe1-43df-aafc-c57362a4a6d3)
+
+- Version of the Protocol : HTTP 프로토콜의 버전
+
+- Status Code : 요청의 성공 여부와 그 이유를 나타내는 상태 코드
+
+- Status Message : 요청 결과의 상태를 나타내는 메시지
+
+- Headers : 요청 헤더와 비슷한 HTTP 헤더들
+
+
+## HTTP 전체 흐름
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/2dda7412-f9a6-455c-91b4-e3bc89b5fb3b)
+
 
 ## RESTful API
 
 <br>
 
-## Get, Post
 
 <br>
 
