@@ -81,8 +81,15 @@
   2. 직관적인 코드의 흐름을 유지하면서 작업을 병렬적으로 처리하기 위함  
      예시) Linux/UnixS OS의 I/O 다중화 모델   
 
-참고  
+---
+
+참고
 - https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%B8%94%EB%A1%9C%ED%82%B9%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC  
 - https://musma.github.io/2019/04/17/blocking-and-synchronous.html 
 - https://homoefficio.github.io/2017/02/19/Blocking-NonBlocking-Synchronous-Asynchronous/  
 - https://cotak.tistory.com/136  
+
+---
+
+더 알아보기  
+- https://incredible-larva.tistory.com/entry/IO-Multiplexing-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0-1%EB%B6%80
