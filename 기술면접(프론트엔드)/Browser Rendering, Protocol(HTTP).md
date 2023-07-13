@@ -297,6 +297,23 @@ Server 가 HTTP 방식으로 Response 하는 방식입니다.
 
 <br>
 
+## 이부분 주말에 정리하기
+
+<br>
+reserve proxy(apache nginx 같은 server 쪽), forward proxy(vpn 같은 proxy. client 쪽)
+
+proxy 서버의 일종인 apache 보단 nginx
+proxy 보안상에 이점이 있고, 반복된 요청을 줄이고 
+proxy를 두면 was 서버를 직접적으로 노출하지 않아도 됨
+
+
+UDP 는 유연한 프로토콜이라서 커스텀이 가능하다. 다양한 
+TCP 는 이미 굳어진 보수적인, 군사적인 통신으로 쓰기도 했다
+
+HTTP 1.1(TCP 기반) , HTTP 2.0(TCP 기반, 1.1 의 낭비를 줄이기 위해), 
+HTTP 3.0 (커스텀한 UDP 기반)
+<br>
+
 프록시는 아래와 같은 다양한 기능들을 수행할 수 있습니다.
 
 캐싱 (ex: 브라우저 캐시)
@@ -410,23 +427,14 @@ Client 가 요청을 했으니 이제 Server 가 HTTP Status Code 로 HTTP 상�
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/2dda7412-f9a6-455c-91b4-e3bc89b5fb3b)
 
 
-## RESTful API
-
-<br>
-ㅠㅠ 다음으로 미루겠습니다
-https://velog.io/@somday/RESTful-API-%EC%9D%B4%EB%9E%80
-
 <br>
 
 ## 주소창에 www.google.com 을 입력하면?
-마지막으로 연결해서 설명
+
 https://velog.io/@soyeon9819/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90-www.google.com%EC%9D%84-%EC%B9%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC
 <br>
 <br>
 
-
-## 아직 참고 못한 링크
-https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90-30%EC%9D%BC%EC%B0%A8-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95
 
 
 ## 참고링크
@@ -441,3 +449,4 @@ https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%
 - https://velog.io/@yjw8459/%EC%9B%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%B3%B4%EC%95%88-SSL%EC%9D%B4%EB%9E%80
 - https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-TCPUDP%EC%99%80-3-Way-Handshake4-Way-Handshake
 - https://seongonion.tistory.com/74
+- https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90-30%EC%9D%BC%EC%B0%A8-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95
