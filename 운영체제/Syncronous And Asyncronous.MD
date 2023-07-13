@@ -92,4 +92,4 @@
 ---
 
 더 알아보기  
-- https://incredible-larva.tistory.com/entry/IO-Multiplexing-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0-1%EB%B6%80
+- https://blog.naver.com/n_cloudplatform/222189669084  
