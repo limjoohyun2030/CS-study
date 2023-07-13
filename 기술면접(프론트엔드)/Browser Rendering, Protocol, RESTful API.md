@@ -82,16 +82,16 @@ async 와 defer 는 차이점이 있습니다
 <br>
 예를들어
 
-<script defer ...a.js></script>
-<script defer ...b.js></script>
+        <script defer ...a.js></script>
+        <script defer ...b.js></script>
 
 이렇게 있다면 a.js 다음에 b.js 가 실행됩니다.
 그리고 아래와 같은 코드가 봅시다
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => alert('hi'));
-</script>
-<script defer ...c.js></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => alert('hi'));
+        </script>
+        <script defer ...c.js></script>
 
 DOMConetentLoaded 이벤트가 실행되면 hi 를 alert 창으로 띄우는 코드입니다.
 말 그대로 DOM content 들이 모두 로드가 되고 나서 진행이 되는데,
