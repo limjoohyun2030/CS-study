@@ -75,11 +75,11 @@
   ```
 
 - 비동기 + 블로킹  
-1. 의도된 동작이 아닌 경우  
-NonBlocking-Async 방식을 쓰는데 그 과정 중에 하나라도 Blocking으로 동작하는 놈이 포함되어 있다면 의도하지 않게 Blocking-Async로 동작할 수 있다.    
-예시) Node.js와 MySQL 조합    
-2. 직관적인 코드의 흐름을 유지하면서 작업을 병렬적으로 처리하기 위함    
-예시) Linux/UnixS OS의 I/O 다중화 모델   
+  1. 의도된 동작이 아닌 경우  
+  NonBlocking-Async 방식을 쓰는데 그 과정 중에 하나라도 Blocking으로 동작하는 놈이 포함되어 있다면 의도하지 않게 Blocking-Async로 동작할 수 있다.    
+  예시) Node.js와 MySQL 조합    
+  2. 직관적인 코드의 흐름을 유지하면서 작업을 병렬적으로 처리하기 위함    
+  예시) Linux/UnixS OS의 I/O 다중화 모델   
 
 참고  
 - https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%B8%94%EB%A1%9C%ED%82%B9%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC  
