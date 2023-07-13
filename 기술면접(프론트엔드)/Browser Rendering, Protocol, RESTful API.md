@@ -106,8 +106,8 @@ alert hi 보다  c.js 가 먼저 실행이 됩니다.
       async 는 defer 와 달리 독립적으로 실행됩니다.
 순차적으로 실행되지도 않고, DOMConetentLoaded 의 영향을 받지도 않습니다.
 
-<script async ...a.js></script>
-<script async ...b.js></script>
+        <script async ...a.js></script>
+        <script async ...b.js></script>
 
 앞에서 본 것과 같은 코드가 있다고 할때
 defer 라면 a.js 이후에 b.js 가 실행되지만
