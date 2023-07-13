@@ -75,7 +75,7 @@
   ```
 
 - 비동기 + 블로킹  
-  1. 의도된 동작이 아닌 경우, 예시) Node.js와 MySQL 조합
+  1. 의도된 동작이 아닌 경우, 예시) Node.js와 MySQL 조합  
      NonBlocking-Async 방식을 쓰는데 그 과정 중에 하나라도 Blocking으로 동작하는 놈이 포함되어 있다면 의도하지 않게 Blocking-Async로 동작할 수 있다.
   2. 직관적인 코드의 흐름을 유지하면서 작업을 병렬적으로 처리하기 위함, 예시) Linux/UnixS OS의 I/O 다중화 모델   
 
