@@ -413,7 +413,7 @@ Client 가 요청을 했으니 이제 Server 가 HTTP Status Code 로 HTTP 상�
 ## RESTful API
 
 <br>
-
+ㅠㅠ 다음으로 미루겠습니다
 https://velog.io/@somday/RESTful-API-%EC%9D%B4%EB%9E%80
 
 <br>
