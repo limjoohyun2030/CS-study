@@ -156,4 +156,4 @@ Encapsulation 과정에서 **TCP or UDP 인지에 대한 정보**와
     - 인파. TCP / IP 4계층 모델 - 핵심 총정리([https://inpa.tistory.com/329](https://inpa.tistory.com/329))
     - nellholic108. 네트워크 OSI 7계층( [https://velog.io/@nellholic108/네트워크-OSI-7-계층](https://velog.io/@nellholic108/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-OSI-7-%EA%B3%84%EC%B8%B5))
     - reakwon. [네트워크] OSI 7계층(OSI 7 LAYER) 기본 개념, 각 계층 설명([https://reakwon.tistory.com/59](https://reakwon.tistory.com/59))
-    - 우아한테크. 파즈. [10분 테코톡] 👍 파즈의 OSI 7 Layer([https://youtu.be/Fl_PSiIwtEo])
+    - 우아한테크. 파즈. [10분 테코톡] 👍 파즈의 OSI 7 Layer([https://youtu.be/Fl_PSiIwtEo]https://youtu.be/Fl_PSiIwtEo)
