@@ -19,7 +19,7 @@ OSI 7 계층과 TCP/IP는 다양한 장치 간의 상호 연결을 위한 프로
 | Layer 수 | 7 | 4 |
 | 개발 주체 | ISO | 미국 국방부 |
 
-![Untitled](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Untitled.png)
+![Untitled](/네트워크/OSI-7-Layer,TCP-IP/7.png)
 
 **OSI (Open Systems Interconnection)** 모델은 네트워크 프로토콜의 기능과 계층을 분리하여 정의하는 개방형 표준 모델이다. 이 모델은 전체 네트워크 통신을 7개의 계층으로 분할하고, 각 계층은 독립적인 기능과 역할을 수행한다. OSI 모델의 계층은 다음과 같다. 
 
