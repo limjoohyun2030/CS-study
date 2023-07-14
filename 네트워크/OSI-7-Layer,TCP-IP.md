@@ -19,7 +19,7 @@ OSI 7 계층과 TCP/IP는 다양한 장치 간의 상호 연결을 위한 프로
 | Layer 수 | 7 | 4 |
 | 개발 주체 | ISO | 미국 국방부 |
 
-![Untitled](/네트워크/OSI-7-Layer,TCP-IP/7.png)
+![7.png](/네트워크/OSI-7-Layer,TCP-IP/7.png)
 
 **OSI (Open Systems Interconnection)** 모델은 네트워크 프로토콜의 기능과 계층을 분리하여 정의하는 개방형 표준 모델이다. 이 모델은 전체 네트워크 통신을 7개의 계층으로 분할하고, 각 계층은 독립적인 기능과 역할을 수행한다. OSI 모델의 계층은 다음과 같다. 
 
@@ -29,7 +29,7 @@ OSI 7 계층과 TCP/IP는 다양한 장치 간의 상호 연결을 위한 프로
 
 물리 계층은 OSI 7 계층 중 가장 하위에 위치하며, 전기적, 기계적, 기능적인 특성을 이용하여 데이터를 전송하는 역할을 한다. 데이터는 0과 1의 비트열, 즉 On과 Off의 전기적 신호로 표현된다. 이 계층은 데이터를 전송하는 것에만 관여하며, 에러탐지 등의 기능은 가지고 있지 않다.
 
-![Screenshot_2023-07-13-20-13-45-697_com.miui.notes.png](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Screenshot_2023-07-13-20-13-45-697_com.miui.notes.png)
+![3.png](/네트워크/OSI-7-Layer,TCP-IP/3.png)
 
 ### 데이터 링크 계층 (Data Link Layer)
 
@@ -57,9 +57,9 @@ data link layer의 데이터 단위를 frame라고 부르는데  10개의 frame�
 
 컴퓨터 A에서 B로 100MB의 데이터를 전송한다고 했을 떄 체크포인트 5MB로 설정했다고 가정하했을 때 48MB 전송 중 연결이 끊겨도 
 
-![Screenshot_2023-07-13-19-03-14-153_com.miui.notes.png](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Screenshot_2023-07-13-19-03-14-153_com.miui.notes.png)
+![1.png](/네트워크/OSI-7-Layer,TCP-IP/1.png)
 
-![Screenshot_2023-07-13-19-04-11-386_com.miui.notes.png](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Screenshot_2023-07-13-19-04-11-386_com.miui.notes.png)
+![2.png](/네트워크/OSI-7-Layer,TCP-IP/2.png)
 
 체크포인트 덕분에 다시 45MB에서 세션을 재개할 수 있게 된다. 
 
@@ -105,11 +105,11 @@ Encapsulation 과정에서 **TCP or UDP 인지에 대한 정보**와
 
 ## 캡슐화(Encapsulation)와 역캡슐화(Decapsulation)
 
-![Untitled](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Untitled%201.png)
+![4.png](/네트워크/OSI-7-Layer,TCP-IP/4.png)
 
-![Untitled](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Untitled%202.png)
+![5.png](/네트워크/OSI-7-Layer,TCP-IP/5.png)
 
-![Untitled](OSI%207%20Layer,%20TCP%20IP%2095deccdaf7f9400da3d05c7b0bcc35df/Untitled%203.png)
+![6.png](/네트워크/OSI-7-Layer,TCP-IP/6.png)
 
 1. 캡슐화(Encapsulation):
 캡슐화는 상위 계층에서 하위 계층으로 내려가는 과정에서 데이터에 헤더와 트레일러를 추가하는 것을 의미합니다. 이 과정은 데이터를 패킷으로 분할하고, 각 계층의 헤더 정보를 추가하여 하위 계층으로 전달하는 것을 포함한다. 각 계층은 자신의 헤더 정보를 추가하고, 이전 계층으로부터 받은 데이터를 그 아래에 캡슐화하여 전달한다. 이러한 과정을 통해 패킷은 점진적으로 내려가며, 최종적으로 물리적인 링크로 전송된다.
@@ -156,3 +156,4 @@ Encapsulation 과정에서 **TCP or UDP 인지에 대한 정보**와
     - 인파. TCP / IP 4계층 모델 - 핵심 총정리([https://inpa.tistory.com/329](https://inpa.tistory.com/329))
     - nellholic108. 네트워크 OSI 7계층( [https://velog.io/@nellholic108/네트워크-OSI-7-계층](https://velog.io/@nellholic108/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-OSI-7-%EA%B3%84%EC%B8%B5))
     - reakwon. [네트워크] OSI 7계층(OSI 7 LAYER) 기본 개념, 각 계층 설명([https://reakwon.tistory.com/59](https://reakwon.tistory.com/59))
+    - 우아한테크. 파즈. [10분 테코톡] 👍 파즈의 OSI 7 Layer([https://youtu.be/Fl_PSiIwtEo])
