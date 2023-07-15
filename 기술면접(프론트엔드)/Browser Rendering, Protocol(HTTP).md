@@ -305,11 +305,13 @@ Web 에선 Client 와 Server 가 통신을 하면서 데이터를 주고받는�
 
 Client에겐 빠른 속도를, Server 에는 불필요한 부하를 줄일 수 있게 됩니다.
 
+<br>
+
 ### Forward Proxy
 
 Proxy 는 두 종류가 있습니다. Forward Proxy, Reverse Proxy 이렇게 있는데 
 
-        Forward Proxy는 같은 내부망의 Client 의 요청을 받아서 외부 서버와 통신하는 방식입니다. 
+        Forward Proxy는 Client를 위해 앞에서 사용된다고 보면 되는데, 같은 내부망의 Client 의 요청을 받아서 외부 서버와 통신하는 방식의 Proxy 입니다. 
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/e3eed372-099c-4576-a622-811637ff86d1)
 
@@ -317,40 +319,74 @@ Client 가 naver.com 을 요청하면 이걸 Forward Proxy 가 받고, 외부 �
 
 이걸 다시 Client 에게 전달을 합니다.
 
+<br>
 
+Forward Proxy 의 장점 3가지
 
+<ol>
+  <li>Client Security</li>
+    특정 사이트 접속을 막을 수 있습니다. 예를 들어, 학창시절 컴퓨터 시간에 다른 사이트 들어가지 못하도록 방화벽처럼 사이트 접속을 차단할 수 있습니다.
+  <li>Caching</li>
+    Client 가 특정 웹사이트에 방문하면 Proxy Server 는 해당 페이지의 서버 정보를 Caching(임시보관) 해둡니다.
+  이렇게 하면 같은 페이지를 요청할때 Caching 했던 정보를 그래도 반환하여 서버 부하를 줄일 수 있습니다. 
+  <li>Encryption</li>
+    Client 가 한 요청은 Forward Proxy Server 를 통과하면 Encryption 됩니다.
+  이로인해 Client 의 ip 가 감춰지고, Server 쪽에서는 Proxy ip 만 보이기 때문에 추적이 힘들어집니다.
+</ol>
+
+<br>
+
+참고로 요즘은 Forward Proxy 대신 VPN 을 주로 쓰는데, VPN 회사들은 속도나 보안면에서 VPN이 더 좋다고 말하긴 합니다.
+
+<br>
 
 ### Reverse Proxy
 
+        Reverse Proxy 는 거꾸로가 아니라 뒤 쪽에 있는 Proxy 라는 뜻으로, 서버를 위한 Proxy 라고 생각하면 됩니다.
 
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/e57802bd-123c-475e-92a0-d31a472b40cb)
 
+내부 Server 가 직접 서비스를 제공하면 보안상 취약해질 수 있습니다.
+
+기업의 네트워크 환경에선 DMZ 라고 불리는 내부 네트워크/외부 네트워크에 둘다 접근 가능한 공간이 있습니다.
+
+이 DMZ에 WAS(Web Application Server)를 두게 되면 보안에 안 좋을 수 있고
+
+WAS 와 연결된 DB도 위험해질 수 있습니다. 그러므로
+
+        일반적으론 Reverse Proxy Server 를 DMZ에 두고, 실제 서비스는 내부망에 위치시켜서 서비스를 운영합니다.
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/1c6f8970-14c4-4de8-a93d-0d8063931f4e)
+
+apache(Nginx 도 가능합니다.) 가 Reverse Proxy 에 해당하고, Tomcat 서버가 내부망에 있어서
+
+Tomcat 서버가 직접적으로 Client 의 요청을 받지 않기 때문에 보안적으로 좋고
+
+반복된 요청을 줄일 수 있습니다.
+
+Forward Proxy 의 장점 4가지
+
+<ol>
+  <li>Load Balancing</li>
+    대량의 트래픽이 발생했을때, 한 개의 서버가 이걸 받아낼 순 없습니다.
+    이때 Reverse Proxy Server 를 여러개 두면 특정 서버가 부하되자 않도록 Load Balancing 을 가능하게 합니다.
+  <li>Security</li>
+   Reverse Proxy 를 이용하면 본래 서버의 IP를 감출 수 있어서, 해커들의 DDoS 같은 공격을 막는데 좋습니다.
+  <li>Caching</li>
+   Reverse Proxy 에 Caching 돼있는 리소스를 사용하면, Client 들이 빠른 경험을 할 수 있습니다.
+  <li>Encryption</li>
+   Server 와 Clinet 가 통신할때 SSL 이나 TSL 로 암호화 복호화를 하면 비용이 많이 드는데
+  Reserver Proxy 를 사용하면 들어오는 요청을 모두 복호화하고, 나가는 응답을 암호화 하므로 
+  보안적으로 좋고, 서버 부담도 줄이게 됩니다.
+</ol>
 
 <br>
-reserve proxy(apache nginx 같은 server 쪽), forward proxy(vpn 같은 proxy. client 쪽)
-
-proxy 서버의 일종인 apache 보단 nginx
-proxy 보안상에 이점이 있고, 반복된 요청을 줄이고 
-proxy를 두면 was 서버를 직접적으로 노출하지 않아도 됨
-
-
-UDP 는 유연한 프로토콜이라서 커스텀이 가능하다. 다양한 
-TCP 는 이미 굳어진 보수적인, 군사적인 통신으로 쓰기도 했다
-
-HTTP 1.1(TCP 기반) , HTTP 2.0(TCP 기반, 1.1 의 낭비를 줄이기 위해), 
-HTTP 3.0 (커스텀한 UDP 기반)
+정리하자면
 <br>
-
-프록시는 아래와 같은 다양한 기능들을 수행할 수 있습니다.
-
-캐싱 (ex: 브라우저 캐시)
-필터링 (바이러스 백신 스캔, 유해 컨텐츠 차단 기능)
-로드 밸런싱 (여러 서버들이 서로 다른 요청을 처리하도록 허용)
-인증 (다양한 리소스에 대한 접근 제어)
-로깅 (이력 정보를 저장)
-
+Forward Proxy 는 내부망에서 Client 와 Proxy Server 가 통신하고, Proxy Server 가 외부에 있는 Server 와 통신해서 리소스를 가져옵니다. Client 가 내부망에서 보호되고 있기 때문에, Server 는 Client 의 IP 를 알 수 없습니다.
 <br>
+Reverse Proxy 는 내부망에 있는 Server 와 통신을 하기 때문에 이 Server 의 IP 가 감춰지고 안전해집니다. Client 는 Reverse Proxy 의 IP 를 알지만 내부망에 있는 IP 를 알 수 없습니다. 
 
-그런데 이런 HTTP 프록시는 상대적으로 보안이 취약하다는 단점이 있어서, 익명성과 보안이 좋은 VPN 을 주로 사용한다고 합니다.
 
 <br>
 
