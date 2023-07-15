@@ -86,7 +86,7 @@
 | 날짜 예시 | 상호 | 주현 | 동재 | 예서 |
 |--|--|--|--|--|
 | 2023-06-29 | [프로세스와스레드](/운영체제/ProcessAndThread.md) | [Browser(Architecture, Engine)](https://github.com/limjoohyun2030/CS-study/blob/37d70627f08fd19116d6a804ea817b0adb592661/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Browser(Architecture%2C%20Engine).md) |  | [캐시](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Cache.MD) |
-| 2023-07-13 |  | [Browser Rendering, Protocol, Proxy, HTTP TCP UDP(이 3개는 기초만)](https://github.com/limjoohyun2030/CS-study/blob/37d70627f08fd19116d6a804ea817b0adb592661/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(%EC%9D%B4%203%EA%B0%9C%EB%8A%94%20%EA%B8%B0%EC%B4%88%EB%A7%8C).md) |  | [동기와 비동기](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Syncronous%20And%20Asyncronous.MD) | 
+| 2023-07-13 |  | [Browser Rendering, Protocol, Proxy](https://github.com/limjoohyun2030/CS-study/blob/37d70627f08fd19116d6a804ea817b0adb592661/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(%EC%9D%B4%203%EA%B0%9C%EB%8A%94%20%EA%B8%B0%EC%B4%88%EB%A7%8C).md) |  | [동기와 비동기](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Syncronous%20And%20Asyncronous.MD) | 
 | 2023-07-27 |  | Restful API |  |  |
 | 2023-08-10 |  |  |  |  |
 | 2023-08-24 |  |  |  |  |
