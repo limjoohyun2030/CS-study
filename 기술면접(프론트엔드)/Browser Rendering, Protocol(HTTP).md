@@ -286,7 +286,7 @@ Server 가 HTTP 방식으로 Response 하는 방식입니다.
 
 <br>
 
-### Proxy
+## Proxy
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/6d9cacce-b5c9-47fa-a568-ce454688fcee)
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/dd437140-3764-4753-9f52-e045de435210)
@@ -297,7 +297,33 @@ Server 가 HTTP 방식으로 Response 하는 방식입니다.
 
 <br>
 
-## 이부분 주말에 정리하기
+Web 에선 Client 와 Server 가 통신을 하면서 데이터를 주고받는데
+
+이때 필연적으로 중복되는 데이터가 발생하고 이는 리소스 낭비와 서버 부하로 이어집니다.
+
+본 서버에 도달하기 전에 또 다른 서버인 프록시 서버를 배치하고, 중복 요청에 대해 동일한 Response 를 한다면
+
+Client에겐 빠른 속도를, Server 에는 불필요한 부하를 줄일 수 있게 됩니다.
+
+### Forward Proxy
+
+Proxy 는 두 종류가 있습니다. Forward Proxy, Reverse Proxy 이렇게 있는데 
+
+        Forward Proxy는 같은 내부망의 Client 의 요청을 받아서 외부 서버와 통신하는 방식입니다. 
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/e3eed372-099c-4576-a622-811637ff86d1)
+
+Client 가 naver.com 을 요청하면 이걸 Forward Proxy 가 받고, 외부 서버와 통신해서 리소스를 가져오고
+
+이걸 다시 Client 에게 전달을 합니다.
+
+
+
+
+### Reverse Proxy
+
+
+
 
 <br>
 reserve proxy(apache nginx 같은 server 쪽), forward proxy(vpn 같은 proxy. client 쪽)
@@ -450,3 +476,4 @@ https://velog.io/@soyeon9819/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97
 - https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-TCPUDP%EC%99%80-3-Way-Handshake4-Way-Handshake
 - https://seongonion.tistory.com/74
 - https://velog.io/@chappi/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90-30%EC%9D%BC%EC%B0%A8-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95
+- https://inpa.tistory.com/entry/NETWORK-%F0%9F%93%A1-Reverse-Proxy-Forward-Proxy-%EC%A0%95%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EC%A0%95%EB%A6%AC#%ED%94%84%EB%A1%9D%EC%8B%9C%EC%9D%98_%EB%91%90_%EC%A2%85%EB%A5%98
