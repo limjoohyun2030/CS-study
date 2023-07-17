@@ -42,7 +42,7 @@
 - [Heap](https://github.com/alstjgg/cs-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap.md)
 - [Stack & Queue](https://github.com/alstjgg/cs-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack%20%26%20Queue.md)
 ## 네트워크
-- [OSI 7 계층](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/osi%207%EA%B3%84%EC%B8%B5.md)
+- [OSI 7 Layer](네트워크/OSI-7-Layer,TCP-IP.md)
 - [TCP 3 way handshake & 4 way handshake](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%5BTCP%5D%203%20way%20handshake%EC%99%80%204%20way%20handshake.md)
 - [TCP IP 흐름 제어 & 혼잡 제어](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20IP%20%ED%9D%90%EB%A6%84%20%EC%A0%9C%EC%96%B4%20%26%20%ED%98%BC%EC%9E%A1%20%EC%A0%9C%EC%96%B4.md)
 - [HTTP & HTTPS](https://github.com/alstjgg/cs-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/HTTP%20%26%20HTTPS.md)
