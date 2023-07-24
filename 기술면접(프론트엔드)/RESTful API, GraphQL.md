@@ -1,7 +1,9 @@
 # RESTful API
 
 https://www.youtube.com/watch?v=iOueE9AXDQQ
-
+https://www.youtube.com/watch?v=PmY3dWcCxXI
+https://www.youtube.com/watch?v=xWA1eTPSzDE
+https://www.youtube.com/watch?v=Nxi8Ur89Akw
 
 # GraphQL
 
