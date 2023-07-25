@@ -1,10 +1,6 @@
 # RESTful API
 
-https://www.youtube.com/watch?v=iOueE9AXDQQ
-<br>
 https://www.youtube.com/watch?v=PmY3dWcCxXI
-<br>
-https://www.youtube.com/watch?v=xWA1eTPSzDE
 <br>
 https://www.youtube.com/watch?v=Nxi8Ur89Akw
 <br>
