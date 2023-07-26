@@ -312,7 +312,8 @@ Uniform Interface 의 제약조건들은 어플리케이션이 필요한 정보�
 3.다른 API 표준을 따라도 됩니다(e.g., GraphQL API)
 
 # GraphQL
-![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/130f220e-9952-49c7-9843-f97df7f2a8d0)
+![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/174270b5-22ca-4b9d-8a3e-66c956289952)
+
 
 https://www.youtube.com/watch?v=EkWI6Ru8lFQ
 
