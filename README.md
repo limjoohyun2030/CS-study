@@ -17,7 +17,7 @@
 | ---- | ---------------------------------------------- |
 | 상호 | [@LeeQuiett](https://github.com/LeeQuiett) |
 | 주현 | [@limjoohyun2030](https://github.com/limjoohyun2030) |
-| 동재 | |@Judongjae](https://github.com/Judongjae)  |
+| 동재 | [@Judongjae](https://github.com/Judongjae)  |
 | 예서 | [@yeseoLee](https://github.com/yeseoLee) |
 
 
