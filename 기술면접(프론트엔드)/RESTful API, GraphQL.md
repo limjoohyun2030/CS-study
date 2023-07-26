@@ -27,6 +27,24 @@
 
 ## REST API 사용이유?
 
+옛날에는 Client 가 PC Browser를 사용했기 때문에 
+Server Side 에서 이에 맞춰서 데이터를 전송하면 됐습니다.
+
+그러나 요즘 시대엔 Web Browser 뿐 아니라 아이폰, 안드로이드폰, 태블릿 등
+Client 가 사용하는 플랫폼이 다양해졌습니다
+
+다양한 디바이스들을 고려해서 각각 Server 를 구축하기엔 너무 비효율적인 상황이 돼었습니다.
+
+그래서 Client 쪽 플랫폼이 어떤것인지 고려하지 않고,
+범용적인 사용이 가능하도록 Server 를 디자인하는게 중요해졌습니다.
+
+Server Side 에서 XML, JSON 같은 데이터 형식으로 보내고
+Client Side 에서 이 데이터를 객체로 바꾸고 UI 쪽으로 그려주는 식으로
+Server 와 Client 를 분리해서 개발하는게 중요해졌습니다.
+
+
+
+
 <br>
 
 ## REST 의 구성요소
@@ -49,8 +67,6 @@ REST에서 하나의 자원은 JSON, XML, TEXT, RSS 등 여러 형태의 Represe
 <br>
 
 ## REST API 설계 규칙
-<br>
-지루할테니 빨리 훑고 스킵
 <br>
 REST에서 가장 중요하며 기본적인 규칙은 아래 두 가지 입니다
 
@@ -76,6 +92,26 @@ ex) GET: http://restapi.exam.com/orders/2/Accept: image/jpg
 7. 리소스 간에 연관 관계가 있는 경우
 /리소스명/리소스ID/관계가 있는 다른 리소스 명
 ex) GET: /users/2/orders (일반적으로 소유의 관계를 표현할 때 사용)
+
+8. URL 에서는 동사를 사용하지 않습니다. 영화 사이트를 예로 들겠습니다.
+ex) /createMovie , /getMovie 같은 url 은 사용하지 않습니다.
+대신 명사를 씁니다.
+<br>
+ex) /Movie/Lalaland
+여기에 HTTP methods를 결합할수도 있고
+<br>
+
+ex) GET /Movie/Lalaland
+<br>
+이 뒤에 query parameter 를 추가해서 사용할 수도 있습니다.
+ex) GET /Movie?min_rating=8.8
+
+<br>
+이러면 매번 검색할때마나 새로운 URL을 만들지 않아도 됩니다.
+<br>
+
+10. 
+11. 
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/92611b41-1413-4463-9c62-d9b7bb5d03fc)
 
@@ -111,57 +147,78 @@ Roy 가 이번에도 이건 REST API 가 아니라 HTTP API 라고 선을 그었
 ## REST API 의 6가지 제약
 <br>
 1.client-server
-클라이언트는 유저와 관련된 처리를, 서버는 REST API를 제공함으로써 각각의 역활이 확실하게 구분되고 일괄적인 인터페이스로 분리되어 작동할 수 있게 한다
-REST Server: API를 제공하고 비지니스 로직 처리 및 저장을 책임진다.
-Client: 사용자 인증이나 context (세션, 로그인 정보) 등을 직접 관리하고 책임진다.
-서로 간 의존성이 줄어든다.
+클라이언트는 유저와 관련된 처리를, 서버는 REST API를 제공함으로써 각각의 역할을 확실하게 구분하고, 
+일괄적인 인터페이스로 분리시켜 작동할 수 있게 한다. 즉 서로 간 의존성이 줄어듭니다.
+
+REST Server: API를 제공하고 비지니스 로직 처리 및 저장을 책임집니다.
+Client: 사용자 인증이나 context (세션, 로그인 정보) 등을 직접 관리하고 책임집니다.
+
 <br>
+
 2.stateless
-REST는 HTTP의 특성을 이용하기 떄문에 무상태성을 갖는다.
-즉 서버에서 어떤 작업을 하기 위해 상태정보를 기억할 필요가 없고 들어온 요청에 대해 처리만 해주면 되기 때문에 구현이 쉽고 단순해진다.
+REST는 HTTP의 특성을 이용하기 떄문에 무상태성을 갖습니다.
+서버에서 어떤 작업을 하기 위해 상태정보를 기억할 필요가 없고 
+들어온 요청에 대해 처리만 해주면 되기 때문에 구현이 단순해집니다.
+
 <br>
+
 3.cache
-HTTP라는 기존 웹표준을 사용하는 REST의 특징 덕분에 기본 웹에서 사용하는 인프라를 그대로 사용 가능하다.
-대량의 요청을 효율적으로 처리하기 위해 캐시가 요구된다.
-캐시 사용을 통해 응답시간이 빨라지고 REST Server 트랜잭션이 발생하지 않기 때문에 전체 응답시간, 성능, 서버의 자원 이용률을 향상 시킬 수 있다.
+HTTP를 사용하기 때문에 기본 웹에서 사용하는 인프라를 그대로 사용합니다.
+캐시 사용을 통해 대용량 데이터를 처리하기 때문에
+REST Server 트랜잭션이 발생하지 않고 전체 응답시간, 성능, 서버의 자원 이용률을 향상 시킬 수 있습니다.
+
 <br>
+
 4.layered system
-클라이언트와 서버가 분리되어 있기 때문에 중간에 프록시 서버, 암호화 계층 등 중간매체를 사용할 수 있어 자유도가 높다
+클라이언트와 서버가 분리되어 있기 때문에 중간에 
+프록시 서버, 암호화 계층 등 중간매체를 사용할 수 있어 자유도가 높습니다
+
 <br>
+
 5.code-on-demand(optional)
 ?
 <br>
+
 6.uniform interface
-Uniform Interface는 Http 표준에만 따른다면 모든 플랫폼에서 사용이 가능하며, URI로 지정한 리소스에 대한 조작을 가능하게 하는 아키텍쳐 스타일을 말한다
-URI로 지정한 Resource에 대한 조작을 통일되고 한정적인 인터페이스로 수행한다.
-즉, 특정 언어나 기술에 종속되지 않는다.
+Uniform Interface는 Http 표준에만 따른다면 모든 플랫폼에서 사용이 가능하며, 
+URI로 지정한 리소스에 대한 조작을 가능하게 하는 아키텍쳐 스타일을 말합니다
+특정 언어나 기술에 종속되지 않습니다.
 
 <br>
+
 6-1 identification of resources
-리소스가 uri로 식별되야 함
+URL (Uniform Resource Locator) 으로 내가 어떤 자원을 제어하려고 하는지 알 수 있어야 합니다
+주로 Server Side 에서 HTTP body에 JSON 이나 XML 형태로 전송 시킵니다.
+
 <br>
+
 6-2 manipulation of resources through representations
-representations을 통해서 자원을 조작해야 한다.
+representations을 통해서 자원을 조작해야 합니다.
+
 <br>
+
 6-3 self-descriptive messages
-스스로 설명하는 메시지가 되어야 한다.
-<br>
-6-4 hypermedia as the engin of application state (HATEOAS)
-애플리케이션의 상태가 Hyperlink를 통해서 전이되어야 한다.
-<br>
-특히 self-descriptive messages와 HATEOAS가 안지켜진다고 합니다.
-<br>
-
-우리가 부르는 대부분의 "REST API"는 REST를 따르지 않고 있다.
-특히 REST의 제약조건인 Self-descriptive와 HATEOAS를 잘 만족시키지 못한다.
-REST를 따르겠다면, Self-descriptivedhk와 HATEOAS를 만족시켜야 한다.
-Self-descriptive : custom meadia-type이나 profile link relation 등으로 만족시킬 수 있다.
-HATEOAS : HTTP 헤더나 본문에 Link를 담아 만족시킬 수 있다.
+데이터에 대한 메타정보만 가지고도 이게 어떤 종류의 데이터인지, 
+이 데이터를 위해서 어떤 어플리케이션을 실행 해야 하는지를 알 수 있어야 합니다.
+데이터 처리를 위한 정보를 얻기 위해서, 데이터 원본을 읽어야 한다면 self-descriptive 적이지 못한겁니다.
 
 <br>
-추가작성 필요
-https://velog.io/@somday/RESTful-API-%EC%9D%B4%EB%9E%80
-https://velog.io/@nyong_i/%EB%A1%9C%EC%9D%B4-%ED%95%84%EB%94%A9%EC%9D%B4-%EC%9D%B4-%EA%B8%80%EC%9D%84-%EC%A2%8B%EC%95%84%ED%95%A9%EB%8B%88%EB%8B%A4
+
+6-4 HATEOAS(hypermedia as the engin of application state)
+애플리케이션의 상태가 Hyperlink를 통해서 전이되어야 합니다.
+REST는 서로 다른 컴포넌트들을 유연하게 연결을 하는데, 이때 Hyperlink 를 이용합니다.
+Client 는 Hyperlink를 이용해서 전체 네트워크와 연결되며
+HATEOAS는 서버가 독립적으로 진화할 수 있도록  서버와 클라이언트를 분리 할 수 있게 합니다.
+
+<br>
+
+우리가 부르는 대부분의 "REST API"는 REST를 따르지 않고 있습니다.
+특히 REST의 제약조건인 Self-descriptive와 HATEOAS를 잘 만족시키지 못합니다.
+Self-descriptive와 HATEOAS 를 아래와 같은 방식으로 만족시킬 순 있습니다.
+<br>
+Self-descriptive : custom meadia-type이나 profile link relation 등으로 만족시킬 수 있습니다.
+HATEOAS : HTTP 헤더나 본문에 Link를 담아 만족시킬 수 있습니다.
+
 <br>
 
 # GraphQL
