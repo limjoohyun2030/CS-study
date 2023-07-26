@@ -233,6 +233,15 @@ HTTP/1.1 에서 Cache-Control, Age, Etag, Vary 등의 헤더들을 메시지에 
 REST는 서로 다른 컴포넌트들을 유연하게 연결을 하는데, 이때 Hyperlink 를 이용합니다.
 Client 는 Hyperlink를 이용해서 전체 네트워크와 연결되며
 HATEOAS는 서버가 독립적으로 진화할 수 있도록  서버와 클라이언트를 분리 할 수 있게 합니다.
+```
+<a href="https://~/email">이메일</a>
+```
+
+Server 에서 Client 에게 <a href> 태그를 가진 HTML 을 보낸다면 HATEOAS 에 위배되지 않을겁니다.
+하지만 일반적으로 백엔드에서는 주로 JSON 형식으로 Client 에게 리소스를 보내고
+프론트에선 이 JSON으로 HTML을 구성합니다.
+그렇기 때문에 백엔드 쪽에서 설계하는 API는 HATEOAS를 위반하는 경우가 많습니다.
+
 
 <br>
 
@@ -243,7 +252,26 @@ Self-descriptive와 HATEOAS 를 아래와 같은 방식으로 만족시킬 순 �
 Self-descriptive : custom meadia-type이나 profile link relation 등으로 만족시킬 수 있습니다.
 HATEOAS : HTTP 헤더나 본문에 Link를 담아 만족시킬 수 있습니다.
 
+```
+{
+    "links":
+    {
+        "href":"https://~/email",
+        "action":"GET"
+    }
+}
+```
 <br>
+
+## REST API를  꼭 따라야할까?
+
+현실적으로 제약조건들을 모두 준수하기 어려운데 꼭 REST API 를 따라야 할까요? 라는 의문이 들 수 있습니다.
+Uniform Interface 의 제약조건들은 어플리케이션이 필요한 정보가 아니라
+표준화된 형식으로 데이터를 전달이 강요되므로 비효율적일 수 있습니다.
+
+1.REST API 를 철저히 따를 수도 있고
+2.REST API 를 부분적으로 준수하는 HTTP API 를 따를 수도 있고
+3.다른 API 표준을 따라도 됩니다(e.g., GraphQL API)
 
 # GraphQL
 
