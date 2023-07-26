@@ -55,9 +55,45 @@ Server 와 Client 를 분리해서 개발하는게 중요해졌습니다.
 
 2. 행위 (Verb) - Http Method<br>
 HTTP 프로토콜은 GET, POST, PUT, DELETE와 같은 메서드를 제공하는데 이걸 사용합니다.
+CREATE READ UPDATE DELETE 이렇게 있을때
+UPDATE에 해당하는 메소드는 PUT(전체수정) 과 PATCH(부분수정) 가 있습니다.
+
+```
+//백엔드
+{
+    "topics": // Collection (Element의 모음)
+    { // Element (한건 한건의 데이터 )
+        "id": 1,
+        "title": "REST",
+        "body": "REST is..."  
+    }
+}
+```
+
+<br>
+```
+//프론트
+
+fetch({'topics/1', { // Collection(복수형으로 s 붙임)/Element의 식별자(identifier)
+        method:'PATCH', 
+        /* PATCH 일땐 title 값만 바뀌지만, 
+        PUT 을 하면 identifier 와 바꾸려는 Element를 제외한 Element 가 삭제됩니다.
+        이 경우엔 identifier 인 id 와 title은 남지만
+        body 가 사라지게 됩니다.
+        */
+        header: {'content-type':'application/json'},
+        body:JSON.stringify({
+            title:'fetch - patch'
+        })
+}
+})
+
+```
 <br>
 
-3. 표현 (Representaion of Resource)<br>
+
+
+4. 표현 (Representaion of Resource)<br>
 Client가 자원의 상태 (정보)에 대한 조작을 요청하면, Server는 이에 적절한 응답 (Representation)을 보냅니다
 REST에서 하나의 자원은 JSON, XML, TEXT, RSS 등 여러 형태의 Representation으로 나타낼 수 있습니다.
 <br>
