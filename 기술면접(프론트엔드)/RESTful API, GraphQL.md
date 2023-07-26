@@ -93,31 +93,22 @@ ex) GET: http://restapi.exam.com/orders/2/Accept: image/jpg
 /리소스명/리소스ID/관계가 있는 다른 리소스 명
 ex) GET: /users/2/orders (일반적으로 소유의 관계를 표현할 때 사용)
 
-8. URL 에서는 동사를 사용하지 않습니다. 영화 사이트를 예로 들겠습니다.
-ex) /createMovie , /getMovie 같은 url 은 사용하지 않습니다.
-대신 명사를 씁니다.
-<br>
-ex) /Movie/Lalaland
-여기에 HTTP methods를 결합할수도 있고
-<br>
 
-ex) GET /Movie/Lalaland
-<br>
-이 뒤에 query parameter 를 추가해서 사용할 수도 있습니다.
-ex) GET /Movie?min_rating=8.8
+### 노마드 코더가 말한부분
+영화 사이트를 예로 들겠습니다.
 
-<br>
+- URL 에서는 동사를 사용하지 않습니다.
+ex) /createmovie , /getmovie 같은 url 은 사용하지 않습니다.
+- 대신 명사를 씁니다.
+ex) /movie/lalaland
+- 여기에 HTTP methods를 결합할수도 있고
+ex) GET /movie/lalaland
+- 이 뒤에 query parameter 를 추가해서 사용할 수도 있습니다.
+ex) GET /movie?min_rating=8.8
 이러면 매번 검색할때마나 새로운 URL을 만들지 않아도 됩니다.
-<br>
-
-10. 
-11. 
-
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/92611b41-1413-4463-9c62-d9b7bb5d03fc)
 
-
 <br>
-
 
 ## REST API 의 탄생배경
 
@@ -179,7 +170,8 @@ REST Server 트랜잭션이 발생하지 않고 전체 응답시간, 성능, 서
 ?
 <br>
 
-6.uniform interface
+### 6.uniform interface
+
 Uniform Interface는 Http 표준에만 따른다면 모든 플랫폼에서 사용이 가능하며, 
 URI로 지정한 리소스에 대한 조작을 가능하게 하는 아키텍쳐 스타일을 말합니다
 특정 언어나 기술에 종속되지 않습니다.
@@ -194,12 +186,44 @@ URL (Uniform Resource Locator) 으로 내가 어떤 자원을 제어하려고 �
 
 6-2 manipulation of resources through representations
 representations을 통해서 자원을 조작해야 합니다.
+자원은 다양한 방식으로 표현 가능한데, 자원의 현재 상태에 대해 표현을 할 수 있어야 합니다.
+<br>
+ex)
+```
+HTTP/1.0 200 OK
+Content-type: text/plain
+Content-length: 17
+
+Hello World!
+```
+
+URI 를 통해 식별된 자원은 객체와 같고, 이 자원은 상태가 변화할 수 있으므로 
+이걸 잘 표현해야 하고, Client 와 Server 이를 통신해야합니다
 
 <br>
 
 6-3 self-descriptive messages
 데이터에 대한 메타정보만 가지고도 이게 어떤 종류의 데이터인지, 
-이 데이터를 위해서 어떤 어플리케이션을 실행 해야 하는지를 알 수 있어야 합니다.
+이 데이터를 위해서 어떤 어플리케이션을 실행 해야 하는지 설명할 수 있어야 합니다.
+<br>
+Client 와 Server 사이에는 많은 컴포넌트들(중개자들) 이 있습니다.
+이 컴포넌트들이 자원에 대한 요청들을 잘 이해하도록 전송을 해야합니다.
+
+- Host 헤더에 도메인명 기재 필요
+```
+GET /user/1 HTTP/1.1
+host: example.com
+```
+HTTP/1.1 부터 Host 헤더에 Domain 명이 필수가 되었습니다. 
+이 이유 중 하나는 가상호스트 때문인데요, 한개의 IP 에 복수의 Domain 명이 존재할 수 있기 때문에
+IP 주소만으로는 요청 대상을 정확히 찾아낼 수 없습니다.
+
+- 캐시
+개별 요청에 대한 응답을 항상 Server 에서 하지 않고
+Client 와 Server 사이에 있는 컴포넌트가 캐시된 데이터를 Client 에 전달합니다.
+HTTP/1.1 에서 Cache-Control, Age, Etag, Vary 등의 헤더들을 메시지에 포함시켜서
+캐시관련 동작들을 커스터마이징 가능하게 됐습니다.
+
 데이터 처리를 위한 정보를 얻기 위해서, 데이터 원본을 읽어야 한다면 self-descriptive 적이지 못한겁니다.
 
 <br>
