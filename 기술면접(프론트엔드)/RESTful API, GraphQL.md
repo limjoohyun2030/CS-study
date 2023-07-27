@@ -246,7 +246,7 @@ URI 를 통해 식별된 자원은 객체와 같고, 이 자원은 상태가 변
 
 <br>
 
-6-3 self-descriptive messages
+### 6-3 self-descriptive messages
 
 Client 와 Server 사이에는 많은 컴포넌트들(중개자들) 이 있습니다.
 <br>
@@ -266,19 +266,19 @@ HTTP/1.1 부터 Host 헤더에 Domain 명이 필수가 되었습니다.
 <br>
 IP 주소만으로는 요청 대상을 정확히 찾아낼 수 없기 때문입니다.
 
-- 캐시
-개별 요청에 대한 응답을 항상 Server 에서 하지 않고
 <br>
-Client 와 Server 사이에 있는 컴포넌트가 캐시된 데이터를 Client 에 전달합니다.
+<br>
+
+- 개별 요청에 대한 응답을 항상 Server 에서 하지 않고, Client 와 Server 사이에 있는 컴포넌트가 캐시된 데이터를 Client 에 전달합니다.
 <br>
 HTTP/1.1 에서 Cache-Control, Age, Etag, Vary 등의 헤더들을 메시지에 포함시켜서
 <br>
 캐시관련 동작들을 커스터마이징 가능하게 됐습니다.
-
+<br>
 
 <br>
 
-6-4 HATEOAS(Hypermedia as the Engine of application state)
+### 6-4 HATEOAS(Hypermedia as the Engine of application state)
 
 애플리케이션의 상태가 Hyperlink를 통해서 전이되어야 합니다.
 <br>
@@ -291,8 +291,8 @@ HATEOAS는 서버가 독립적으로 진화할 수 있도록  서버와 클라�
 <a href="https://~/email">이메일</a>
 ```
 
-<br>
-Server 에서 Client 에게 <a href> 태그를 가진 HTML 을 보낸다면 HATEOAS 에 위배되지 않을겁니다.
+
+Server 에서 Client 에게 `<a href>`태그를 가진 HTML 을 보낸다면 HATEOAS 에 위배되지 않을겁니다.
 <br>
 하지만 일반적으로 백엔드에서는 주로 JSON 형식으로 Client 에게 리소스를 보내고
 <br>
@@ -300,14 +300,17 @@ Server 에서 Client 에게 <a href> 태그를 가진 HTML 을 보낸다면 HATE
 <br>
 그렇기 때문에 백엔드 쪽에서 설계하는 API는 HATEOAS를 위반하는 경우가 많습니다.
 
-
 <br>
 
 우리가 부르는 대부분의 "REST API"는 REST를 따르지 않고 있습니다.
+<br>
 특히 REST의 제약조건인 Self-descriptive와 HATEOAS를 잘 만족시키지 못합니다.
+<br>
 Self-descriptive와 HATEOAS 를 아래와 같은 방식으로 만족시킬 순 있습니다.
 <br>
+<br>
 Self-descriptive : custom meadia-type이나 profile link relation 등으로 만족시킬 수 있습니다.
+<br>
 HATEOAS : HTTP 헤더나 본문에 Link를 담아 만족시킬 수 있습니다.
 
 ```
@@ -324,12 +327,26 @@ HATEOAS : HTTP 헤더나 본문에 Link를 담아 만족시킬 수 있습니다.
 ## REST API를  꼭 따라야할까?
 
 현실적으로 제약조건들을 모두 준수하기 어려운데 꼭 REST API 를 따라야 할까요? 라는 의문이 들 수 있습니다.
+<br>
 Uniform Interface 의 제약조건들은 어플리케이션이 필요한 정보가 아니라
+<br>
 표준화된 형식으로 데이터를 전달이 강요되므로 비효율적일 수 있습니다.
+<br>
+<br>
 
-1.REST API 를 철저히 따를 수도 있고
-2.REST API 를 부분적으로 준수하는 HTTP API 를 따를 수도 있고
-3.다른 API 표준을 따라도 됩니다(e.g., GraphQL API)
+<ol>
+    <li>
+        REST API 를 철저히 따를 수도 있고
+    </li>
+    <li>
+        REST API 를 부분적으로 준수하는 HTTP API 를 따를 수도 있고
+    </li>
+    <li>
+        다른 API 표준을 따라도 됩니다(e.g., GraphQL API)
+    </li>
+</ol>
+
+<br>
 
 # GraphQL
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/174270b5-22ca-4b9d-8a3e-66c956289952)
