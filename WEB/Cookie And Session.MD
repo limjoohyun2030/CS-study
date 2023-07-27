@@ -104,26 +104,22 @@ Cookie (HTTP Request)
 
 ### 출처
 
-- 쿠키
+쿠키  
+[모든 개발자를 위한 HTTP 웹 기본 지식](https://inf.run/vyK5)
+https://www.daleseo.com/http-cookies/
     
-    [모든 개발자를 위한 HTTP 웹 기본 지식](https://inf.run/vyK5)
-    https://www.daleseo.com/http-cookies/
-    
-- 세션
-    
-    https://smjeon.dev/web/sticky-session/
-    [https://code-lab1.tistory.com/쿠키(Cookie)와 세션(Session)의 차이, 쿠키란? 세션이란?](https://code-lab1.tistory.com/298)
-    [https://hyuntaeknote.tistory.com/다중 서버 환경에서 세션을 어떻게 공유하고 관리할까?](https://hyuntaeknote.tistory.com/4)
+세션    
+https://smjeon.dev/web/sticky-session/
+[https://code-lab1.tistory.com/쿠키(Cookie)와 세션(Session)의 차이, 쿠키란? 세션이란?](https://code-lab1.tistory.com/298)
+[https://hyuntaeknote.tistory.com/다중 서버 환경에서 세션을 어떻게 공유하고 관리할까?](https://hyuntaeknote.tistory.com/4)
     
 
 ### 더 알아보기
 
-- 보안
+보안   
+[https://seob.dev/posts/브라우저-쿠키와-SameSite-속성/](https://seob.dev/posts/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%BF%A0%ED%82%A4%EC%99%80-SameSite-%EC%86%8D%EC%84%B1/)
+[https://program-developer.tistory.com/XSS와 CSRF(XSRF)의 차이점](https://program-developer.tistory.com/99)
+[https://nsinc.tistory.com/HTTP Only와 Secure Cookie 이해하기](https://nsinc.tistory.com/121)
     
-    [https://seob.dev/posts/브라우저-쿠키와-SameSite-속성/](https://seob.dev/posts/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%BF%A0%ED%82%A4%EC%99%80-SameSite-%EC%86%8D%EC%84%B1/)
-    [https://program-developer.tistory.com/XSS와 CSRF(XSRF)의 차이점](https://program-developer.tistory.com/99)
-    [https://nsinc.tistory.com/HTTP Only와 Secure Cookie 이해하기](https://nsinc.tistory.com/121)
-    
-- JWT 인증
-
-    [https://inpa.tistory.com/entry/WEB-📚-JWTjson-web-token-란-💯-정리](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-JWTjson-web-token-%EB%9E%80-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC)
+JWT 인증  
+[https://inpa.tistory.com/entry/WEB-📚-JWTjson-web-token-란-💯-정리](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-JWTjson-web-token-%EB%9E%80-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC)
