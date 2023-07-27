@@ -94,7 +94,7 @@ fetch({'topics/1', { // Collection(복수형으로 s 붙임)/Element의 식별�
 
 
 
-4. 표현 (Representaion of Resource)<br>
+3. 표현 (Representaion of Resource)<br>
 Client가 자원의 상태 (정보)에 대한 조작을 요청하면, Server는 이에 적절한 응답 (Representation)을 보냅니다
 REST에서 하나의 자원은 JSON, XML, TEXT, RSS 등 여러 형태의 Representation으로 나타낼 수 있습니다.
 <br>
