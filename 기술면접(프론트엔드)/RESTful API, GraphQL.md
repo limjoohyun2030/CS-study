@@ -251,7 +251,9 @@ URI 를 통해 식별된 자원은 객체와 같고, 이 자원은 상태가 변
 데이터에 대한 메타정보만 가지고도 이게 어떤 종류의 데이터인지,
 <br> 
 이 데이터를 위해서 어떤 어플리케이션을 실행 해야 하는지 설명할 수 있어야 합니다.
+<br>
 Client 와 Server 사이에는 많은 컴포넌트들(중개자들) 이 있습니다.
+<br>
 이 컴포넌트들이 자원에 대한 요청들을 잘 이해하도록 전송을 해야합니다.
 
 - Host 헤더에 도메인명 기재 필요
@@ -260,13 +262,18 @@ GET /user/1 HTTP/1.1
 host: example.com
 ```
 HTTP/1.1 부터 Host 헤더에 Domain 명이 필수가 되었습니다. 
+<br>
 이 이유 중 하나는 가상호스트 때문인데요, 한개의 IP 에 복수의 Domain 명이 존재할 수 있기 때문에
+<br>
 IP 주소만으로는 요청 대상을 정확히 찾아낼 수 없습니다.
 
 - 캐시
 개별 요청에 대한 응답을 항상 Server 에서 하지 않고
+<br>
 Client 와 Server 사이에 있는 컴포넌트가 캐시된 데이터를 Client 에 전달합니다.
+<br>
 HTTP/1.1 에서 Cache-Control, Age, Etag, Vary 등의 헤더들을 메시지에 포함시켜서
+<br>
 캐시관련 동작들을 커스터마이징 가능하게 됐습니다.
 
 데이터 처리를 위한 정보를 얻기 위해서, 데이터 원본을 읽어야 한다면 self-descriptive 적이지 못한겁니다.
@@ -274,14 +281,21 @@ HTTP/1.1 에서 Cache-Control, Age, Etag, Vary 등의 헤더들을 메시지에 
 <br>
 
 6-4 HATEOAS(hypermedia as the engin of application state)
+
 애플리케이션의 상태가 Hyperlink를 통해서 전이되어야 합니다.
+<br>
 REST는 서로 다른 컴포넌트들을 유연하게 연결을 하는데, 이때 Hyperlink 를 이용합니다.
+<br>
 Client 는 Hyperlink를 이용해서 전체 네트워크와 연결되며
+<br>
 HATEOAS는 서버가 독립적으로 진화할 수 있도록  서버와 클라이언트를 분리 할 수 있게 합니다.
+<br>
+
 ```
 <a href="https://~/email">이메일</a>
 ```
 
+<br>
 Server 에서 Client 에게 <a href> 태그를 가진 HTML 을 보낸다면 HATEOAS 에 위배되지 않을겁니다.
 하지만 일반적으로 백엔드에서는 주로 JSON 형식으로 Client 에게 리소스를 보내고
 프론트에선 이 JSON으로 HTML을 구성합니다.
