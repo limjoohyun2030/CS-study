@@ -89,16 +89,16 @@ Cookie (HTTP Request)
 
 ### **다중 서버 환경에서의 세션 관리**
 
-- 로드 밸런싱(Load Balancing)
-    - 데이터 불일치(**정합성**)
-- 스티키 세션(Sticky Session)
-    - 장애 발생시 세션 유실(**가용성**)
-- 세션 클러스터링(Session Clustering)
-    - all-to-all Session Replication
-    - primary-secondary Session Replication
-- 세션 스토리지(Session Storage)
-    - Disk based vs In-Memory
-    - Replication(Master-Slave, failover)
+로드 밸런싱(Load Balancing)
+  - 데이터 불일치(**정합성**)
+스티키 세션(Sticky Session)
+  - 장애 발생시 세션 유실(**가용성**)
+세션 클러스터링(Session Clustering)
+  - all-to-all Session Replication
+  - primary-secondary Session Replication
+세션 스토리지(Session Storage)
+  - Disk based vs In-Memory
+  - Replication(Master-Slave, failover)
 
 ---
 
