@@ -353,7 +353,12 @@ Uniform Interface 의 제약조건들은 어플리케이션이 필요한 정보�
 
 ## Over Fetching
 
+영화 사이트에서 특정 평점 이상인 영화를 가져오려 한다면?
+
 ## Under Fetching
+
+지금 개봉하는 영화와, 개봉 예정인 영화 목록을 가져오려면 2개의 URL (자원)을 요청해야 하는데...?
+
 
 <br>
 https://www.youtube.com/watch?v=EkWI6Ru8lFQ
