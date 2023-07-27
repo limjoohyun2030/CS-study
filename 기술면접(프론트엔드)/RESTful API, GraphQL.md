@@ -351,8 +351,14 @@ Uniform Interface 의 제약조건들은 어플리케이션이 필요한 정보�
 # GraphQL
 ![image](https://github.com/limjoohyun2030/CS-study/assets/39722436/174270b5-22ca-4b9d-8a3e-66c956289952)
 
+## Over Fetching
 
+## Under Fetching
+
+<br>
 https://www.youtube.com/watch?v=EkWI6Ru8lFQ
+<br>
+https://www.youtube.com/watch?v=N-81mS2vldI
 
 <br>
 
