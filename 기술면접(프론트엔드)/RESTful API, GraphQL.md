@@ -208,24 +208,30 @@ REST Server 트랜잭션이 발생하지 않고 전체 응답시간, 성능, 서
 이것은 사전 구현에 필요한 기능의 수를 줄임으로써 클라이언트를 단순화합니다.
 <br>
 
-### 6.uniform interface
+## 6.uniform interface
 
-Uniform Interface는 Http 표준에만 따른다면 모든 플랫폼에서 사용이 가능하며, 
+Uniform Interface는 Http 표준에만 따른다면 모든 플랫폼에서 사용이 가능하며,
+<br>
 URI로 지정한 리소스에 대한 조작을 가능하게 하는 아키텍쳐 스타일을 말합니다
 특정 언어나 기술에 종속되지 않습니다.
 
 <br>
 
 6-1 identification of resources
+
 URL (Uniform Resource Locator) 으로 내가 어떤 자원을 제어하려고 하는지 알 수 있어야 합니다
+<br>
 주로 Server Side 에서 HTTP body에 JSON 이나 XML 형태로 전송 시킵니다.
 
 <br>
 
 6-2 manipulation of resources through representations
+
 representations을 통해서 자원을 조작해야 합니다.
+<br>
 자원은 다양한 방식으로 표현 가능한데, 자원의 현재 상태에 대해 표현을 할 수 있어야 합니다.
 <br>
+
 ex)
 ```
 HTTP/1.0 200 OK
@@ -241,6 +247,7 @@ URI 를 통해 식별된 자원은 객체와 같고, 이 자원은 상태가 변
 <br>
 
 6-3 self-descriptive messages
+
 데이터에 대한 메타정보만 가지고도 이게 어떤 종류의 데이터인지, 
 이 데이터를 위해서 어떤 어플리케이션을 실행 해야 하는지 설명할 수 있어야 합니다.
 <br>
