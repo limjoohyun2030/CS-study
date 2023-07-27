@@ -368,6 +368,9 @@ https://www.youtube.com/watch?v=N-81mS2vldI
 <br>
 
 참고링크
+### 네이버 그런 rest api 로 괜찮은가
+<br>
+https://www.youtube.com/watch?v=RP_f5dMoHFc
 <br>
 https://velog.io/@somday/RESTful-API-%EC%9D%B4%EB%9E%80
 <br>
