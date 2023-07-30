@@ -1,3 +1,0 @@
-# Hoisting
-
-# Closure
