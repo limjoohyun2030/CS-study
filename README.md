@@ -89,7 +89,7 @@
 | 2023-07-13 | [OSI 7 Layer](네트워크/OSI-7-Layer,TCP-IP.md) | [Browser Rendering, Protocol, Proxy](https://github.com/limjoohyun2030/CS-study/blob/37d70627f08fd19116d6a804ea817b0adb592661/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(%EC%9D%B4%203%EA%B0%9C%EB%8A%94%20%EA%B8%B0%EC%B4%88%EB%A7%8C).md) |  | [동기와 비동기](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Syncronous%20And%20Asyncronous.MD) | 
 | 2023-07-27 |  | [Restful API](https://github.com/limjoohyun2030/CS-study/blob/1e9e7dfc6a0b4b272a502d00d4417c9722f10fb3/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/RESTful%20API.md) | [인덱스](https://www.notion.so/a04c1e9c58304a15995ebcaf5547d481?pvs=4) | [쿠키와 세션](https://github.com/limjoohyun2030/CS-study/blob/main/WEB/Cookie%20And%20Session.MD) |
 | 2023-08-17 |  | [SPA, CSR, SSR](https://github.com/limjoohyun2030/CS-study/blob/4aa5520a70c0b94b411632e42472536050002915/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/SPA%2C%20CSR%2C%20SSR.md)  |  | [3-Way, 4-Way Handshake](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/3-Way%2C%204-Way%20Handshake.MD) |
-| 2023-08-24 |  |  | XML과 JSON | CORS |
+| 2023-08-24 |  | 미정 | XML과 JSON | CORS |
 | 2023-09-07 |  |  |  |  |
 | 2023-09-21 |  |  |  |  |
 | 2023-10-05 |  |  |  |  |
