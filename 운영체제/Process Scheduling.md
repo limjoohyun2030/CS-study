@@ -74,7 +74,7 @@
 
 일반적으로 **평균대기시간과 평균반환시간이 이용**된다.
 
-![Untitled](./운영체제/Process Scheduling/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled.png)
 
 1. **평균 대기 시간 계산:**
 평균 대기 시간은 각 프로세스의 대기 시간을 합산하여 프로세스의 개수로 나누는 방식으로 계산.
