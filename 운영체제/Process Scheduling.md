@@ -99,7 +99,7 @@
 
 1. **FCFS(First-Come, First-Served) 스케줄링: 비선점**
     
-    ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%201.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%201.png)
     
     - 장점:
         - 구현이 간단하고 이해하기 쉽다.
@@ -107,7 +107,7 @@
         - 평균 대기 시간이 높을 수 있다. 먼저 도착한 프로세스가 긴 작업을 할 경우, 뒤에 있는 모든 프로세스들이 대기해야 한다.
 2. **SJF(Shortest Job First) 스케줄링: 비선점**
     
-    ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%202.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%202.png)
     
     - 장점:
         - 일괄처리 환경에서 구현하기 쉽다.
@@ -115,7 +115,7 @@
         - 실제로는 실행 시간을 사전에 알 수 없어 예측이 어렵다.
 3. **SRT(Shortest Remaining Time) 스케줄링: 선점** 
     
-    ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%203.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%203.png)
     
     - 장점:
         - SJF보다 평균대기시간과 평균반환시간에서 효율적이다.
@@ -125,16 +125,16 @@
     - 장점:
         - 모든 프로세스들에게 CPU 시간을 공평하게 할당. 작은 양의 시간 단위로 각 프로세스들을 번갈아가며 실행.
     
-    ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%204.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%204.png)
     
     - 단점:
         - 시간 할당량(Time Quantum) 크기에 따라 성능이 크게 달라질 수 있다. 시간 할당량이 크면 SJF와 유사한 성능을 보이고, 작으면 오버헤드가 증가할 수 있다.
         
-        ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%205.png)
+        ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%205.png)
         
 5. **HRN(Highest Response Ratio Next) 스케줄링: 비선점**
 
-![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%206.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%206.png)
 
 - 장점:
     - 응답 비율을 고려하여 프로세스를 스케줄링. 응답 비율이 높은 프로세스를 우선적으로 실행.
@@ -147,7 +147,7 @@
     - n개의 단계를 가지고 각 단계마다 하나의 큐가 존재한다.
     - 단계가 커질수록 시간 할당량도 커진다.
     
-    ![Untitled](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%20919d2478ea57480ca35301aa4acdb6ba/Untitled%207.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling/Untitled%207.png)
     
     ### 스케줄링 방법
     
