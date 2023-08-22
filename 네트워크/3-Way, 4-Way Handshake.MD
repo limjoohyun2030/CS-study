@@ -116,9 +116,6 @@ http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm
 1. **Packet Delay**에 의해서 새로운 Connection이 이전 Connection의 영향을 받는 상황
     
     ![[그림 1] TCP Connection Issue with Packet Delay](./3-Way%2C%204-Way%20Handshake/TCP%20Connection%20Issue%20with%20Packet%20Delay.png)
-    
-    [그림 1] TCP Connection Issue with Packet Delay
-    
     - 붉은 선으로 표시 된 Client가 전송한 SEQ=3 Packet이 지연됨
     - Client와 Server가 기존의 Connection을 종료하고 새로운 Connection을 맺음
     - 이후에 이전 Connection의 지연된 SEQ=3 Packet이 Server에게 전달
@@ -127,9 +124,6 @@ http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm
 2. 원격 종단의 연결이 닫혔는지 확인해야할 경우 (TCP 4-Way Handshake의 마지막 `ACK` Flag가 Server(**Passive Closer**)에게 전달되지 않아 Server가 `LAST_ACK` 상태를 유지하는 상황)
     
     ![[그림 2] TCP Connection Issue with Lost Last ACK in 4Way Handshake](./3-Way%2C%204-Way%20Handshake/TCP%20Connection%20Issue%20with%20Lost%20Last%20ACK%20in%204Way%20Handshake.png)
-    
-    [그림 2] TCP Connection Issue with Lost Last ACK in 4Way Handshake
-    
     - Server의 `LAST_ACK` 상태가 **Timeout**에 의해서 `CLOSED` 상태로 변경 되기전, Client는 새로운 Connection을 위해서 동일한 Local IP/Port를 이용하여 Server에게 `SYN` Flag를 전송
     - `LAST_ACK` 상태의 Server는 `SYN` Flag를 받을 경우 `RST` FLAG를 전송하여 Connection 생성을 막기 때문에 새로운 Connection 생성 실패
 
