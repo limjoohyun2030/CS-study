@@ -102,10 +102,43 @@ TCP 연결을 단계적으로 해제(Connecntion Termination)하는 절차
 
 http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm
 
-### TIME_WAIT
+## TIME_WAIT
 
-- https://docs.likejazz.com/time-wait/
+- Connection을 먼저 종료하는 **Active Closer**가 Connection 종료 후 도달하는 상태
+    
+    ※ Close 요청을 먼저한 주체가 누구냐에 따라 **Active Close**, **Passive Close** 대상이 달라진다, 먼저 close 요청한 쪽이 Active Close.
+    
+- Network에 남아 있을 수 있는 종료된 Connection의 Packet이 완전히 제거될 때까지 대기
+- 이후에 생성되는 새로운 Connection에 영향을 미치지 않기 위한 용도로 이용되는 상태
 
+### Problems if TIME_WAIT is short
+
+1. **Packet Delay**에 의해서 새로운 Connection이 이전 Connection의 영향을 받는 상황
+    
+    ![[그림 1] TCP Connection Issue with Packet Delay](./3-Way%2C%204-Way%20Handshake/TCP%20Connection%20Issue%20with%20Packet%20Delay.png)
+    
+    [그림 1] TCP Connection Issue with Packet Delay
+    
+    - 붉은 선으로 표시 된 Client가 전송한 SEQ=3 Packet이 지연됨
+    - Client와 Server가 기존의 Connection을 종료하고 새로운 Connection을 맺음
+    - 이후에 이전 Connection의 지연된 SEQ=3 Packet이 Server에게 전달
+    - Server가 받아야 하는 SEQ와 지연된 Packet의 SEQ가 다르면 Server에서는 Drop하기 때문에 문제가 발생하지 않음
+    - 하지만 **Server가 수신해야 하는 SEQ와 지연된 Packet의 SEQ가 우연히 동일한 경우**에는 Server는 지연된 Packet을 Drop하지 않고 수신하여 Data 무결성이 깨진다.
+2. 원격 종단의 연결이 닫혔는지 확인해야할 경우 (TCP 4-Way Handshake의 마지막 `ACK` Flag가 Server(**Passive Closer**)에게 전달되지 않아 Server가 `LAST_ACK` 상태를 유지하는 상황)
+    
+    ![[그림 2] TCP Connection Issue with Lost Last ACK in 4Way Handshake](./3-Way%2C%204-Way%20Handshake/TCP%20Connection%20Issue%20with%20Lost%20Last%20ACK%20in%204Way%20Handshake.png)
+    
+    [그림 2] TCP Connection Issue with Lost Last ACK in 4Way Handshake
+    
+    - Server의 `LAST_ACK` 상태가 **Timeout**에 의해서 `CLOSED` 상태로 변경 되기전, Client는 새로운 Connection을 위해서 동일한 Local IP/Port를 이용하여 Server에게 `SYN` Flag를 전송
+    - `LAST_ACK` 상태의 Server는 `SYN` Flag를 받을 경우 `RST` FLAG를 전송하여 Connection 생성을 막기 때문에 새로운 Connection 생성 실패
+
+### ****Avoiding TIME_WAIT****
+
+- `tcp_timestamps`
+- `tcp_tw_reuse`
+- `tcp_tw_recycle`
+- `Socket Lingering`
 ---
 
 ## 3-Way Handshake vs 4-Way Handshake
@@ -123,4 +156,6 @@ http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm
 - http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-3.htm
 - http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm
 - [https://velog.io/@averycode/네트워크-TCPUDP와-3-Way-Handshake4-Way-Handshake#3-way-handshake의-기본매커니즘](https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-TCPUDP%EC%99%80-3-Way-Handshake4-Way-Handshake#3-way-handshake%EC%9D%98-%EA%B8%B0%EB%B3%B8%EB%A7%A4%EC%BB%A4%EB%8B%88%EC%A6%98)
+- https://ssup2.github.io/theory_analysis/TCP_TIME_WAIT_State/
 - https://docs.likejazz.com/time-wait/
+- https://serverframework.com/asynchronousevents/2011/01/time-wait-and-its-design-implications-for-protocols-and-scalable-servers.html
