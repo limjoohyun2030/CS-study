@@ -10,6 +10,7 @@
 
 ## 👨‍🎓 참고할 선배님들 링크
 - https://github.com/alstjgg/cs-study/tree/main
+- https://github.com/WeareSoft/tech-interview
 
 ## 👨‍💻  스터디원
 
