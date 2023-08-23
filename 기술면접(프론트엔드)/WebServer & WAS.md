@@ -1,6 +1,6 @@
 # Web Server & WAS
 
-![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/730957ae-0ef2-4966-9a3b-2ceee70eddbb)
 
 왼쪽이 Web Server, 오른쪽이 WAS
 
@@ -14,9 +14,10 @@ WAS 는 사용자의 입력에 따라 다른 결과를 보여주는 동적인(dy
 
 분리하면 서버의 부담을 줄일 수 있습니다.
 
-![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled%201.png)
 
 ## Web Server
+
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/7d2de719-83cd-4543-b7e4-1d5d2e081c8e)
 
 ```jsx
 클라이언트로부터 HTTP 요청을 받고, static page(html, css, js 등)을 제공하는 프로그램
@@ -66,9 +67,10 @@ HTTPS 통신인 경우엔 443번 포트를 사용합니다
 
 ---
 
-![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled%202.png)
 
 ## WAS(Web Application Server)
+
+![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/911fea38-1c33-4aaf-8e5e-1024dff11713)
 
 웹 어플리케이션과 서버환경을 만들고, 
 
