@@ -1,5 +1,6 @@
-![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/19ba3b48-66cd-4ada-a25c-d0aa02827db0)
+# Web Server & WAS
 
+![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled.png)
 
 왼쪽이 Web Server, 오른쪽이 WAS
 
@@ -13,7 +14,7 @@ WAS 는 사용자의 입력에 따라 다른 결과를 보여주는 동적인(dy
 
 분리하면 서버의 부담을 줄일 수 있습니다.
 
-![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/3b1b0821-c50c-40e7-87cb-9c2f1f33ae3f)
+![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled%201.png)
 
 ## Web Server
 
@@ -26,6 +27,74 @@ HTTP 통신은 80번 포트를 사용하고
 HTTPS 통신인 경우엔 443번 포트를 사용합니다
 
 대표적인 웹서버에는 Apache Server, Nginx 등이 있습니다.
+
+---
+
+## Apache vs Nginx
+
+### Apache
+
+- 다중 프로세스로(MPM. Multi Process Module) 일을 처리
+    
+    Client 마다 프로세스를 생성하는 방식(mpm-prefork)
+    
+    한 프로세스 안에서 스레드를 새로 생성하는 방식(mpm-worker)
+    
+- 두 방식 모두, 프로세스나 스레드가 이 Context 실행했다 저 Context 실행했다 하는
+    
+    **context switching 이 발생.**
+    
+    이 방식은 컴퓨터 자원을 많이 소모합니다.
+    
+- 보안이 좋고, 다양한 모듈(MPM 등) 제공하기 때문에 좋습니다.
+
+### Nginx
+
+- 이벤트로(event-driven) 일을 처리하기 때문에 효율이 더 좋습니다.
+    
+    Event-driven 구조는 Clinet 요청을 병렬로 처리해서 
+    
+    동시에 커넥션 양 & 속도를 대폭 향상 할 수 있습니다.
+    
+- 시간이 오래 걸리는 작업이 있다면 Thread Pool에게 해당 일을 위임합니다
+- SSL 터미네이션 수행. Client 와는 HTTPS 통신을 하고, Server 와는 HTTP 통신을 합니다.
+- 모듈 직접 개발 까다롭습니다.
+
+따라서 성능과 가벼움을 중요시 한다면 Nginx,
+
+안정되고 검증된 기능들을 필요로 한다면 Apache
+
+---
+
+![Untitled](Web%20Server%20&%20WAS%2005a5a7ca3e534215b40bb41588cc46df/Untitled%202.png)
+
+## WAS(Web Application Server)
+
+웹 어플리케이션과 서버환경을 만들고, 
+
+**DB나 외부 서비스와 상호작용하며 비지니스 로직을 처리할 수 있습니다.**
+
+php jsp 와 같은 언어들을 이용해서 동적인 페이지를 생성할 수 있고
+
+대표적인 WAS로는 Tomcat, JBoss, Jeus, WebSphere 등이 있습니다.
+
+### Tomcat
+
+가장 흔히 쓰이는 Tomcat은 요즘 스프링에 내장돼있어서 직접 접하는 빈도가 줄었지만
+
+JAVA 와 JSP 로 만든 웹 또는 앱을 실행할때 톰캣 같은 WAS가 사용됩니다.
+
+### 그럼 Node.js 와 Go 에선…??
+
+WAS 를 검색하면 죄다 JAVA 관련된 내용이 나옵니다.
+
+다른 진영에서는 WAS 역할을 한다 라고 딱히 구분해서 사용하지는 않는데 
+
+이런게 다 정의하기 나름이고, 진영마다 배포 구조들도 다르기 때문입니다. 
+
+참고로, Node.js 에서는 어플리케이션이 WAS 역할까지 합니다.
+
+# WebServer 와 WAS 를 둘다 사용하는 이유
 
 ### Reverse Proxy
 
@@ -78,73 +147,15 @@ Fails: 요청이 몇번 실패하면 서버가 비정상인지 인지하는 횟�
 
 Passes: 서버가 다시 복구되어 요청을 보낼건데 몇번 연속 성공하면 정상으로 간주할지에 대한 횟수
 
-### fail over(장애 극복), fail back 처리에
+### fail over, fail back
 
----
+fail over 와 fail back 처리에 유리합니다.
 
-## Apache vs Nginx
+fail over: 서버, 시스템, 네트워크 등에서 이상이 생겼을 때 예비 시스템으로 자동 전환
 
-### Apache
+fail back: fail over에 따라 전환된 서버, 시스템, 네트워크 등을, 이상이 발생하기 전의 상태로 되돌리는 처리
 
-- 다중 프로세스로(MPM. Multi Process Module) 일을 처리
-    
-    Client 마다 프로세스를 생성하는 방식(mpm-prefork)
-    
-    한 프로세스 안에서 스레드를 새로 생성하는 방식(mpm-worker)
-    
-- 두 방식 모두, 프로세스나 스레드가 이 Context 실행했다 저 Context 실행했다 하는
-    
-    **context switching 이 발생.**
-    
-    이 방식은 컴퓨터 자원을 많이 소모합니다.
-    
-- 보안이 좋고, 다양한 모듈(MPM 등) 제공하기 때문에 좋습니다.
-
-### Nginx
-
-- 이벤트로(event-driven) 일을 처리하기 때문에 효율이 더 좋습니다.
-    
-    Event-driven 구조는 Clinet 요청을 병렬로 처리해서 
-    
-    동시에 커넥션 양 & 속도를 대폭 향상 할 수 있습니다.
-    
-- 시간이 오래 걸리는 작업이 있다면 Thread Pool에게 해당 일을 위임합니다
-- SSL 터미네이션 수행. Client 와는 HTTPS 통신을 하고, Server 와는 HTTP 통신을 합니다.
-- 모듈 직접 개발 까다롭습니다.
-
-따라서 성능과 가벼움을 중요시 한다면 Nginx,
-
-안정되고 검증된 기능들을 필요로 한다면 Apache
-
----
-
-![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/d1f2e2f6-2cae-4e4d-b4ea-911a4bf3c00b)
-
-## WAS(Web Application Server)
-
-웹 어플리케이션과 서버환경을 만들고, 
-
-**DB나 외부 서비스와 상호작용하며 비지니스 로직을 처리할 수 있습니다.**
-
-php jsp 와 같은 언어들을 이용해서 동적인 페이지를 생성할 수 있고
-
-대표적인 WAS로는 Tomcat, JBoss, Jeus, WebSphere 등이 있습니다.
-
-### Tomcat
-
-가장 흔히 쓰이는 Tomcat은 요즘 스프링에 내장돼있어서 직접 접하는 빈도가 줄었지만
-
-JAVA 와 JSP 로 만든 웹 또는 앱을 실행할때 톰캣 같은 WAS가 사용됩니다.
-
-### 그럼 Node.js 와 Go 에선…??
-
-WAS 를 검색하면 죄다 JAVA 관련된 내용이 나옵니다.
-
-다른 진영에서는 WAS 역할을 한다 라고 딱히 구분해서 사용하지는 않는데 
-
-이런게 다 정의하기 나름이고, 진영마다 배포 구조들도 다르기 때문입니다. 
-
-참고로, Node.js 에서는 어플리케이션이 WAS 역할까지 합니다.
+<br>
 
 참고 링크
 
@@ -160,9 +171,4 @@ WAS 를 검색하면 죄다 JAVA 관련된 내용이 나옵니다.
 
 [https://lu-coding.tistory.com/101](https://lu-coding.tistory.com/101)
 
-[https://velog.io/@pjy05200/Web-Server와-WAS의-차이](https://velog.io/@pjy05200/Web-Server%EC%99%80-WAS%EC%9D%98-%EC%B0%A8%EC%9D%B4)b41588cc46df.md…]()
-
-
-https://www.youtube.com/watch?v=mcnJcjbfjrs
-<br>
-https://www.youtube.com/watch?v=Zimhvf2B7Es
+[https://velog.io/@pjy05200/Web-Server와-WAS의-차이](https://velog.io/@pjy05200/Web-Server%EC%99%80-WAS%EC%9D%98-%EC%B0%A8%EC%9D%B4)
