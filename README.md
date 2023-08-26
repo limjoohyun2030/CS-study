@@ -55,7 +55,7 @@
 | 2023-07-27 | [프로세스 스케줄링](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Process%20Scheduling.md) |[Restful API](https://github.com/limjoohyun2030/CS-study/blob/1e9e7dfc6a0b4b272a502d00d4417c9722f10fb3/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/RESTful%20API.md) | [인덱스](https://www.notion.so/a04c1e9c58304a15995ebcaf5547d481?pvs=4) | [쿠키와 세션](https://github.com/limjoohyun2030/CS-study/blob/main/WEB/Cookie%20And%20Session.MD) |
 | 2023-08-10(여름휴가) |  |   |  |  |
 | 2023-08-24 |  | [Web Server & WAS](https://github.com/limjoohyun2030/CS-study/blob/f7fb2d9b33ef982f07df93f50accd797f48f9ac1/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/WebServer%20%26%20WAS.md) | XML과 JSON | [3-Way, 4-Way Handshake](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/3-Way%2C%204-Way%20Handshake.MD) |
-| 2023-09-07 |  |  |  | CORS |
+| 2023-09-07 |  | WebSocket |  | CORS |
 | 2023-09-21 |  |  |  |  |
 | 2023-10-05 |  |  |  |  |
 | 2023-10-19 |  |  |  |  |
