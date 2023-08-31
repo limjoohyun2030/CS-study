@@ -1,4 +1,4 @@
-![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/e329d1cf-4189-46cc-b3c5-324229ab1e04)# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
+# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
 
 TCP를 자세히 살펴보기 전에 TCP에서의 패킷을 세그먼트라고 한다.
 
