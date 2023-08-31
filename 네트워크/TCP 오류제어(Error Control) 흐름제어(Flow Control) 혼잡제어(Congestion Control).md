@@ -1,4 +1,4 @@
-# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/0c7ccc4c-5026-4cd6-a348-8a7fc9fdd777)# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
 
 TCP를 자세히 살펴보기 전에 TCP에서의 패킷을 세그먼트라고 한다.
 
@@ -42,7 +42,7 @@ A에서 0번, 1번, 2번 패킷을 전송한다고 가정한다. 이중 0번, 1�
 
 단점으로는 이미 수신한 데이터를 폐기하고 다시 재전송해야 한다는 점이다.
 
-![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled%201.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%201.png?raw=true)
 
 ## Selective Repeat
 
@@ -54,7 +54,7 @@ A에서 0번, 1번, 2번 패킷을 전송한다고 가정한다. 이중 0번, 1�
 
 이 때 수신측의 버퍼에 순서가 보장되지 않기 때문에 수신 버퍼에 대한 재정렬이 필요하며 이는 필연적으로 또 다른 버퍼 공간을 필요로 한다는 단점이 있다.
 
-![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled%202.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%202.png?raw=true)
 
 ---
 
@@ -68,7 +68,7 @@ TCP는 UDP와는 다르게 흐름 제어를 제공한다. 송신 TCP는 송신 �
 
 전송한 패킷에 대한 확인 응답을 받아야만 그 다음 패킷을 전송하는 기법
 
-![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled%203.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%203.png?raw=true)
 
 ## Sliding Window(윈도우 광고 기법)
 
