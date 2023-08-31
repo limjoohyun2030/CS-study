@@ -2,7 +2,7 @@
 
 TCP를 자세히 살펴보기 전에 TCP에서의 패킷을 세그먼트라고 한다.
 
-# TCP 오류제어****(Error Control)****
+# TCP 오류제어(Error Control)
 
 신뢰성 있는 서비스를 제공하기 위하여, TCP는 오류 제어 매커니즘을 구현한다. 오류 제어에서는 세그먼트가 (손실 또는 훼손된 세그먼트 등의) 오류 감지를 위한 데이터의 단위이기는 하지만, 오류 제어는 바이트-단위로 동작한다.
 
@@ -24,7 +24,7 @@ B는 ACK를 받으면 1번 패킷을 전송한다. 하지만 1번 패킷이 손�
 
 이와 같은 방식으로 매번 전송한 패킷에 대한 ACK를 받고 다음 패킷을 전송하는 방식이 STOP-AND-WAIT 방식이다.
 
-![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled.png?raw=true)
 
 ## Go Back N
 
