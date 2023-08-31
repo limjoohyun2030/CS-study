@@ -1,4 +1,4 @@
-![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/0c7ccc4c-5026-4cd6-a348-8a7fc9fdd777)# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/e329d1cf-4189-46cc-b3c5-324229ab1e04)# TCP 오류제어(Error Control) 흐름제어(Flow Control) 혼잡제어(Congestion Control)
 
 TCP를 자세히 살펴보기 전에 TCP에서의 패킷을 세그먼트라고 한다.
 
@@ -96,7 +96,7 @@ B는 확인 응답 ACK = 151을 전송하며, 자신의 윈도우 크기가 150�
 
 ACK = 151과 B의 윈도우 크기가 150이라는 정보를 수신한 송신측 윈도우도 그에 따라 윈도우를 조절한다.
 
-![TCP 흐름제어.png](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/TCP_%25E1%2584%2592%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B3%25E1%2586%25B7%25E1%2584%258C%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25A5.png)
+![TCP 흐름제어.png](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/un6.png?raw=true)
 
 ---
 
@@ -122,11 +122,11 @@ TCP는 UDP와는 다르게 망의 혼잡을 고려한다. 송신측에서 전송
         1. 결국 혼잡이 발생되면 Multiplicative Decrease 방식을 수행, 혼잡이 발생한 상황의 경우에 따라 다르게 동작
             1. **세그먼트 전송 후 타임아웃되어서 재전송해야 하는 상황** : cwnd의 크기는 1로 재설정 되고 ssthresh값은 20의 1/2인 10으로 변경된다. 이후에는 Slow Start와 Additive Increase 기법을 계속해서 수행.
                 
-                ![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled%204.png)
+                ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%204.png?raw=true)
                 
             2. **3개 이상의 중복된 ACK를 수신한 경우 :** ssthresh값이 1/2로 축소, cwnd의 크기는 ssthresh와 같은 값으로 재설정, 이후에는 Additive Increase 기법으로 혼잡 회피만 수행
                 
-                ![Untitled](TCP%20%E1%84%8B%E1%85%A9%E1%84%85%E1%85%B2%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Error%20Control)%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5(Flow%20Control%20768c373d84cd466f92018721e50614ef/Untitled%205.png)
+                ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%205.png?raw=true)
                 
 
 - 참조
