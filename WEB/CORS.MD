@@ -3,7 +3,7 @@
 
 - “**다른-출처 자원 공유”** 권한을 부여하도록 브라우저에 알려주는 **HTTP-header 기반** 메커니즘
 - 한 출처에서 실행 중인 웹 애플리케이션이 **다른출처의 리소스에 접근할 수 있는 권한을 부여**하도록 브라주저에 알려주는 체제 → “다른 출처라도 요청을 보내게 해줄게”
-- Resource가 자신의 **Origin(출처)** 과 다를 때 **cross-origin HTTP requests**를 실행
+- Resource가 자신의 **Origin(출처)**과 다를 때 **cross-origin HTTP requests**를 실행
 
 ### 왜 **다른 출처 자원 공유가 안될까?** SOP(Same-Origin Policy)
 
