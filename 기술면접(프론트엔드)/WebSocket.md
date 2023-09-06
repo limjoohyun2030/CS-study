@@ -1,8 +1,7 @@
 # WebSocket
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/7e129d28-7ebd-4ebe-92d0-cf2533bbbed3)
 
 ## WebSocket 이란?
-
-![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled.png)
 
 클라이언트의 요청과 서버의 응답이 끝나면 연결이 종료되는(**Connectionless**) HTTP 통신과 달리
 
@@ -48,7 +47,7 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
 
 1. polling
     
-    ![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%201.png)
+    ![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/6e5a03dd-378c-4964-ace6-f2c4eadba3b7)
     
     일정 주기로 서버에 HTTP 요청을 보내는 방식
     
@@ -58,8 +57,8 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
     
 2. Long polling
     
-    ![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%202.png)
-    
+    ![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/1a41929c-8f40-4233-a908-a9d9d5048a6e)
+
     클라이언트에서 서버로 일단 HTTP Request를 요청하면 
     
     서버에서 해당 클라이언트로 전달할 이벤트가 있을 때까지 대기 상태로 있다가 
@@ -71,8 +70,8 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
     업데이트 주기가 짧다면 polling 과 별 차이가 없게 됨
     
 3. streaming
-    
-    ![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%203.png)
+
+    ![Untitled 3](https://github.com/limjoohyun2030/CS-study/assets/39722436/c6d299eb-3029-42ae-9145-742c9d579010)
     
     클라이언트에서 서버로 일단 HTTP Request를 보낸 후 
     
@@ -83,7 +82,7 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
 
 ## WebSocket 접속방법 - Hand Shaking
 
-![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%204.png)
+![Untitled 4](https://github.com/limjoohyun2030/CS-study/assets/39722436/cb5bae90-12d4-4c78-a2bd-d2cdfbcddb61)
 
 웹소켓도 TCP/IP 위에서 동작하기 때문에
 
@@ -181,7 +180,8 @@ heartbeat 패킷을 보내며 주기적으로 ping 을 보내 체크합니다.
 
 ## Frame (프레임) 헤더 구조
 
-![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%205.png)
+![Untitled 5](https://github.com/limjoohyun2030/CS-study/assets/39722436/e294c5ca-4a60-4320-b483-e21c0645fdc2)
+
 
 - FIN
 이 프레임의 전체 메시지의 끝임을 나타내는 플래그
@@ -222,7 +222,8 @@ polling, FlashSocket 등의 기술들을 하나의 API 추상화 한 것들입�
 
 ## 주의할 점
 
-![Untitled](WebSocket%20450557f204e34c6e92ebb81de4d1edb9/Untitled%206.png)
+![Uploading Untitled 6.png…]()
+
 
 ```jsx
 WebScoket 프로토콜은 HTTP 프로토콜처럼 **애플리케이션 계층(Application Layer)에 위치**하며, 
