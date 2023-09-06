@@ -194,10 +194,12 @@ heartbeat 패킷을 보내며 주기적으로 ping 을 보내 체크합니다.
 - FIN
 이 프레임의 전체 메시지의 끝임을 나타내는 플래그
 - OPCODE
+```
 Continue ( 0x0 ) : 전체 메시지의 일부
 Text ( 0x1 ) : 포함 데이터가 UTF-8 텍스트라는 의미
 Binary (0x2) : 포함된 데이터가 이진 데이터라는 의미
 close (0x8) : Close 핸드쉐이크를 시작한다는 의미
+```
 - LENGTH
 이 프레임에 포함된 데이터의 총 길이를 나타낸다.
 - RSV 1 ~ 3
@@ -236,8 +238,8 @@ polling, FlashSocket 등의 기술들을 하나의 API 추상화 한 것들입�
 
 
 ```jsx
-WebScoket 프로토콜은 HTTP 프로토콜처럼 **애플리케이션 계층(Application Layer)에 위치**하며, 
-TCP의 양방향 전이중 통신을 사용하기 때문에 **전송 계층(Transport Layer)에 의존**하고 있다고 볼 수 있습니다.
+WebScoket 프로토콜은 HTTP 프로토콜처럼 애플리케이션 계층(Application Layer)에 위치하며, 
+TCP의 양방향 전이중 통신을 사용하기 때문에 전송 계층(Transport Layer)에 의존하고 있다고 볼 수 있습니다.
 
 WebScoket 은 HTTP 레이어에서 작동하는 소켓으로, TCP/IP 소켓의 레이어가 다릅니다.
 ```
