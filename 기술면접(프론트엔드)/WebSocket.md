@@ -194,7 +194,7 @@ heartbeat 패킷을 보내며 주기적으로 ping 을 보내 체크합니다.
 - FIN
 이 프레임의 전체 메시지의 끝임을 나타내는 플래그
 - OPCODE
-```
+```jsx
 Continue ( 0x0 ) : 전체 메시지의 일부
 Text ( 0x1 ) : 포함 데이터가 UTF-8 텍스트라는 의미
 Binary (0x2) : 포함된 데이터가 이진 데이터라는 의미
@@ -211,7 +211,9 @@ close (0x8) : Close 핸드쉐이크를 시작한다는 의미
 
 ## ****Socket.io, SockJS, STOMP****
 
-WebSocket은 HTML5 이후에 나온 기술이며, 그 이전에 나온 서비스에서도 Websocket 처럼 사용할 수 있도록 도와주는 기술들이 있습니다.
+WebSocket은 HTML5 이후에 나온 기술이며, 그 이전에 나온 서비스에서도 
+
+Websocket 처럼 사용할 수 있도록 도와주는 기술들이 있습니다.
 
 polling, FlashSocket 등의 기술들을 하나의 API 추상화 한 것들입니다.
 
