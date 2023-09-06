@@ -1,6 +1,8 @@
 # WebSocket
 ![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/7e129d28-7ebd-4ebe-92d0-cf2533bbbed3)
 
+<br>
+
 ## WebSocket 이란?
 
 클라이언트의 요청과 서버의 응답이 끝나면 연결이 종료되는(**Connectionless**) HTTP 통신과 달리
@@ -8,6 +10,8 @@
 응답 이후에도 Connection이 계속 유지되도록 만든 프로토콜. 이를 WebSocket 이라고 합니다. 
 
 웹 환경에서 널리 쓰이고 있으며, 브라우저에서 웹소켓 프로토콜을 지원합니다.
+
+<br>
 
 ## WebSocket 의 특징
 
@@ -39,11 +43,15 @@
     HTTP 규격인 CORS 적용이나 인증 등의 과정을 기존과 동일하게 가져갈 수 있습니다
     
 
+<br>
+
 ## HTTP 의 실시간 통신 방식
 
 WebSocket 에서만 실시간 통신이 가능한건 아닙니다. 
 
 HTTP 에서도 아래와 같은 방식으로 가능합니다.
+
+<br>
 
 1. polling
     
@@ -79,6 +87,7 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
     
     클라이언트에서 서버로의 데이터 송신이 어려움
     
+<br>
 
 ## WebSocket 접속방법 - Hand Shaking
 
@@ -87,6 +96,8 @@ HTTP 에서도 아래와 같은 방식으로 가능합니다.
 웹소켓도 TCP/IP 위에서 동작하기 때문에
 
 서버와 클라이언트는 TCP/IP 접속이 되어있어야 합니다.
+
+<br>
 
 ### 웹소켓 열기 HandShake
 
@@ -139,9 +150,9 @@ Sec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=
 | Sec-WebSocket-Protocol | Option | 서버에서 서비스하는 하위 프로토콜을 명시한다. 클라이언트가 요청하지 않는 하위 프로토콜을 명시하면 HandShake는 실패한다. |
 | Sec-WebSocket-Extensions | Option | 서버가 사용하는 추가 옵션을 기술한다. 클라이언트가 요청하지 않는 추가 옵션을 명시하면 HandShake는 실패한다. |
 
-### Handshake 완료 (웹 소켓이 열리고, 데이터 전송 시작)
+<br>
 
-[data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+### Handshake 완료 (웹 소켓이 열리고, 데이터 전송 시작)
 
 Handshake 가 끝난 시점부터 서버와 클라이언트는 서로가 살아 있는지 확인하기 위해서 
 
@@ -154,9 +165,6 @@ heartbeat 패킷을 보내며 주기적으로 ping 을 보내 체크합니다.
     (Client Web Socket) WS(80) or WSS(443) → WS or WSS (Server WebSocket)
     (Client Web Socket) WS or WSS ← WS or WSS (Server WebSocket)
     
-
-[data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - 데이터를 주고 받는데 있어서 단위는 Message를 사용합니다.
     
     Message를 웹소켓 프레임이라고 한다.
@@ -197,15 +205,17 @@ close (0x8) : Close 핸드쉐이크를 시작한다는 의미
 - 연결 종료
 연결 종료 할 때는 Close Frame을 주고 받으며 종료한다.
 
+<br>
+
 ## ****Socket.io, SockJS, STOMP****
 
 WebSocket은 HTML5 이후에 나온 기술이며, 그 이전에 나온 서비스에서도 Websocket 처럼 사용할 수 있도록 도와주는 기술들이 있습니다.
 
 polling, FlashSocket 등의 기술들을 하나의 API 추상화 한 것들입니다.
 
-### Socket.io, SockJS
+<br>
 
-[data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+### Socket.io, SockJS
 
 - HTML5 이전 기술로 구현된 서비스에서 웹 소켓처럼 사용할 수 있도록 도와주는 기술
 - Javascript를 이용하여 브라우저 종류에 상관없이 실시간 웹을 구현
@@ -213,16 +223,16 @@ polling, FlashSocket 등의 기술들을 하나의 API 추상화 한 것들입�
 
 ### STOMP
 
-[data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
-
 - WS는 형식이 없기 때문에 해석이 어려운데, 따라서 WS 방식은 Sub Protocol을 사용해서 주고 받는 메시지의 형태를 약속합니다.
 - 이러한 Sub Protocol 중 하나가 STOMP(Simple Text Oriented Message Protocol) 입니다.
 - 문자열들을 주고 받을 수 있게 해줄 뿐 그 이상의 일은 하지 않습니다.
 - 주고 받은 문자열의 해독은 애플리케이션이 합니다.
 
+<br>
+
 ## 주의할 점
 
-![Uploading Untitled 6.png…]()
+![Untitled 6](https://github.com/limjoohyun2030/CS-study/assets/39722436/82d9e6be-c5f2-4066-a0e2-f52d5510888e)
 
 
 ```jsx
@@ -231,6 +241,8 @@ TCP의 양방향 전이중 통신을 사용하기 때문에 **전송 계층(Tra
 
 WebScoket 은 HTTP 레이어에서 작동하는 소켓으로, TCP/IP 소켓의 레이어가 다릅니다.
 ```
+
+<br>
 
 참고링크
 
