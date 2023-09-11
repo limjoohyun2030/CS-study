@@ -57,7 +57,7 @@
 | 2023-08-10(여름휴가) |  |   |  |  |
 | 2023-08-24 | [TCP 오류제어 흐름제어 혼잡제어](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control).md) | [Web Server & WAS](https://github.com/limjoohyun2030/CS-study/blob/f7fb2d9b33ef982f07df93f50accd797f48f9ac1/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/WebServer%20%26%20WAS.md) | XML과 JSON | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
 | 2023-09-07 |  | [WebSocket](https://github.com/limjoohyun2030/CS-study/blob/6b10c33acd916655f7f4bbc7fdd35a2f7a2ea5fc/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/WebSocket) |  | [CORS](/WEB/CORS.MD) |
-| 2023-09-21 |  |  |  |  |
+| 2023-09-21 |  | Promise |  |  |
 | 2023-10-05 |  |  |  |  |
 | 2023-10-19 |  |  |  |  |
 | 2023-11-02 |  |  |  |  |
