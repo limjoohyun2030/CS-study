@@ -51,7 +51,7 @@
 - [CORS](/WEB/CORS.MD)
 
 ## Timeline
-| 날짜 예시 | 상호 | 주현 | 동재 | 예서 |
+| 날짜 | 상호 | 주현 | 동재 | 예서 |
 |--|--|--|--|--|
 | 2023-06-29 | [프로세스와스레드](/운영체제/ProcessAndThread.md) | [Browser(Architecture, Engine)](/기술면접(프론트엔드)/Browser(Architecture%2C%20Engine).md) |  | [캐시](/운영체제/Cache.MD) |
 | 2023-07-13 | [OSI 7 Layer](네트워크/OSI-7-Layer,TCP-IP.md) | [Browser Rendering, Protocol, Proxy](/기술면접(프론트엔드)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(이%203개는%20기초만).md) |  | [동기와 비동기](/운영체제/Syncronous%20And%20Asyncronous.MD) | 
