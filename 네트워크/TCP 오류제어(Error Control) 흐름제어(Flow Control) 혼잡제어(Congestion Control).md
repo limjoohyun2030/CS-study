@@ -111,22 +111,22 @@ TCP는 UDP와는 다르게 망의 혼잡을 고려한다. 송신측에서 전송
 
 **혼잡 제어 방식 :**
 
-1. **혼잡 발생 전**
-    1. **Slow Start** 
-        1. TCP는 Slow Start 방식으로 하나씩 전송한다. 이 때 cwnd의 값은 1로 시작하고 1, 2, 4, 8의 지수적 증가 방식을 통해 세그먼트를 임계값까지 전송한다.
-    2. **Additive Increase**
-        1. Ssthresh값까지 cwnd가 도달하게 되면 TCP는 혼잡 상황으로 갈 위험이 높다고 여겨져 Additive Increase 기법을 사용해 혼잡을 회피한다.
-        2. cwnd를 하나씩 증가시키며 혼잡을 회피한다
-2. **혼잡 발생 후**
-    1. **Multiplicative Decrease**
-        1. 결국 혼잡이 발생되면 Multiplicative Decrease 방식을 수행, 혼잡이 발생한 상황의 경우에 따라 다르게 동작
-            1. **세그먼트 전송 후 타임아웃되어서 재전송해야 하는 상황** : cwnd의 크기는 1로 재설정 되고 ssthresh값은 20의 1/2인 10으로 변경된다. 이후에는 Slow Start와 Additive Increase 기법을 계속해서 수행.
+- **혼잡 발생 전**
+    - **Slow Start** 
+        - TCP는 Slow Start 방식으로 하나씩 전송한다. 이 때 cwnd의 값은 1로 시작하고 1, 2, 4, 8의 지수적 증가 방식을 통해 세그먼트를 임계값까지 전송한다.
+    - **Additive Increase**
+        - Ssthresh값까지 cwnd가 도달하게 되면 TCP는 혼잡 상황으로 갈 위험이 높다고 여겨져 Additive Increase 기법을 사용해 혼잡을 회피한다.
+        - cwnd를 하나씩 증가시키며 혼잡을 회피한다
+- **혼잡 발생 후**
+    - **Multiplicative Decrease**
+        - 결국 혼잡이 발생되면 Multiplicative Decrease 방식을 수행, 혼잡이 발생한 상황의 경우에 따라 다르게 동작
+        - **세그먼트 전송 후 타임아웃되어서 재전송해야 하는 상황** : cwnd의 크기는 1로 재설정 되고 ssthresh값은 20의 1/2인 10으로 변경된다. 이후에는 Slow Start와 Additive Increase 기법을 계속해서 수행.
                 
-                ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%204.png?raw=true)
+             ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%204.png?raw=true)
                 
-            2. **3개 이상의 중복된 ACK를 수신한 경우 :** ssthresh값이 1/2로 축소, cwnd의 크기는 ssthresh와 같은 값으로 재설정, 이후에는 Additive Increase 기법으로 혼잡 회피만 수행
+         - **3개 이상의 중복된 ACK를 수신한 경우 :** ssthresh값이 1/2로 축소, cwnd의 크기는 ssthresh와 같은 값으로 재설정, 이후에는 Additive Increase 기법으로 혼잡 회피만 수행
                 
-                ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%205.png?raw=true)
+              ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%205.png?raw=true)
                 
 
 - 참조
