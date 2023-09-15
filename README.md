@@ -59,7 +59,7 @@
 | 2023-08-10 (여름 휴가) |  |   |  |  |
 | 2023-08-24 | [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md) | [Web Server & WAS](/기술면접(프론트엔드)/WebServer%20%26%20WAS.md) | XML과 JSON | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
 | 2023-09-07 |  | [WebSocket](/기술면접(프론트엔드)/WebSocket.md) |  | [CORS](/WEB/CORS.MD) |
-| 2023-09-21 |  | Promise |  |  |
+| 2023-09-21 |  | Promise |  | [HTTP Method And Status Code](/네트워크/HTTP%20Method%20And%20Status%20Code.MD) |
 | 2023-10-05 |  |  |  |  |
 | 2023-10-19 |  |  |  |  |
 | 2023-11-02 |  |  |  |  |
