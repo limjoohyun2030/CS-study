@@ -6,7 +6,7 @@
 - 프로젝트 전반의 품질 저하 요소를 발견하여 품질을 끌어올림
 - 기획, 개발, 프로세스 등을 검수하여 품질 규격과 요구사항 명세를 준수하도록 하는 프로세스
     
-    ![[그림 1] Process-level integration of Dynamic Test Processes, ISO/IEC/IEEE 29119-2:2013](./QA/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-09-21%20%EC%98%A4%ED%9B%84%208.04.56.png)
+    ![[그림 1] Process-level integration of Dynamic Test Processes, ISO/IEC/IEEE 29119-2:2013](./QA/Untitled4.png)
     
     [그림 1] Process-level integration of Dynamic Test Processes, ISO/IEC/IEEE 29119-2:2013
     
@@ -24,7 +24,7 @@
 - [테스트 케이스(Test Case)](https://istqb-glossary.page/test-case/)는 「프로그램의 특정 경로를 실험」해보거나 혹은 「프로그램이 특정 요구 사항을 준수하는지를 확인」하기 위한 목적으로 사용합니다. 이 때, 「특정 목적」 또는 「테스트 조건의 확인」을 위해 개발된 「입력 값, 실행 사전 조건, 예상 결과 및 실행 사후 조건」 등을 포함은 내용의 집합을 테스트 케이스라고 합니다.
 - 여기에서 하나 더 짚어야 하는 용어가 있습니다. 바로 Test라는 용어입니다. ISTQB Glossary에서는 Test에 대해 다음과 같이 정의하고 있습니다. [테스트(Test)](https://istqb-glossary.page/test/)란 한 개 이상의 테스트 케이스의 집합을 의미합니다.
 
-![테스트 케이스 예시](./QA/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-09-21%20%EC%98%A4%ED%9B%84%208.00.09.png)
+![테스트 케이스 예시](./QA/Untitled3.png)
 
 테스트 케이스 예시
 
@@ -63,7 +63,7 @@
         
         ![Untitled](./QA/Untitled.png)
         
-        ![스크린샷 2023-09-21 오후 8.40.14.png](./QA/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-09-21%20%EC%98%A4%ED%9B%84%208.40.14.png)
+        ![스크린샷 2023-09-21 오후 8.40.14.png](./QA/Untitled2.png)
         
     
     - 기업 기술 블로그
