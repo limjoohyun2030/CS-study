@@ -1,6 +1,6 @@
 # Promise
 
-![Untitled](Promise%204c85afafeff2439582c6ebf931bad7d9/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/56f79db5-e1d3-4d10-b2cc-5ec7a7ac6603)
 
 ## Promise 란
 
@@ -74,7 +74,7 @@ plusNum(0) // Promise 가 성공하면, resolve 의 매개변수 값이 then 의
 
 ## Promise State
 
-![Untitled](Promise%204c85afafeff2439582c6ebf931bad7d9/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/c022eb32-8268-441c-afd4-a0a073c2acef)
 
 새 Promise 객체를 생성 시
 
@@ -217,7 +217,7 @@ Promise 도 then 이 길어지고, 코드 자체가 많아지면 가독성이 �
 
 Promise 도 결국 비동기적인 코드이므로 가독성에 한계가 있습니다.
 
-![Untitled](Promise%204c85afafeff2439582c6ebf931bad7d9/Untitled%202.png)
+![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/e33f7fba-ddb6-4914-96a9-980222eea9e2)
 
 ## Async & Await
 
