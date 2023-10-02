@@ -34,6 +34,9 @@
 ## 자료구조
 - [Stack](/자료구조/Stack.md)
 
+## 알고리즘
+- [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md)
+
 ## 네트워크
 - [OSI 7 Layer](/네트워크/OSI-7-Layer,TCP-IP.md)
 - [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD)
