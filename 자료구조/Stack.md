@@ -1,4 +1,4 @@
-# Stack
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/80729a7f-3226-4c01-bc50-30bd77d8c628)# Stack
 
 **ADT(abstract data type)**
 
@@ -34,7 +34,7 @@
     
     ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack/Untitled.png?raw=true)
     
-    ![Untitled](Stack%20c7578bc9b20c4b1bbf3f9fe15b9d893d/Untitled%201.png)
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack/Untitled%201.png?raw=true)
     
     **Step 1.** 프로그램이 실행되면, 가장 먼저 main() 함수가 호출되어 main() 함수의 스택 프레임이 스택에 저장됩니다.
     
@@ -57,7 +57,7 @@
 
 ### 스택 오버플로우(stack overflow)
 
-![Untitled](Stack%20c7578bc9b20c4b1bbf3f9fe15b9d893d/Untitled%202.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack/Untitled%202.png?raw=true)
 
 함수의 재귀 호출이 무한히 반복되면, 해당 프로그램은 스택 오버플로우(stack overflow)에 의해 종료됩니다.
 
