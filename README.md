@@ -32,6 +32,7 @@
 ## 개발 상식
 
 ## 자료구조
+- [Stack](/자료구조/Stack.md)
 
 ## 네트워크
 - [OSI 7 Layer](/네트워크/OSI-7-Layer,TCP-IP.md)
@@ -39,7 +40,7 @@
 - [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md)
 
 ## 운영체제
-- [프로세스 & 스레드](/운영체제/ProcessAndThread.md)
+- [프로세스와 스레드](/운영체제/ProcessAndThread.md)
 - [프로세스 스케줄링](/운영체제/Process%20Scheduling.md)
 - [캐시](/운영체제/Cache.MD)
 - [동기와 비동기](/운영체제/Syncronous%20And%20Asyncronous.MD)
