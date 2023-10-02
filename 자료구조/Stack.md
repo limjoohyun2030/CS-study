@@ -32,7 +32,7 @@
 
 1. **stack memory & stack frame - 함수 호출과 복귀 관리**
     
-   [ ![Untitled](Stack%20c7578bc9b20c4b1bbf3f9fe15b9d893d/Untitled.png)](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack/Untitled.png)
+    ![Untitled](https://github.com/limjoohyun2030/CSstudy/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Stack/Untitled.png)
     
     ![Untitled](Stack%20c7578bc9b20c4b1bbf3f9fe15b9d893d/Untitled%201.png)
     
