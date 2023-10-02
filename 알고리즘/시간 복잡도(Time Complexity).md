@@ -1,5 +1,3 @@
-# 시간 복잡도(Time Complexity)
-
 # 시간 복잡도(Time Complexity)란?
 
 알고리즘의 효율성 분석을 위해 알고리즘의 수행 시간(CPU Time)을 따지는 것
@@ -42,7 +40,7 @@
 
 - **O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(N!)**
 
-![Untitled](%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity)%20e45c6ae1ea324ba993ee0e2cd53efaa7/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity)/Untitled.png?raw=true)
 
 # 시간 복잡도 구하기
 
