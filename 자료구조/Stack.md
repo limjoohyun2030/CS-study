@@ -1,4 +1,4 @@
-![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/80729a7f-3226-4c01-bc50-30bd77d8c628)# Stack
+# Stack
 
 **ADT(abstract data type)**
 
