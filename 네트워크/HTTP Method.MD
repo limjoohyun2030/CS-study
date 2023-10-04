@@ -285,6 +285,7 @@ https://ko.wikipedia.org/wiki/HTTP
     - POST의 /new, /edit, /delete가 컨트롤 URI
     - HTTP 메서드로 해결하기 애매한 경우 사용(HTTP API 포함)
 
+
 - 회원 목록 /members -> GET
 - 회원 등록 폼 /members/new -> GET
 - 회원 등록 /members/new, /members -> POST
