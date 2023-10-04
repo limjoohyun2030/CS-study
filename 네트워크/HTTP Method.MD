@@ -135,15 +135,15 @@ Host: localhost:8080
 
 | HTTP 메소드 | RFC | 요청에 Body가 있음 | 응답에 Body가 있음 | 안전 | 멱등(Idempotent) | 캐시 가능 |
 | --- | --- | --- | --- | --- | --- | --- |
-| GET | https://datatracker.ietf.org/doc/html/rfc7231 | 아니요 | 예 | 예 | 예 | 예 |
-| HEAD | https://datatracker.ietf.org/doc/html/rfc7231 | 아니요 | 아니요 | 예 | 예 | 예 |
-| POST | https://datatracker.ietf.org/doc/html/rfc7231 | 예 | 예 | 아니요 | 아니요 | 예 |
-| PUT | https://datatracker.ietf.org/doc/html/rfc7231 | 예 | 예 | 아니요 | 예 | 아니요 |
-| DELETE | https://datatracker.ietf.org/doc/html/rfc7231 | 아니요 | 예 | 아니요 | 예 | 아니요 |
-| CONNECT | https://datatracker.ietf.org/doc/html/rfc7231 | 예 | 예 | 아니요 | 아니요 | 아니요 |
-| OPTIONS | https://datatracker.ietf.org/doc/html/rfc7231 | 선택 사항 | 예 | 예 | 예 | 아니요 |
-| TRACE | https://datatracker.ietf.org/doc/html/rfc7231 | 아니요 | 예 | 예 | 예 | 아니요 |
-| PATCH | https://datatracker.ietf.org/doc/html/rfc5789 | 예 | 예 | 아니요 | 아니요 | 예 |
+| GET | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 아니요 | 예 | 예 | 예 | 예 |
+| HEAD | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 아니요 | 아니요 | 예 | 예 | 예 |
+| POST | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 예 | 예 | 아니요 | 아니요 | 예 |
+| PUT | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 예 | 예 | 아니요 | 예 | 아니요 |
+| DELETE | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 아니요 | 예 | 아니요 | 예 | 아니요 |
+| CONNECT | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 예 | 예 | 아니요 | 아니요 | 아니요 |
+| OPTIONS | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 선택 사항 | 예 | 예 | 예 | 아니요 |
+| TRACE | [rfc7231](https://datatracker.ietf.org/doc/html/rfc7231) | 아니요 | 예 | 예 | 예 | 아니요 |
+| PATCH | [rfc5789](https://datatracker.ietf.org/doc/html/rfc5789) | 예 | 예 | 아니요 | 아니요 | 예 |
 
 https://ko.wikipedia.org/wiki/HTTP
 
