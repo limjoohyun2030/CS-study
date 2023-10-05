@@ -63,8 +63,8 @@
 | 2023-08-10 (여름 휴가) |  |   |  |  |
 | 2023-08-24 | [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md) | [Web Server & WAS](/기술면접(프론트엔드)/WebServer%20%26%20WAS.md) | XML과 JSON | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
 | 2023-09-07 | [Stack](/자료구조/Stack.md) | [WebSocket](/기술면접(프론트엔드)/WebSocket.md) |  | [CORS](/WEB/CORS.MD) |
-| 2023-09-21 | [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md) | [Promise](https://github.com/limjoohyun2030/CS-study/blob/d3c36e3074004bb5d4af2b2728397a8bc8387707/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Promise.md) |  | [HTTP Method](/네트워크/HTTP%20Method.MD) |
-| 2023-10-05 |  | XSS |  |  |
+| 2023-09-21 | [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md) | [Promise](https://github.com/limjoohyun2030/CS-study/blob/d3c36e3074004bb5d4af2b2728397a8bc8387707/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Promise.md) |  | [QA](/개발%20상식/QA.md) |
+| 2023-10-05 |  | XSS |  | [HTTP Method](/네트워크/HTTP%20Method.MD) |
 | 2023-10-19 |  |  |  |  |
 | 2023-11-02 |  |  |  |  |
 | 2023-11-16 |  |  |  |  |
