@@ -9,7 +9,7 @@
 - 메시지 바디를 사용해서 데이터를 전달할 수 있지만, 지원하지 않는 곳이 많아서 권장하지
 않음
 
-```json
+```
 GET /search?q=hello&hl=ko HTTP/1.1
 Host: www.google.com
 ```
@@ -33,7 +33,7 @@ Host: www.google.com
         예) JSON으로 조회 데이터를 넘겨야 하는데, GET 메서드를 사용하기 어려운 경우
         
 
-```json
+```
 POST /members HTTP/1.1
 Content-Type: application/json
 {
@@ -49,7 +49,7 @@ Content-Type: application/json
     - 클라이언트가 리소스 위치를 알고 URI 지정함
     - POST와 차이점
 
-```json
+```
 PUT /members/100 HTTP/1.1
 Content-Type: application/json
 {
@@ -62,7 +62,7 @@ Content-Type: application/json
 
 - 리소스 부분 변경
 
-```json
+```
 PATCH /members/100 HTTP/1.1
 Content-Type: application/json
 {
@@ -83,7 +83,7 @@ Content-Type: application/json
     
 - PATCH
     
-    ```json
+    ```
     // 요청
     PATCH /members/100 HTTP/1.1
     Content-Type: application/json
@@ -99,7 +99,7 @@ Content-Type: application/json
     
 - PUT
     
-    ```json
+    ```
     // 요청
     PUT /members/100 HTTP/1.1
     Content-Type: application/json
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 - 리소스 삭제
 
-```json
+```
 DELETE /members/100 HTTP/1.1
 Host: localhost:8080
 ```
