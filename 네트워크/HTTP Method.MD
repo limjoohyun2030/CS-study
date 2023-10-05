@@ -264,16 +264,14 @@ https://ko.wikipedia.org/wiki/HTTP
 
 **PUT - 신규 자원 등록 특징**
 
-- 클라이언트는 등록될 리소스의 URI를 모른다.
-    - 회원 등록 /members -> POST
-    - POST /members
-- 서버가 새로 등록된 리소스 URI를 생성해준다.
-    - HTTP/1.1 201 Created
-    Location: /members/100
-- 컬렉션(Collection)
-    - 서버가 관리하는 리소스 디렉토리
-    - 서버가 리소스의 URI를 생성하고 관리
-    - 여기서 컬렉션은 /members
+- 클라이언트가 리소스 URI를 알고 있어야 한다.
+    - 파일 등록 /files/{filename} -> PUT
+    - PUT /files/star.jpg
+- 클라이언트가 직접 리소스의 URI를 지정한다.
+- 스토어(Store)
+    - 클라이언트가 관리하는 리소스 저장소
+    - 클라이언트가 리소스의 URI를 알고 관리
+    - 여기서 스토어는 /files
 
 ### HTML FORM 사용
 
