@@ -190,10 +190,9 @@ https://ko.wikipedia.org/wiki/HTTP
 
 ### URI 설계 예시
 
-**HTTP API - 컬렉션**
-
-- POST 기반 등록
-- 서버가 리소스 URI 결정
+- **HTTP API - 컬렉션**
+    - POST 기반 등록
+    - 서버가 리소스 URI 결정
 - **HTTP API - 스토어**
     - PUT 기반 등록
     - 클라이언트가 리소스 URI 결정
