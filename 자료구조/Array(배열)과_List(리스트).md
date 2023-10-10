@@ -59,9 +59,11 @@ int[] nums = {1,10,100};
 
 LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값과 다음 원소의 주소값(포인터)를 저장합니다.
 
-![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%201.png)
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/bfd887a5-b1a0-4b53-8691-4a03843bd2b4)
 
-![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%202.png)
+
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/e06e511e-81d8-4935-84a6-8240e1e8aa4b)
+
 
 ## 2. LinkedList 의 특징
 
@@ -75,18 +77,21 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
 
 ## 3. LinkedList의 삭제, 삽입 연산
 
-![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%201.png)
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a)
+
 
 ### 삭제 연산
 
 **노드 x를 삭제할 때 :**
 
-![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%203.png)
+![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/9fbf5f82-aae8-49dc-bd06-6dafc3b5ecef)
+
 
 - 삭제할 노드의 선행 노드의 링크 필드를 삭제할 노드의 후행 노드를 가리키게 한다.
 - 삭제할 노드를 메모리에 반환한다.
     
-    ![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%204.png)
+    ![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/4bf50e3d-53b9-471e-8727-d4c9f111dd4d)
+
     
     ### 삽입 연산
     
@@ -94,11 +99,13 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
     
     **연결 리스트의 초기 모습**
     
-    ![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%205.png)
+    ![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/b7c5c6c3-795f-4e8f-b94a-d3fc4f7a7651)
+
     
     **연결 리스트의 삽입 결과**
     
-    ![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled%206.png)
+    ![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/4210984f-1f09-4bcb-8c1d-6b309af9860a)
+
     
 - i 노드의 j 노드를 향하는 링크를 끊는다.
 - i 노드의 링크 부분을 x 노드를 향하게 한다.
