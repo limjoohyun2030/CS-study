@@ -14,7 +14,7 @@ int[] nums = {1,10,100};
 
 위 코드는 메모리상에
 
-![Untitled](Array(%E1%84%87%E1%85%A2%E1%84%8B%E1%85%A7%E1%86%AF)%E1%84%80%E1%85%AA%20List(%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3)%20f7c086211fdc410c9455bdf8d3893907/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array(%EB%B0%B0%EC%97%B4)%EA%B3%BC_List(%EB%A6%AC%EC%8A%A4%ED%8A%B8)/Untitled.png?raw=true)
 
 이렇게 물리적으로 연속된 형태로 저장될겁니다. 이걸 **순차 리스트**라고 합니다.
 
