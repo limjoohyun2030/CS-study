@@ -1,4 +1,4 @@
-# XSS(Cross-Site Scripting)
+<img width="854" alt="Untitled 2" src="https://github.com/limjoohyun2030/CS-study/assets/39722436/502c2f33-310d-47ac-a180-7da6c6acd6da"># XSS(Cross-Site Scripting)
 
 ## XSS란?
 
@@ -16,8 +16,8 @@ Clinet 의 개인정보 및 쿠키를 탈취해서 세션하이재킹 공격을 
 
 1. 공격자가 악의적인 스크립트가 담긴 게시물을 등록
     
-    ![Untitled](XSS(Cross-Site%20Scripting)%204350680e0f5b4d4786ccbd0209ee75a8/Untitled.png)
-    
+    ![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/19fa20c3-208f-4b9b-bf9c-8587e4e821ce)
+
 2. DB string 에 해당 스크립트가 저장됨
 3. 사용자가 해당 게시글을 읽음
 4. 악성 스크립트가 실행됨
@@ -29,7 +29,8 @@ Clinet 의 개인정보 및 쿠키를 탈취해서 세션하이재킹 공격을 
 
 ### Reflected XSS (반사형 XSS)
 
-![Untitled](XSS(Cross-Site%20Scripting)%204350680e0f5b4d4786ccbd0209ee75a8/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/f0acb4d4-7a4b-4292-9a3d-8536b7418e56)
+
 
 공격자가 URL 에 있는 Query String  에 악성 스크립트를 담아 전송을 하고,
 
@@ -48,9 +49,11 @@ DOM 객체 생성 시 클라이언트 측 스크립트에 포함되는 것입니
 
 Stored와 Reflected 가 서버측 어플리케이션 취약점으로 인해 공격하는 반면, DOM Based XSS 는 서버와 관계없이 브라우저에서 발생하는 것이 차이점이다
 
-![Untitled](XSS(Cross-Site%20Scripting)%204350680e0f5b4d4786ccbd0209ee75a8/Untitled%202.png)
+<img width="854" alt="Untitled 2" src="https://github.com/limjoohyun2030/CS-study/assets/39722436/31064103-997a-4b0e-9b1f-b6c7f82245c4">
 
-![Untitled](XSS(Cross-Site%20Scripting)%204350680e0f5b4d4786ccbd0209ee75a8/Untitled%203.png)
+![Untitled 3](https://github.com/limjoohyun2030/CS-study/assets/39722436/b6d73bf9-4035-4da3-aed0-f4e7e50bab5c)
+
+
 
 ### XSS 공격 사례
 
