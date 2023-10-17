@@ -22,7 +22,7 @@
 
 ---
 
-## ****[Informational 1xx](https://httpwg.org/specs/rfc9110.html#status.1xx)**
+## [Informational 1xx](https://httpwg.org/specs/rfc9110.html#status.1xx)
 
 - **요청이 수신되어 처리중**
 - 요청된 작업을 완료하고 최종 응답을 전송하기 전에 연결 상태 또는 요청 진행 상황을 전달하기 위한 중간 응답
@@ -30,7 +30,7 @@
 
 ---
 
-## ****[Successful 2xx](https://httpwg.org/specs/rfc9110.html#status.2xx)****
+## [Successful 2xx](https://httpwg.org/specs/rfc9110.html#status.2xx)
 
 - **클라이언트의 요청을 성공적으로 처리**
 
@@ -59,7 +59,7 @@
 
 ---
 
-## ****[Redirection 3xx](https://httpwg.org/specs/rfc9110.html#status.3xx)****
+## [Redirection 3xx](https://httpwg.org/specs/rfc9110.html#status.3xx)
 
 - 요청을 완료하기 위해 유저 에이전트의 추가 조치 필요
 - 웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동
@@ -127,7 +127,7 @@
 
 ---
 
-## ****[Client Error 4xx](https://httpwg.org/specs/rfc9110.html#status.4xx)****
+## [Client Error 4xx](https://httpwg.org/specs/rfc9110.html#status.4xx)
 
 - **클라이언트에 의해 발생한 오류로** 서버가 요청을 수행할 수 없음
 - 클라이언트가 이미 잘못된 요청을 보내고 있기 때문에 **똑같은 재시도가 실패**함
@@ -164,7 +164,7 @@
 - **요청 리소스를 찾을 수 없음**
 - 요청 리소스가 서버에 없거나 클라이언트가 권한이 부족한 리소스에 접근할 때 해당 리소스를 숨기고 싶을 때
 
-## ****[Server Error 5xx](https://httpwg.org/specs/rfc9110.html#status.5xx)****
+## [Server Error 5xx](https://httpwg.org/specs/rfc9110.html#status.5xx)
 
 - **서버 오류**
 - 서버에 문제가 있기 때문에 **재시도 하면 성공할 수도 있음**
