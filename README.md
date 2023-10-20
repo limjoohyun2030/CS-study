@@ -66,8 +66,8 @@
 | 2023-09-07 | [Stack](/자료구조/Stack.md) | [WebSocket](/기술면접(프론트엔드)/WebSocket.md) |  | [CORS](/WEB/CORS.MD) |
 | 2023-09-21 | [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md) | [Promise](https://github.com/limjoohyun2030/CS-study/blob/d3c36e3074004bb5d4af2b2728397a8bc8387707/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Promise.md) |  | [QA](/개발%20상식/QA.md) |
 | 2023-10-05 | [Array(배열)과 List(리스트)](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Array(%EB%B0%B0%EC%97%B4)%EA%B3%BC_List(%EB%A6%AC%EC%8A%A4%ED%8A%B8).md) | [XSS](https://github.com/limjoohyun2030/CS-study/blob/57b55bff7db19859bbca0b71b94a8891cda365cb/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/XSS.md) |  | [HTTP Method](/네트워크/HTTP%20Method.MD) |
-| 2023-10-19 |  | [Closure](https://github.com/limjoohyun2030/CS-study/blob/8dab1e41e1de56f4921f532f271c9cd657593ac5/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Closure.md) |  | [HTTP Status](/네트워크/HTTP%20Stataus.MD) |
-| 2023-11-02 |  | [AWS] S3 cloudfront EC2 |  |  |
+| 2023-10-26 |  | [Closure](https://github.com/limjoohyun2030/CS-study/blob/8dab1e41e1de56f4921f532f271c9cd657593ac5/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Closure.md) |  | [HTTP Status](/네트워크/HTTP%20Stataus.MD) |
+| 2023-11-09 |  | [AWS] S3 cloudfront EC2 |  |  |
 | 2023-11-16 |  |  |  |  |
 | 2023-11-30 |  |  |  |  | 
 | 2023-12-14 |  |  |  |  | 
