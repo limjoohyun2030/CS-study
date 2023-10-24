@@ -59,7 +59,7 @@ int[] nums = {1,10,100};
 
 LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값과 다음 원소의 주소값(포인터)를 저장합니다.
 
-![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/bfd887a5-b1a0-4b53-8691-4a03843bd2b4)
+<!--![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/bfd887a5-b1a0-4b53-8691-4a03843bd2b4)-->
 <img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/bfd887a5-b1a0-4b53-8691-4a03843bd2b4" width="300" height="550"/>
 
 ![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/e06e511e-81d8-4935-84a6-8240e1e8aa4b)
@@ -77,7 +77,7 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
 
 ## 3. LinkedList의 삭제, 삽입 연산
 
-![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a)
+<!--![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a)-->
 <img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a" width="300" height="550"/>
 
 ### 삭제 연산
