@@ -78,7 +78,7 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
 ## 3. LinkedList의 삭제, 삽입 연산
 
 <!--![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a)-->
-<img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a" width="300" height="550"/>
+<img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a" width=50>
 
 ### 삭제 연산
 
