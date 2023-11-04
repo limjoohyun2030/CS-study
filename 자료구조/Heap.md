@@ -4,7 +4,7 @@
 
 - **트리(tree)**란 → 부모-자녀처럼 **계층적인 형태**를 가지는 구조
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled.png)
 
 ---
 
