@@ -2,7 +2,7 @@
 
 **힙**은 주로 **이진 트리(binary tree) 기반**으로 구현
 
-- **트리(tree)**란 → 부모-자녀처럼 **계층적인 형태**를 가지는 구조
+- **트리tree**란 → 부모-자녀처럼 **계층적인 형태**를 가지는 구조
 
 ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled.png)
 
