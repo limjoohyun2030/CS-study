@@ -75,3 +75,6 @@
 힙(heap)메모리의 힙은 오늘 공부한 힙과는 관련이 없다.
 
 heap의 사전적인 의미가 범위라는 뜻이라기 때문에 힙 메모리의 힙은 메모리에 쌓여있는 더미라고 이해하자.
+
+- 참조
+    - 쉬운코드. 우선순위 큐와 힙의 개념과 차이, 사용 사례를 설명합니다! 힙이 어떻게 동작하는지도 예를 통해 자세히 설명합니다!([https://youtu.be/P-FTb1faxlo?si=HHrxAZcOG4BVmZ0a](https://youtu.be/P-FTb1faxlo?si=HHrxAZcOG4BVmZ0a)) 
