@@ -14,7 +14,7 @@
 
 - 부모 노드의 키(key)가 자식 노드(들)의 키(key)보다 크거나 같은 트리
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%201.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%201.png)
 
 **min heap**
 
@@ -27,25 +27,25 @@
 
 - insert → 힙에 아이템을 키값과 함께 넣어준다.(max heap 경우의 그림 예)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%202.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%202.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%203.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%203.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%204.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%204.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%205.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%205.png)
 
 - delete → max heap의 경우 키값이 가장 큰 아이템을 꺼낸다.
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%206.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%206.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%207.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%207.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%208.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%208.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%209.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%209.png)
 
-![Untitled](Heap%20c0e59e9919eb4143a83e5c44809215a5/Untitled%2010.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap/Untitled%2010.png)
 
 - peek → delete와 같지만 실제로 heap에서 삭제하진 않는다.
 
