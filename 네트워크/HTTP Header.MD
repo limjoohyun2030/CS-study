@@ -31,15 +31,15 @@
 
 ### General Header: 메시지 전체에 적용되는 정보
 
-![general](./HTTP Header/general.png)
+![general](./HTTP%20Header/general.png)
 
 ### Request Header: 요청 정보
 
-![request](./HTTP Header/request.png)
+![request](./HTTP%20Header/request.png)
 
 ### Response Header: 응답 정보
 
-![response](./HTTP Header/response.png)
+![response](./HTTP%20Header/response.png)
 
 ### Representation Header: 표현 정보
 
@@ -47,7 +47,7 @@ Entity Header → Representation Header로 용어가 변경됨
 
 Representation = representation **Metadata** + Representation **Data**
 
-![representation](./HTTP Header/representation.png)
+![representation](./HTTP%20Header/representation.png)
 
 ### Custom Header (사용자 정의 헤더)
 
@@ -55,9 +55,9 @@ Representation = representation **Metadata** + Representation **Data**
     
     `X-`: 표준화되지 않은 헤더라는 것을 의미
     
-    ![AWS S3 REST API.png](./HTTP Header/AWS S3 REST API.png)
+    ![AWS S3 REST API.png](./HTTP%20Header/AWS%20S3%20REST%20API.png)
     
-    ![NCloud REST API.png](./HTTP Header/NCloud REST API.png)
+    ![NCloud REST API.png](./HTTP%20Header/NCloud%20REST%20API.png)
     
 - 최신 HTTP 표준에서는 권장하지 않는 방식
     
@@ -67,7 +67,7 @@ Representation = representation **Metadata** + Representation **Data**
     
     `X-My-Custom-Header: {CUSTOM_VALUE}` → `My-Custom-Header: {CUSTOM_VALUE}`
     
-    ![Tosspayments API.png](./HTTP Header/Tosspayments API.png)
+    ![Tosspayments API.png](./HTTP%20Header/Tosspayments%20API.png)
     
 
 ---
