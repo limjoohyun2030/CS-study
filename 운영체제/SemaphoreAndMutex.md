@@ -125,4 +125,4 @@ V(sem);  // 공유 자원 사용이 끝나면 sem 세마포어를 반환합니�
 
 >
 - 참조
-    - William, Stallings. 2015. Operating Systems: Internals and Design Principles. 8th Edition. Pearson Education.
+    - William Stallings. 2015. Operating Systems: Internals and Design Principles. 8th Edition. Pearson Education.
