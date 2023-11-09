@@ -20,7 +20,7 @@
 
 각자의 주력 비지니스에 집중을 하는 효율적인 방향으로 가고 있습니다.
 
-![Untitled](%5BAWS%5D%20S3%20cloudfront%20EC2%2005232f11dbe64be1ac683cf2d7cf54b8/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/5b198a1f-badc-498f-a172-13f0d5769755)
 
 *CSP: ***Cloud*** Service Provider
 
@@ -112,7 +112,7 @@ Client에게 빠른 전송 속도를 제공하기 위해 세계 이곳저곳에 
 
 AWS 가 전 세계의 각 데이터센터를 클러스터링 하는(묶는) 물리적 위치
 
-![Untitled](%5BAWS%5D%20S3%20cloudfront%20EC2%2005232f11dbe64be1ac683cf2d7cf54b8/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/29978503-7f75-42dd-a0a1-71a70292adb2)
 
 ### AWS AZ(Availability Zone)
 
@@ -122,7 +122,7 @@ AWS 가 전 세계의 각 데이터센터를 클러스터링 하는(묶는) 물�
 
 태풍, 지진과 같은 천재지변에서 데이터를 보호하기 위해 여러 개를 둡니다.
 
-![Untitled](%5BAWS%5D%20S3%20cloudfront%20EC2%2005232f11dbe64be1ac683cf2d7cf54b8/Untitled%202.png)
+![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/7fd36dbe-93e2-4162-b75a-3a491a5a3b87)
 
 ### VPC(Virtual Private Cloud)
 
@@ -138,7 +138,8 @@ VPC 영역 안에서 망을 더  쪼개는 행위
 
 단일 AZ 에 위치함. 여러 AZ에 걸쳐서 Subnet 을 생성할 순 없음
 
-![Untitled](%5BAWS%5D%20S3%20cloudfront%20EC2%2005232f11dbe64be1ac683cf2d7cf54b8/Untitled%203.png)
+![Untitled 3](https://github.com/limjoohyun2030/CS-study/assets/39722436/f45d5e20-668a-4f6e-8e5d-1dfcd465561a)
+
 
 참고링크
 
