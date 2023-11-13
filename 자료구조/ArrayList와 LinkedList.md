@@ -1,6 +1,7 @@
 # ArrayList와 LinkedList
 
 **ArrayList**와 **LinkedList**의 차이에 대해서 설명하겠습니다.
+ArrayList란 리스트를 배열을 이용해 구현한 것이고 LinkedList는 리스트를 포인터를 이용해 구현한 것입니다.
 
 ## 1. ArrayList에 대해
 
