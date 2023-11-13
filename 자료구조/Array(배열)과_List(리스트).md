@@ -1,12 +1,12 @@
-# Array(배열)과 List(리스트)
+# ArrayList와 LinkedList
 
-정확히는 **Array**와 **LinkedList**의 차이에 대해서 설명하겠습니다.
+**ArrayList**와 **LinkedList**의 차이에 대해서 설명하겠습니다.
 
-## 1. Array(배열)에 대해
+## 1. ArrayList에 대해
 
-Array의 논리적 순서는 메모리 공간에서 저장되는 ‘원소값의 물리적 순서’와 같습니다.
+ArrayList의 논리적 순서는 메모리 공간에서 저장되는 ‘원소값의 물리적 순서’와 같습니다.
 
-예를 들어 다음과 같은 Array를 선언하고 초기화했다고 해봅시다.
+예를 들어 다음과 같은 ArrayList를 선언하고 초기화했다고 해봅시다.
 
 ```java
 int[] nums = {1,10,100};
@@ -18,12 +18,12 @@ int[] nums = {1,10,100};
 
 이렇게 물리적으로 연속된 형태로 저장될겁니다. 이걸 **순차 리스트**라고 합니다.
 
-따라서 Array의 첫 번째 원소의 주소를 가지고 인덱스를 이용해 임의의 배열 원소의 주소값을 계산해 접근할 수 있습니다.
+따라서 ArrayList의 첫 번째 원소의 주소를 가지고 인덱스를 이용해 임의의 배열 원소의 주소값을 계산해 접근할 수 있습니다.
 
-## 2. Array의 특징
+## 2. ArrayList의 특징
 
 - 고정된 크기를 가지고 크기를 늘리거나 줄일 수 없습니다.
-    - Array의 크기를 6으로 선언했다면 Array에 데이터가 3개만 들어가있어도 배열의 크기는 6이고 3만큼의 메모리가 낭비될 수 있습니다.
+    - ArrayList의 크기를 6으로 선언했다면 ArrayList에 데이터가 3개만 들어가있어도 배열의 크기는 6이고 3만큼의 메모리가 낭비될 수 있습니다.
 - 논리적 순서가 물리적 순서와 같습니다.
 - Cache Hit Rate가 높습니다.
 - 시간복잡도
@@ -34,7 +34,7 @@ int[] nums = {1,10,100};
 
 삽입, 삭제시 평균적으로 N/2 만큼 원소를 밀거나 당겨와야 해서 그래요!
 
-## 3. Array의 삭제 연산
+## 3. ArrayList의 삭제 연산
 
 예를 들어 아래와 같은 배열이 있다고 해봅시다.
 
@@ -67,7 +67,7 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
 
 ## 2. LinkedList 의 특징
 
-- Array와 달리 메모리에 연속적으로 있어야 하는게 아니어서 이 때문에 메모리의 낭비가 발생하진 않습니다.
+- ArrayList와 달리 메모리에 연속적으로 있어야 하는게 아니어서 이 때문에 메모리의 낭비가 발생하진 않습니다.
 - 논리적 순서와 물리적 순서가 다릅니다.
 - 위 이유로 Cache Hit Rate가 낮습니다.
 - 시간복잡도
@@ -78,7 +78,7 @@ LinkedLinst는 포인터를 이용해 구현됩니다. 각 노드는 원소값�
 ## 3. LinkedList의 삭제, 삽입 연산
 
 <!--![image](https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a)-->
-<img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a" width=50%>
+<img src="https://github.com/limjoohyun2030/CS-study/assets/91045946/8cafe75f-ecd2-44d6-852a-ea9858676f5a" width="300" height="550">
 
 ### 삭제 연산
 
