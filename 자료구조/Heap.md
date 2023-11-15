@@ -1,6 +1,6 @@
 # Heap
 
-**힙**은 주로 **이진 트리(binary tree) 기반**으로 구현
+**힙**은 **우선순위 큐의 한 종류**이고 **우선순위 큐를 트리로 구현한게 힙**입니다.
 
 - **트리tree**란 → 부모-자녀처럼 **계층적인 형태**를 가지는 구조
 
@@ -8,7 +8,7 @@
 
 ---
 
-**힙**은 **max heap**과 **min heap**이 있음
+**힙**은 **max heap**과 **min heap**이 있습니다.
 
 **max heap**
 
@@ -53,28 +53,28 @@
 
 **Priority queue와 Heap의 관계**
 
-힙(heap)의 키(key)를 우선순위(priority)로 사용한다면 힙은 우선순위 큐(priority queue)의 구현체가 된다.
+힙(heap)의 키(key)를 우선순위(priority)로 사용한다면 힙은 우선순위 큐(priority queue)의 구현체가 됩니다.
 
-우선순위 큐에는 힙 말고도 여러 구현체가 있을 수 있지만 힙이 효율이 제일 좋아서 힙을 대부분 많이 사용한다.
+우선순위 큐에는 힙 말고도 여러 구현체가 있을 수 있지만 힙이 효율이 제일 좋아서 힙을 대부분 많이 사용합니다.
 
-따라서 priority queue = heap은 아니다.
+따라서 priority queue = heap은 아닙니다.
 
-**priority queue**는 **ADT**이고 **heap**은 **data** **structure** 이다.
+**priority queue**는 **ADT**이고 **heap**은 **data** **structure** 입니다.
 
 ---
 
 **우선순위 큐와 힙의 사용 사례**
 
 - 프로세스 스케줄링(process scheduling)
-- heap sort(힙 정렬) → n개의 item을 힙에다 넣은 다음에 차례차례 delete하면 정렬되어 나온다.
+- heap sort(힙 정렬) → n개의 item을 힙에다 넣은 다음에 차례차례 delete하면 정렬되어 나옵니다.
 
 ---
 
 **힙(heap)메모리도 혹시?**
 
-힙(heap)메모리의 힙은 오늘 공부한 힙과는 관련이 없다.
+힙(heap)메모리의 힙은 오늘 공부한 힙과는 관련이 없습니다.
 
-heap의 사전적인 의미가 범위라는 뜻이라기 때문에 힙 메모리의 힙은 메모리에 쌓여있는 더미라고 이해하자.
+heap의 사전적인 의미가 범위라는 뜻이라기 때문에 힙 메모리의 힙은 메모리에 쌓여있는 더미라고 이해하시면 됩니다.
 
 - 참조
     - 쉬운코드. 우선순위 큐와 힙의 개념과 차이, 사용 사례를 설명합니다! 힙이 어떻게 동작하는지도 예를 통해 자세히 설명합니다!([https://youtu.be/P-FTb1faxlo?si=HHrxAZcOG4BVmZ0a](https://youtu.be/P-FTb1faxlo?si=HHrxAZcOG4BVmZ0a)) 
