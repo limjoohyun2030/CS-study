@@ -1,4 +1,4 @@
-# [AWS] S3 cloudfront EC2
+# AWS & Cloud
 
 ## Cloud Computing 이란
 
