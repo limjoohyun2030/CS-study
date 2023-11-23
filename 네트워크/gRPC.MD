@@ -88,12 +88,12 @@ https://protobuf.dev/
 | --- | --- | --- |
 | Contract | Required (.proto) | Optional (OpenAPI) |
 | Protocol | HTTP/2 | HTTP |
-| Payload | (Protobuf (small, binary))[https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#performance] | JSON (large, human readable) |
-| Prescriptiveness | https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#strict-specification | Loose. Any HTTP is valid. |
-| Streaming | https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#streaming | Client, server |
-| Browser support | https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#limited-browser-support | Yes |
+| Payload | [Protobuf (small, binary)](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#performance) | JSON (large, human readable) |
+| Prescriptiveness | [Strict specification](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#strict-specification) | Loose. Any HTTP is valid. |
+| Streaming | [Client, server, bi-directional](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#streaming) | Client, server |
+| Browser support | [No (requires grpc-web)](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#limited-browser-support) | Yes |
 | Security | Transport (TLS) | Transport (TLS) |
-| Client code-generation | https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#code-generation | OpenAPI + third-party tooling |
+| Client code-generation | [Yes](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#code-generation) | OpenAPI + third-party tooling |
 
 ---
 
