@@ -86,7 +86,7 @@ https://protobuf.dev/
 
 | Feature | gRPC | HTTP APIs with JSON |
 | --- | --- | --- |
-| Contract | Required (.proto) | Optional (OpenAPI) |
+| Contract | Required (`.proto`) | Optional (OpenAPI) |
 | Protocol | HTTP/2 | HTTP |
 | Payload | [Protobuf (small, binary)](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#performance) | JSON (large, human readable) |
 | Prescriptiveness | [Strict specification](https://learn.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-7.0#strict-specification) | Loose. Any HTTP is valid. |
