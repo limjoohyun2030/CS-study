@@ -2,7 +2,7 @@
 
 ### Browser Rendering
 
-![Untitled](Virtual%20DOM%206ddfdb7bb73447e08dd94add0b840f1f/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/fc04bc9d-42a3-495a-aa9e-5068b3833cec)
 
 1. 개발자가 작성한 HTML 을 브라우저 렌더 엔진이 해석하고 파싱해서 DOM tree 로 만듭니다.
 2. css 스타일도 파싱해서 CSSOM tree 를 만듭니다.
@@ -18,7 +18,7 @@ DOM 을 직접 조작하여 화면을 업데이트 하는건
 
 ### SSR  vs  CSR
 
-![Untitled](Virtual%20DOM%206ddfdb7bb73447e08dd94add0b840f1f/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/d4481ef1-24d7-4d38-bd23-f6a4a41ca166)
 
 옛날에는 정적인 페이지를 많이 사용했지만, 
 
@@ -30,7 +30,7 @@ DOM 을 직접 조작하여 화면을 업데이트 하는건
 
 ### Virtual DOM
 
-![Untitled](Virtual%20DOM%206ddfdb7bb73447e08dd94add0b840f1f/Untitled%202.png)
+![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/b34f0a68-fe6d-4aa3-9b3f-e3e90052c022)
 
 **Virtual DOM 은 UI 의 이상적인 또는 가상적인 표현을 메모리에 저장하고**
 
