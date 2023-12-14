@@ -72,7 +72,7 @@
 | 2023-11-09 | [세마포어, 뮤텍스](운영체제/SemaphoreAndMutex.md) | [AWS & Cloud](https://github.com/limjoohyun2030/CS-study/blob/4530fabf46549aa0848f98d7c8104789ea597df4/%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%89%E1%85%A1%E1%86%BC%E1%84%89%E1%85%B5%E1%86%A8/Cloud.md) |  | [HTTP Header](/네트워크/HTTP%20Header.MD) |
 | 2023-11-23 |  | [Virtual DOM](/기술면접(프론트엔드)/Virtual%20DOM.md) |  | [gRPC](/네트워크/gRPC.MD) |
 | 2023-12-14 |  |  |  |  | 
-| 2023-12-28 |  | [SPA, CSR, SSR](/기술면접(프론트엔드)/SPA%2C%20CSR%2C%20SSR.md) |  |  | 
+| 2023-12-28 |  | [SPA, CSR, SSR](/기술면접(프론트엔드)/SPA%2C%20CSR%2C%20SSR.md) |  | [Garbage Collection](/운영체제/GarbageCollection.MD) | 
 | 2024-01-11 |  |  |  |  | 
 | 2024-01-25 |  |  |  |  | 
 | 2024-02-08 |  |  |  |  | 
