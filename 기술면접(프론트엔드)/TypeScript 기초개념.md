@@ -20,6 +20,7 @@ C#의 리드 아키텍트이자 델파이, 터보 파스칼의 창시자인 Ande
 
 ## TypeScript 장점과 단점
 <br>
+
 ### 장점1 - 에러 예방
 
 ![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/88004351-1bb9-4752-9684-584e66e82bf9)
