@@ -76,3 +76,4 @@
 | 2024-01-11 |  | [React LifeCycle](/기술면접(프론트엔드)/React%20LifeCycle.md) |  |  | 
 | 2024-01-25 |  | [TypeScript 기초개념](/기술면접(프론트엔드)/TypeScript%20기초개념.md) |  |  | 
 | 2024-02-08 |  | [TypeScript interface&Generic](/기술면접(프론트엔드)/TypeScript%20interface&Generic.md) |  |  | 
+| 2024-02-22 |  |  |  |  | 
