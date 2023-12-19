@@ -1,13 +1,10 @@
 # React LifeCycle
-
-![Untitled](React%20LifeCycle%20cc452b45c2e44b0abd4e76d3e2a6a3dc/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/f6629790-4bf9-473d-8053-1ef90fb05008)
 
 ## 리액트 라이프 사이클(생명주기)
-
 ![Untitled](React%20LifeCycle%20cc452b45c2e44b0abd4e76d3e2a6a3dc/Untitled%201.png)
 
 위는 class 방식 라이프 사이클
-
 ![Untitled](React%20LifeCycle%20cc452b45c2e44b0abd4e76d3e2a6a3dc/Untitled%202.png)
 
 위는 함수 방식의 라이프 사이클(React 16.8 Hooks 업데이트 이후로 함수형에서도 라이프 사이클 다룰 수 있게 됨)
