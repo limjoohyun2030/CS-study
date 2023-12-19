@@ -2,7 +2,7 @@
 
 ## TypeScript 란?
 
-![Untitled](TypeScript%20%E1%84%80%E1%85%B5%E1%84%8E%E1%85%A9%209a294cfe50404a59927f94aec91ada50/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/d34e3d00-f727-417c-8345-ff90cab71758)
 
 ```jsx
 타입스크립트는 자바스크립트의 슈퍼셋인 오픈소스 프로그래밍 언어이다. 
@@ -24,7 +24,8 @@ C#의 리드 아키텍트이자 델파이, 터보 파스칼의 창시자인 Ande
 
 ### 장점1 - 에러 예방
 
-![Untitled](TypeScript%20%E1%84%80%E1%85%B5%E1%84%8E%E1%85%A9%209a294cfe50404a59927f94aec91ada50/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/88004351-1bb9-4752-9684-584e66e82bf9)
+
 
 TS 에서는 타입을 부여하기 때문에, 타입이 일치하지 않을때 미리 IDE 에서 오류 메세지를 띄웁니다.
 
@@ -72,7 +73,7 @@ TS 가 익숙하지 않은 개발자라면 생산성이 낮아질 수 있습니�
 
 ### JS vs TS 비교 및 정리
 
-![Untitled](TypeScript%20%E1%84%80%E1%85%B5%E1%84%8E%E1%85%A9%209a294cfe50404a59927f94aec91ada50/Untitled%202.png)
+![Untitled 2](https://github.com/limjoohyun2030/CS-study/assets/39722436/b73f37f3-8350-45d2-b7a4-06b481fb0a73)
 
 | Javascript | Typescript |
 | --- | --- |
