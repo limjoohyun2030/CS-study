@@ -74,5 +74,5 @@
 | 2023-12-14 |  | [리액트 상태관리](/기술면접(프론트엔드)/리액트%20상태관리.md) |  | [Garbage Collection](/운영체제/GarbageCollection.MD) | 
 | 2023-12-28 |  | [SPA, CSR, SSR](/기술면접(프론트엔드)/SPA%2C%20CSR%2C%20SSR.md) |  |  | 
 | 2024-01-11 |  | [TypeScript 기초개념](/기술면접(프론트엔드)/TypeScript%20기초개념.md) |  |  | 
-| 2024-01-25 |  |  |  |  | 
+| 2024-01-25 |  | [TypeScript interface&Generic](/기술면접(프론트엔드)/TypeScript interface&Generic.md) |  |  | 
 | 2024-02-08 |  |  |  |  | 
