@@ -2,7 +2,7 @@
 
 ## Type vs interface
 
-![Untitled](TypeScript%20interface%20&%20Generic%20e589f4466a1841df8a1ca4bb4a1f80c7/Untitled.png)
+![Untitled](https://github.com/limjoohyun2030/CS-study/assets/39722436/b1126384-cb1a-42da-905b-02b45834655c)
 
 type과 interface는 자주 사용하는 타입들을 object 형태의 묶음으로 정의해 
 
@@ -156,7 +156,7 @@ type Person = { // 객체는 interface를 사용하도록 하자.
 
 ## 제네릭(Generics)이란?
 
-![Untitled](TypeScript%20interface%20&%20Generic%20e589f4466a1841df8a1ca4bb4a1f80c7/Untitled%201.png)
+![Untitled 1](https://github.com/limjoohyun2030/CS-study/assets/39722436/36583324-f52f-4600-8a0c-ea90bf95f311)
 
 제네릭은 C#, Java 등의 언어에서 재사용성이 높은 컴포넌트를 만들 때
 
