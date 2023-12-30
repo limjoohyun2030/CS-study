@@ -129,3 +129,7 @@
     인접 노드사이의 경로선택 → 분산형 경로선택
     
     통신망 전체의 경로선택 → 중앙집중형 경로선택
+
+- 참조
+    - 손진곤, 길준민, 박지수. 2023. 정보통신망. 서울 : 한국방송통신대학교 출판문화원
+    - James F. Kurose, Keith W. Ross. 2011. 4판. *Computer Networking A Top-Down Approach.* 교보문고
