@@ -47,7 +47,7 @@
 - [Routing](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Routing.md)
 
 ## 운영체제
-- [프로세스와 스레드](/운영체제/ProcessAndThread.md)
+- [Process, Thread](/운영체제/ProcessAndThread.md)
 - [프로세스 스케줄링](/운영체제/Process%20Scheduling.md)
 - [캐시](/운영체제/Cache.MD)
 - [동기와 비동기](/운영체제/Syncronous%20And%20Asyncronous.MD)
