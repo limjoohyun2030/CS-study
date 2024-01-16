@@ -1,5 +1,3 @@
-# Stack
-
 **ADT(abstract data type)**
 
 - 추상자료형
@@ -15,7 +13,7 @@
 
 ---
 
-스택은 입력이 가장 늦게 된 자료가 가장 먼저 출력되는 LIFO(Last In First Out) 구조입니다. 
+스택은 입력이 가장 늦게 된 자료가 가장 먼저 출력되는 LIFO(Last In First Out) 구조이다. 
 
 ### 주요 동작
 
