@@ -42,6 +42,7 @@
 
 ## 네트워크
 - [OSI 7 Layer](/네트워크/OSI-7-Layer.md)
+- [TCP-IP-Model](/네트워크/TCP-IP-Model.md)
 - [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD)
 - [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md)
 - [Routing](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Routing.md)
@@ -64,7 +65,7 @@
 |--|--|--|--|--|
 | 2023-06-29 | [Process, Thread](/운영체제/ProcessAndThread.md) | [Browser(Architecture, Engine)](/기술면접(프론트엔드)/Browser(Architecture%2C%20Engine).md) |  | [캐시](/운영체제/Cache.MD) |
 | 2023-07-13 | [OSI 7 Layer](/네트워크/OSI-7-Layer.md) | [Browser Rendering, Protocol, Proxy](/기술면접(프론트엔드)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(이%203개는%20기초만).md) |  | [동기와 비동기](/운영체제/Syncronous%20And%20Asyncronous.MD) | 
-| 2023-07-27 | [프로세스 스케줄링](/운영체제/Process%20Scheduling.md) |[Restful API](/기술면접(프론트엔드)/RESTful%20API.md) | [인덱스](https://platinum-gong-8ee.notion.site/a04c1e9c58304a15995ebcaf5547d481?pvs=4) | [쿠키와 세션](/WEB/Cookie%20And%20Session.MD) |
+| 2023-07-27 | [TCP-IP-Model](/네트워크/TCP-IP-Model.md) |[Restful API](/기술면접(프론트엔드)/RESTful%20API.md) | [인덱스](https://platinum-gong-8ee.notion.site/a04c1e9c58304a15995ebcaf5547d481?pvs=4) | [쿠키와 세션](/WEB/Cookie%20And%20Session.MD) |
 | 2023-08-10 (여름 휴가) |  |   |  |  |
 | 2023-08-24 | [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md) | [Web Server & WAS](/기술면접(프론트엔드)/WebServer%20%26%20WAS.md) | [데이터 담는 형식(XML, JSON, 파싱), 포워딩](https://platinum-gong-8ee.notion.site/XML-JSON-a81c3db0760f46b4ad84a800b2fa4eee?pvs=4) | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
 | 2023-09-07 | [Stack](/자료구조/Stack.md) | [WebSocket](/기술면접(프론트엔드)/WebSocket.md) |  [컨텍스트, 호이스팅](https://platinum-gong-8ee.notion.site/1c7060a8766749b596a2be06150edfb2?pvs=4)| [CORS](/WEB/CORS.MD) |
