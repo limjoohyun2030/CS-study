@@ -44,7 +44,7 @@
 - [OSI 7 Layer](/네트워크/OSI-7-Layer.md)
 - [TCP-IP-Model](/네트워크/TCP-IP-Model.md)
 - [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD)
-- [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md)
+- [TCP Control](/네트워크/TCP%20Control(Error,%20Flow,%20Congestion).md)
 - [Routing](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Routing.md)
 
 ## 운영체제
@@ -67,7 +67,7 @@
 | 2023-07-13 | [OSI 7 Layer](/네트워크/OSI-7-Layer.md) | [Browser Rendering, Protocol, Proxy](/기술면접(프론트엔드)/Browser%20Rendering%2C%20Protocol%2C%20Proxy%2C%20HTTP%20TCP%20UDP(이%203개는%20기초만).md) |  | [동기와 비동기](/운영체제/Syncronous%20And%20Asyncronous.MD) | 
 | 2023-07-27 | [TCP-IP-Model](/네트워크/TCP-IP-Model.md) |[Restful API](/기술면접(프론트엔드)/RESTful%20API.md) | [인덱스](https://platinum-gong-8ee.notion.site/a04c1e9c58304a15995ebcaf5547d481?pvs=4) | [쿠키와 세션](/WEB/Cookie%20And%20Session.MD) |
 | 2023-08-10 (여름 휴가) |  |   |  |  |
-| 2023-08-24 | [TCP 오류제어 흐름제어 혼잡제어](/네트워크/TCP%20오류제어(Error%20Control)%20흐름제어(Flow%20Control)%20혼잡제어(Congestion%20Control).md) | [Web Server & WAS](/기술면접(프론트엔드)/WebServer%20%26%20WAS.md) | [데이터 담는 형식(XML, JSON, 파싱), 포워딩](https://platinum-gong-8ee.notion.site/XML-JSON-a81c3db0760f46b4ad84a800b2fa4eee?pvs=4) | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
+| 2023-08-24 | [TCP Control](/네트워크/TCP%20Control(Error,%20Flow,%20Congestion).md) | [Web Server & WAS](/기술면접(프론트엔드)/WebServer%20%26%20WAS.md) | [데이터 담는 형식(XML, JSON, 파싱), 포워딩](https://platinum-gong-8ee.notion.site/XML-JSON-a81c3db0760f46b4ad84a800b2fa4eee?pvs=4) | [3-Way, 4-Way Handshake](/네트워크/3-Way%2C%204-Way%20Handshake.MD) |
 | 2023-09-07 | [Stack](/자료구조/Stack.md) | [WebSocket](/기술면접(프론트엔드)/WebSocket.md) |  [컨텍스트, 호이스팅](https://platinum-gong-8ee.notion.site/1c7060a8766749b596a2be06150edfb2?pvs=4)| [CORS](/WEB/CORS.MD) |
 | 2023-09-21 | [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md) | [Promise](https://github.com/limjoohyun2030/CS-study/blob/d3c36e3074004bb5d4af2b2728397a8bc8387707/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/Promise.md) | [서블릿(Servelet)](https://platinum-gong-8ee.notion.site/Servelet-7ebb36af61f1479d8e09d15223270887?pvs=4) | [QA](/개발%20상식/QA.md) |
 | 2023-10-05 | [ArrayList와 LinkedList](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/ArrayList%EC%99%80%20LinkedList.md) | [XSS](https://github.com/limjoohyun2030/CS-study/blob/57b55bff7db19859bbca0b71b94a8891cda365cb/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91(%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C)/XSS.md) |  [컨테이너 & 도커](https://platinum-gong-8ee.notion.site/61d20191d96249dfa3df075b3555e6a7?pvs=4)| [HTTP Method](/네트워크/HTTP%20Method.MD) |
