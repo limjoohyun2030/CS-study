@@ -6,11 +6,13 @@
 
 1. **메모리 구조, 프로세스는 각각 독립된 메모리를 할당받는다.**
     
-   ![운영체제/ProcessAndThread/Untitled.png](/운영체제/ProcessAndThread/Untitled.png)
+    ![](https://velog.velcdn.com/images/leequiett/post/d5bc4815-9618-438f-bfc5-6c5fa40b4f64/image.png)
+
     
     **프로세스는 코드, 데이터, 힙, 스택으로 구성된다.**
     
-    ![Screenshot_2023-06-28-23-02-15-744_com.miui.notes.png](/운영체제/ProcessAndThread/Screenshot_2023-06-28-23-02-15-744_com.miui.notes.png)
+    ![](https://velog.velcdn.com/images/leequiett/post/e128360a-e62f-4e7f-a214-4b821f7b1998/image.png)
+
     
     - 스택 : 데이터를 일시적으로 저장하는 영역. 지역변수에 사용하고, 변수가 범위 밖으로 이동하면 공간을 해제한다. 호출한 함수의 반환 주소, 반환 값, 매개변수 등에 사용하고, 함수를 호출할수록 커지고 반환하면 줄어든다. 보통 힙과 인접한 방향으로 점점 커져 스택 포인터와 힙 포인터를 만나면 메모리가 소진되었다는 의미이다.
     - 힙 : 코드 영역과는 별도로 유지되는 자유 영역이다. 동적으로 메모리를 할당하려고 프로그램 실행 중 시스템 호출을 사용했다가 해제하는 방법으로 활용한다. 프로세스의 공유 라이브러리와 동적으로 적재된 모듈이 서로 공유하는데, 동적 메모리 할당이 발생하면 보통 위쪽으로 커진다.
@@ -43,7 +45,8 @@
 
 ## 4. 프로세스의 상태 변화
 
-![Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png](/운영체제/ProcessAndThread/Screenshot_2023-06-28-23-40-40-773_com.miui.notes.png)
+![](https://velog.velcdn.com/images/leequiett/post/126f3d40-af8c-493d-aca4-fd20caaca605/image.png)
+
 
 - 준비상태 : 메모리에 올라온 상태
 - 실행상태 : CPU를 할당 받은 상태
@@ -91,11 +94,13 @@
 
 프로세스는 두 가지 특성인 자원과 제어로 구분할 수 있다. 이 중 제어만 분리한 실행 단위를 스레드라고 하는데, 프로세스 하나는 스레드 한 개 이상으로 나눌 수 있다.
 
-![https://gmlwjd9405.github.io/images/os-process-and-thread/multi-thread.png](https://gmlwjd9405.github.io/images/os-process-and-thread/multi-thread.png)
+![](https://velog.velcdn.com/images/leequiett/post/6e6d394f-40a3-4002-a2ea-c5e4a6ae32cb/image.png)
+
 
 각각의 스레드는 프로그램 카운터(PC), 스택 포인터(SP)등을 비롯한 스레드실행 환경 정보(문맥 정보), 지역 데이터, 스택을 독립적으로 가지면서 코드, 전역 데이터, 힙을 다른 스레드와 공유한다.
 
-![Screenshot_2023-06-29-18-41-44-678_com.miui.notes.png](/운영체제/ProcessAndThread/Screenshot_2023-06-29-18-41-44-678_com.miui.notes.png)
+![](https://velog.velcdn.com/images/leequiett/post/0a08d722-89f4-4a1c-bcea-d61380b90c4a/image.png)
+
 
 ## 8. 스레드 사용의 이점
 
@@ -108,7 +113,8 @@
 
 - **운영체제는 단일 프로세스에서 단일 스레드 실행이나 멀티 스레드 실행을 지원한다.**
 
-![Untitled](/운영체제/ProcessAndThread/Untitled1.png)
+![](https://velog.velcdn.com/images/leequiett/post/681d7536-30df-4254-9bd8-798447555cf8/image.png)
+
 
 여기서 단일 스레드를 지원하는 운영체제는 프로세스 하나에 스레드 한 개를 실행하는 전통적인 방법으로 아직 스레드 용어가 탄생하기 전이라 개념이 불확실하다. 도스가 대표적인 예이다.
 
@@ -116,7 +122,8 @@
 
 - **스레드 제어 블록 (TCB)**
 
-![img.png](/운영체제/ProcessAndThread/img.png)
+![](https://velog.velcdn.com/images/leequiett/post/8708a127-9274-4028-a97c-ad55cff111e5/image.png)
+
 
 프로세스가 PCB에 정보를 저장하듯이 스레드도 스레드 제어 블록에 정보를 저장한다. 그런데 프로세스는 스레드를 한 개 이상 가질 수 있으므로, 결국 프로세스 제어 블록은 스레드 제어 블록의 리스트를 가리킨다.
 
@@ -124,7 +131,8 @@
 
 1. **사용자 수준 스레드**
     
-    ![img1.daumcdn.png](/운영체제/ProcessAndThread/img1.daumcdn.png)
+    ![](https://velog.velcdn.com/images/leequiett/post/f60267ea-8322-42f3-b86c-74826a98b89b/image.png)
+
     
     - 사용자 수준 스레드는 운영체제가 아닌 응용 프로그램에서 관리되는 스레드이다.
     - 사용자 수준 스레드는 스레드 라이브러리에 의해 관리되며, 운영체제는 스레드의 존재를 알지 못한다.
@@ -133,7 +141,8 @@
     - 그러나 사용자 수준 스레드가 블로킹(System Call 등으로 인해) 상태에 들어가면, 해당 프로세스의 모든 스레드가 중단될 수 있다.
 2. 커널 수준 스레드
     
-    ![img1.daumcdn.png](/운영체제/ProcessAndThread/img1.daumcdn1.png)
+    ![](https://velog.velcdn.com/images/leequiett/post/27456932-1369-40b7-9026-1f3d41472f8c/image.png)
+
     
     - 커널 수준 스레드는 운영체제 커널에서 직접 관리되는 스레드이다.
     - 각 스레드에 대해 운영체제는 스레드의 컨텍스트 스위칭과 스케줄링을 수행한다.
@@ -141,7 +150,8 @@
     - 커널 수준 스레드는 블로킹 상태에 있는 스레드가 있더라도 다른 스레드가 실행될 수 있다.
 3. 혼합형 스레드
     
-    ![img1.daumcdn.png](/운영체제/ProcessAndThread/img1.daumcdn2.png)
+    ![](https://velog.velcdn.com/images/leequiett/post/de776db1-cf67-40a6-9c30-7151b76c87e2/image.png)
+
     
     - 혼합형 스레드는 사용자 수준 스레드와 커널 수준 스레드를 혼합하여 사용하는 방식이다.
     - 일반적으로, 각 사용자 수준 ㅅ스레드는 커널 수준 스레드에 매핑된다.
@@ -152,9 +162,9 @@
 ## 사용자 수준 스레드와 커널 수준 스레드의 차이점과 사용 이유에 대해 정리
 
 1. 메모리 영역은 크게 user 영역과 kernel 영역으로 나뉜다, 이중모드라고도 하며 한 컴퓨터를 여러 사람이 동시에 사용하는 환경(ex → server) 또는 한 사람이 여러 개의 프로그램을 동시에 사용하는 경우에 한 사람의 고의/실수로 프로그램 전체에 영향을 끼칠 수 있다(ex → (STOP, HALT, RESET ← Assembly lang, 그리고 이러한 명령어를 privileged instructions라고도 한다.) 명령어 등)
-2. 그래서 사용자 프로그램은 STOP등의 치명적 명령을 사용 불가하게 user 모드 kernel 모드(priviliged 모드)로 운영체제는 나누게 된다.
+2. 그래서 사용자 프로그램은 STOP등의 치명적 명령을 사용 불가하게 user 모드 kernel 모드(priviliged모드)로 운영체제는 나누게 된다.
 3. 그래서 기본적으로 프로그램은 user모드로 동작하다가 privileged instruction이 필요한 경우에 kernel 모드로 동작하게 된다.
-4. 중요한것은 모드의 전환엔 오버헤드가 있다는 것.
+4. 중요한것은 모드의 전환엔 오버헤드가 있다는 .
 5. 커널 수준 스레드와 유저 레벨 스레드는 생성 주체가 누구냐에 따라 구분한다.
 6. 커널 레벨 쓰레드의 단점은 유저 모드에서 커널 모드로의 전환이 빈번하게 이뤄져 성능 저하가 발생하기 때문에 유저 레벨 스레드를 사용할 수 있다. 유저 레벨 스레드를 사용하면 커널은 스레드의 존재를 모르기 때문에 모드 간의 전환이 없으며 따라서 성능적으로 이득이다.
 7. 그렇지만 유저 레벨 스레드는 커널 관점에서 보면 하나의 프로세스이기(스레드) 때문에 한 스레드가 커널에 블로킹되면 프로세스 전체가 블로킹될 수 있다.
