@@ -34,6 +34,7 @@
 ### 라우팅 테이블
 
 - 데이터그램을 목적 노드로 전달하기 위해 참조하는 테이블
+- 	L3 네트워크 계층의 식별자인 ip주소를 근거로 하여 스위칭해주는 라우터가 가지고 있는 이정표
 
 ![](https://velog.velcdn.com/images/leequiett/post/00120757-ccc0-45c0-8854-fd163abff1c0/image.png)
 
