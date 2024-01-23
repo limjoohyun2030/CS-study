@@ -22,7 +22,7 @@ B는 ACK를 받으면 1번 패킷을 전송한다. 하지만 1번 패킷이 손�
 
 이와 같은 방식으로 매번 전송한 패킷에 대한 ACK를 받고 다음 패킷을 전송하는 방식이 STOP-AND-WAIT 방식이다.
 
-![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled.png?raw=true)
+![](https://velog.velcdn.com/images/leequiett/post/8ff36207-fb2b-4183-8da7-d730f06bb22e/image.png)
 
 ## Go Back N
 
@@ -40,7 +40,7 @@ A에서 0번, 1번, 2번 패킷을 전송한다고 가정한다. 이중 0번, 1�
 
 단점으로는 이미 수신한 데이터를 폐기하고 다시 재전송해야 한다는 점이다.
 
-![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%201.png?raw=true)
+![](https://velog.velcdn.com/images/leequiett/post/9b83591f-2410-4a54-9d58-5dc239e057b7/image.png)
 
 ## Selective Repeat
 
@@ -52,7 +52,7 @@ A에서 0번, 1번, 2번 패킷을 전송한다고 가정한다. 이중 0번, 1�
 
 이 때 수신측의 버퍼에 순서가 보장되지 않기 때문에 수신 버퍼에 대한 재정렬이 필요하며 이는 필연적으로 또 다른 버퍼 공간을 필요로 한다는 단점이 있다.
 
-![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%202.png?raw=true)
+![](https://velog.velcdn.com/images/leequiett/post/c496901a-ea35-4b83-ae4a-a8191c82c370/image.png)
 
 ---
 
@@ -66,7 +66,7 @@ TCP는 UDP와는 다르게 흐름 제어를 제공한다. 송신 TCP는 송신 �
 
 전송한 패킷에 대한 확인 응답을 받아야만 그 다음 패킷을 전송하는 기법
 
-![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%203.png?raw=true)
+![](https://velog.velcdn.com/images/leequiett/post/24869a5a-8c24-4d88-9c35-4677cf8f841f/image.png)
 
 ## Sliding Window(윈도우 광고 기법)
 
@@ -94,7 +94,7 @@ B는 확인 응답 ACK = 151을 전송하며, 자신의 윈도우 크기가 150�
 
 ACK = 151과 B의 윈도우 크기가 150이라는 정보를 수신한 송신측 윈도우도 그에 따라 윈도우를 조절한다.
 
-![TCP 흐름제어.png](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/un6.png?raw=true)
+![](https://velog.velcdn.com/images/leequiett/post/a768329d-30fe-4dd7-b623-61004d3e0ff3/image.png)
 
 ---
 
@@ -120,11 +120,14 @@ TCP는 UDP와는 다르게 망의 혼잡을 고려한다. 송신측에서 전송
         - 결국 혼잡이 발생되면 Multiplicative Decrease 방식을 수행, 혼잡이 발생한 상황의 경우에 따라 다르게 동작
         - **세그먼트 전송 후 타임아웃되어서 재전송해야 하는 상황** : cwnd의 크기는 1로 재설정 되고 ssthresh값은 20의 1/2인 10으로 변경된다. 이후에는 Slow Start와 Additive Increase 기법을 계속해서 수행.
                 
-             ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%204.png?raw=true)
+             
+             ![](https://velog.velcdn.com/images/leequiett/post/a61777d0-47f6-46bb-b38e-004acf7df5f3/image.png)
+
                 
          - **3개 이상의 중복된 ACK를 수신한 경우 :** ssthresh값이 1/2로 축소, cwnd의 크기는 ssthresh와 같은 값으로 재설정, 이후에는 Additive Increase 기법으로 혼잡 회피만 수행
                 
-              ![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/TCP%20%EC%98%A4%EB%A5%98%EC%A0%9C%EC%96%B4(Error%20Control)%20%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4(Flow%20Control)%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4(Congestion%20Control)/Untitled%205.png?raw=true)
+              ![](https://velog.velcdn.com/images/leequiett/post/618a61fd-6f7f-40bb-99fb-4bc074542122/image.png)
+
                 
 
 - 참조
