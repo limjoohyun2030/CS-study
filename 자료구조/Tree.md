@@ -4,7 +4,7 @@
 
 - 힙(Heap)을 구현하는 방법 중 하나가 트리이다.
 
-[Heap](https://www.notion.so/Heap-c0e59e9919eb4143a83e5c44809215a5?pvs=21)
+[Heap](https://velog.io/@leequiett/Heap)
 
 ![](https://velog.velcdn.com/images/leequiett/post/ce8cea27-0c61-47c0-9ba0-1cf40f6cdda3/image.png)
 
