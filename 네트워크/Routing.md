@@ -95,7 +95,7 @@
 
 1. **hot potato 경로선택(=shortest queue routing method)**
 - 가장 짧은 큐를 가진 출력선로를 선택하여 데이터 전송
-1. **국부지연평가(local delay estimate)에 의한 경로선택**
+2. **국부지연평가(local delay estimate)에 의한 경로선택**
 - 과거의 정보를 이용하는 방식
 - 데이터를 반대 방향으로 전송하는데 걸리는 시간을 계산하여 다음 노드를 결정(backward routing)
 
@@ -124,7 +124,7 @@
 - 분산형 경로선택과 정반대
 - 각 노드는 편리하나, NRC는 복잡함
 
-델타 경로선택(delta routing)
+**델타 경로선택(delta routing)**
 
 - 분산형 경로선택과 중앙집중형 경로선택의 결합
     
