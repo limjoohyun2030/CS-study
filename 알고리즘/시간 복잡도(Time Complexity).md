@@ -40,7 +40,7 @@
 
 - **O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(N!)**
 
-![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity)/Untitled.png?raw=true)
+![Untitled](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8B%9C%EA%B0%84%20%EB%B3%B5%EC%9E%A1%EB%8F%84(Time%20Complexity)/Untitled.png)
 
 # 시간 복잡도 구하기
 
