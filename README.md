@@ -38,7 +38,7 @@
 - [Tree](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Tree.md)
 
 ## 알고리즘
-- [시간복잡도](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%B8%E1%84%83%E1%85%A9(Time%20Complexity).md)
+- [시간복잡도](/알고리즘/시간 복잡도(Time Complexity).md)
 
 ## 네트워크
 - [OSI 7 Layer](/네트워크/OSI-7-Layer.md)
