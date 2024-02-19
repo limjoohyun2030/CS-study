@@ -13,7 +13,8 @@ num++
 **고 알고있었는데**
 
 직접 확인해보고자 디스어셈블리를 열어봤다.
-![](https://velog.velcdn.com/images/leequiett/post/08561de5-8fe1-42f3-be1a-54e991661cbe/image.png)
+![](https://velog.velcdn.com/images/leequiett/post/8685d4c2-bbb7-4795-9217-48e265ea5b92/image.png)
+
 
 구현 차이만 있을 뿐(증가 후 리턴, 리턴 후 증가) 같은 단계의 연산을 수행한다.
 따라서 사실 **속도 차이는 '없다'.**
