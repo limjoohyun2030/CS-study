@@ -30,6 +30,7 @@
 
 # 학습 주제
 ## 개발 상식
+- [증감연산자의-속도차이](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EC%86%8D%EB%8F%84%EC%B0%A8%EC%9D%B4)
 
 ## 자료구조
 - [Stack](/자료구조/Stack.md)
@@ -76,7 +77,7 @@
 | 2023-11-23 | [Heap](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Heap.md) | [Virtual DOM](/기술면접(프론트엔드)/Virtual%20DOM.md) |  | [gRPC](/네트워크/gRPC.MD) |
 | 2023-12-14 | [Routing](https://github.com/limjoohyun2030/CS-study/blob/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/Routing.md) | [리액트 상태관리](/기술면접(프론트엔드)/리액트%20상태관리.md) |  | [Garbage Collection](/운영체제/GarbageCollection.MD) | 
 | 2023-12-28 | [Process Scheduling](/운영체제/Process%20Scheduling.md) | [SPA, CSR, SSR](/기술면접(프론트엔드)/SPA%2C%20CSR%2C%20SSR.md) |  |  | 
-| 2024-01-11 |  | [React LifeCycle](/기술면접(프론트엔드)/React%20LifeCycle.md) |  |  | 
+| 2024-01-11 | [증감연산자의-속도차이](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EC%86%8D%EB%8F%84%EC%B0%A8%EC%9D%B4) | [React LifeCycle](/기술면접(프론트엔드)/React%20LifeCycle.md) |  |  | 
 | 2024-01-25 |  | [TypeScript 기초개념](/기술면접(프론트엔드)/TypeScript%20기초개념.md) |  |  | 
 | 2024-02-08 |  | [TypeScript interface&Generic](/기술면접(프론트엔드)/TypeScript%20interface&Generic.md) |  |  | 
 | 2024-02-22 |  |  |  |  | 
