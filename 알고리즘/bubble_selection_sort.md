@@ -5,7 +5,7 @@
 
 
 ### 버블 정렬
-```
+```c
 #include <stdio.h>
 
 int main(void) {
@@ -30,7 +30,7 @@ int main(void) {
 
 ### 선택정렬
 
-```
+```c
 #include <stdio.h>
 
 int main(void) {
