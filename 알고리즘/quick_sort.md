@@ -1,7 +1,7 @@
 퀵 정렬이 무엇인지는 위키백과 링크로 대체한다.
 >https://ko.wikipedia.org/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC
 
-```
+```c
 #include <stdio.h>
 
 void quicSort2(int* array, int L, int R);
