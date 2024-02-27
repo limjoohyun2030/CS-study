@@ -132,5 +132,6 @@ push ax
 ### 결론
 32bit와 64bit 환경에서 매개변수가 저장되는 위치는 다르다.
 
->* 참조<br>
-최호성. 독하게 시작하는 C 프로그래밍. 인프런 (https://inf.run/iXxzY)
+>* 참고문헌<br>
+1. 최호성. 독하게 시작하는 C 프로그래밍. 인프런 (https://inf.run/iXxzY)
+2. Brian W. Kernighan , Dennis M. Ritchie. 2016. C Programming Language. 휴먼싸이언스
