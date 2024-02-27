@@ -32,6 +32,7 @@
 ## 개발 상식
 - [증감연산자의-속도차이](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EC%86%8D%EB%8F%84%EC%B0%A8%EC%9D%B4.md)
 - [(C언어)함수의_매개변수가_저장되는_위치](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/(C%EC%96%B8%EC%96%B4)%ED%95%A8%EC%88%98%EC%9D%98_%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EA%B0%80_%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94_%EC%9C%84%EC%B9%98.md)
+- [(C_언어)_연산의_임시결과는_어디에_저장될까](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/(C_%EC%96%B8%EC%96%B4)_%EC%97%B0%EC%82%B0%EC%9D%98_%EC%9E%84%EC%8B%9C%EA%B2%B0%EA%B3%BC%EB%8A%94_%EC%96%B4%EB%94%94%EC%97%90_%EC%A0%80%EC%9E%A5%EB%90%A0%EA%B9%8C.md)
 
 ## 자료구조
 - [Stack](/자료구조/Stack.md)
@@ -83,4 +84,4 @@
 | 2024-01-11 | [증감연산자의-속도차이](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90%EC%9D%98-%EC%86%8D%EB%8F%84%EC%B0%A8%EC%9D%B4.md) | [React LifeCycle](/기술면접(프론트엔드)/React%20LifeCycle.md) |  |  | 
 | 2024-01-25 | [bubble_sort_selection_sort](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/bubble_selection_sort.md) | [TypeScript 기초개념](/기술면접(프론트엔드)/TypeScript%20기초개념.md) |  |  | 
 | 2024-02-08 | [quick_sort](https://github.com/limjoohyun2030/CS-study/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/quick_sort.md) | [TypeScript interface&Generic](/기술면접(프론트엔드)/TypeScript%20interface&Generic.md) |  |  | 
-| 2024-02-22 | [(C언어)함수의_매개변수가_저장되는_위치](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/(C%EC%96%B8%EC%96%B4)%ED%95%A8%EC%88%98%EC%9D%98_%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EA%B0%80_%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94_%EC%9C%84%EC%B9%98.md) |  |  |  | 
+| 2024-02-22 | [(C언어)함수의_매개변수가_저장되는_위치](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/(C%EC%96%B8%EC%96%B4)%ED%95%A8%EC%88%98%EC%9D%98_%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EA%B0%80_%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94_%EC%9C%84%EC%B9%98.md)<br>[(C_언어)_연산의_임시결과는_어디에_저장될까](https://github.com/limjoohyun2030/CS-study/blob/main/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D/(C_%EC%96%B8%EC%96%B4)_%EC%97%B0%EC%82%B0%EC%9D%98_%EC%9E%84%EC%8B%9C%EA%B2%B0%EA%B3%BC%EB%8A%94_%EC%96%B4%EB%94%94%EC%97%90_%EC%A0%80%EC%9E%A5%EB%90%A0%EA%B9%8C.md) |  |  |  | 
